@@ -1,0 +1,237 @@
+---
+title: "Lab 5 · Cuando el dato viene de verdad sucio"
+subtitle: "Desaprendiendo sobre... Limpieza de datos · Distribuidora agroalimentaria (datos sintéticos con errores plantados)"
+lang: es
+format:
+  html:
+    toc: true
+    embed-resources: true
+execute:
+  warning: false
+  message: false
+---
+
+> **Objetivo.** Estudiante_18 viene casi limpio. **Esto no es lo normal.** Aquí tenéis un dataset construido con los errores típicos de los sistemas reales (formatos mezclados, centinelas, claves sucias, faltantes con motivo, joins que fallan en silencio). Como **conocemos la verdad** (un *gold standard* que en la vida real no tendríais), podemos medir si cada decisión acierta. Todo está resuelto: leed la salida, y **contrastad con lo que visteis en los Labs 1-4**.
+
+```{r}
+# ── Preparación (ejecutar una vez) ───────────────────────────────────────────
+# En Colab/Linux usamos binarios precompilados: los paquetes se instalan en segundos.
+if (Sys.info()[["sysname"]] == "Linux")
+  options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
+
+paquetes <- c("tidyverse", "mice")
+faltan <- paquetes[!vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)]
+if (length(faltan)) install.packages(faltan)
+suppressPackageStartupMessages({
+library(tidyverse)
+})
+
+# Los datos: si no están en la carpeta, se descargan
+BASE_URL <- "https://raw.githubusercontent.com/vicentcorrecher/lab-limpieza-datos/main/datos"
+obtener <- function(f) {
+  ruta <- file.path("datos", f)
+  if (!file.exists(ruta)) {
+    dir.create(dirname(ruta), recursive = TRUE, showWarnings = FALSE)
+    download.file(paste0(BASE_URL, "/", f), ruta, quiet = TRUE, mode = "wb")
+  }
+}
+for (f in c(
+  "distribuidora/clientes_sucio.csv",
+  "distribuidora/ventas_sucio.csv",
+  "distribuidora/registro_mercantil.csv",
+  "distribuidora/clientes_gold.csv"
+)) obtener(f)
+```
+
+```{r}
+leer <- function(f) read_csv(file.path("datos/distribuidora", f), col_types = cols(.default = col_character()),
+                             na = character(), show_col_types = FALSE)
+cli_raw <- leer("clientes_sucio.csv"); ven_raw <- leer("ventas_sucio.csv"); emp_raw <- leer("registro_mercantil.csv")
+gold <- read_csv("datos/distribuidora/clientes_gold.csv", show_col_types = FALSE)
+
+tibble(tabla = c("clientes", "ventas", "registro mercantil"), filas = c(nrow(cli_raw), nrow(ven_raw), nrow(emp_raw)))
+```
+
+Leemos **todo como texto** y sin convertir nada a `NA`: así vemos los datos como llegan y no perdemos información.
+
+## 1. Diagnóstico: los faltantes camuflados y los formatos
+
+```{r}
+cli_raw |> count(`Ingresos Anuales (€)`, sort = TRUE) |> head(6)
+cli_raw |> count(Edad, sort = TRUE) |> head(5)
+```
+
+```{r}
+# Perfilar el PATRÓN de la fecha, no el valor: los dígitos pasan a 9
+ven_raw |> mutate(patron = str_replace_all(fecha, "[0-9]", "9")) |> count(patron, sort = TRUE)
+```
+
+> ### Para pensar
+> 1. ¿Qué valores de `Edad` o de ingresos son **«faltantes camuflados»**? ¿Habríais visto el `999` si hubierais dejado que R convirtiera los textos a números?
+> 2. En Estudiante_18 todas las fechas eran `9999-99-99`. ¿Cuántos formatos hay aquí? ¿Qué problema de **ambigüedad** crea `03-04-2021`?
+
+## 2. Depuración: texto, claves, números y fechas
+
+```{r}
+norm_id   <- function(x) sprintf("C%04d", as.integer(str_extract(x, "\\d+")))
+sin_ruido <- function(x) x |> stringi::stri_trans_general("Latin-ASCII") |> str_to_lower() |> str_squish()
+
+codigos_na <- c("", "N/A", "-", "s/d", "NULL")
+a_numero <- function(x) {
+  x <- na_if(str_squish(x), "")
+  x <- if_else(x %in% codigos_na, NA_character_, x)
+  x <- str_remove_all(x, "[€\\s]")
+  x <- if_else(str_detect(x, ","), str_replace(str_remove_all(x, "\\."), ",", "."), x)   # europeo vs. anglosajón
+  suppressWarnings(as.numeric(x))
+}
+
+a_fecha <- function(x) suppressWarnings(case_when(
+  str_detect(x, "^\\d{4}-\\d{2}-\\d{2}$")     ~ ymd(x),
+  str_detect(x, "^\\d{8}$")                   ~ ymd(x),
+  str_detect(x, "^\\d{2}/\\d{2}/\\d{4}$")     ~ dmy(x),
+  str_detect(x, "^\\d{2}-\\d{2}-\\d{2}$")     ~ dmy(x),
+  str_detect(x, "^\\d{2}\\.\\d{2}\\.\\d{2}$") ~ dmy(x),
+  str_detect(x, "^\\d{2}-\\d{2}-\\d{4}$")     ~ mdy(x),    # CONVENCIÓN a documentar
+  str_detect(x, "^[A-Za-z]+ \\d{2}, \\d{4}$") ~ mdy(x, locale = "C"),
+  .default = NA_Date_))
+
+# Un mismo importe, tres formas de escribirlo:
+tibble(entrada = c("28.000,50 €", "28000.50", "28000,5 €")) |> mutate(salida = a_numero(entrada))
+```
+
+```{r}
+cli <- cli_raw |> set_names(c("id_cliente", "nombre", "email", "provincia", "segmento", "fecha_alta", "edad", "ingresos"))
+mapa_prov <- c(valencia = "Valencia", alacant = "Alicante", alicante = "Alicante", castellon = "Castellón", castello = "Castellón",
+               madrid = "Madrid", barcelona = "Barcelona", barna = "Barcelona", sevilla = "Sevilla", bilbao = "Bilbao", zaragoza = "Zaragoza")
+
+cli <- cli |>
+  mutate(id_cliente = norm_id(id_cliente), nombre = str_squish(nombre),
+         provincia = unname(mapa_prov[sin_ruido(provincia)]),
+         ingresos = a_numero(ingresos), edad = a_numero(edad), edad = if_else(edad == 999, NA_real_, edad),
+         fecha_alta = a_fecha(fecha_alta),
+         edad = if_else(edad < 18 | edad > 100, NA_real_, edad),
+         fecha_alta = if_else(fecha_alta > today(), NA_Date_, fecha_alta),
+         email = if_else(str_detect(email, "^[^@\\s]+@[^@\\s]+\\.[a-z]{2,}$"), email, NA_character_))
+
+cli |> count(provincia)
+```
+
+```{r}
+canon <- c("Aceite de oliva", "Arroz bomba", "Naranjas (caja)", "Vino tinto", "Turrón", "Conservas", "Horchata", "Embutido")
+ven <- ven_raw |>
+  mutate(producto = canon[match(sin_ruido(producto), sin_ruido(canon))],
+         id_cliente = norm_id(id_cliente), importe_eur = a_numero(importe_eur), fecha = a_fecha(fecha),
+         fecha = if_else(fecha < ymd("2020-01-01") | fecha > today(), NA_Date_, fecha),
+         unidades = as.numeric(unidades), unidades = if_else(unidades <= 0 | unidades > 1000, NA_real_, unidades),
+         descuento_pct = as.numeric(descuento_pct))
+glimpse(ven)
+```
+
+## 3. Duplicados y valores atípicos
+
+```{r}
+cat("Clientes: ", nrow(cli), "filas |", sum(duplicated(cli)), "exactas |", cli |> count(id_cliente) |> filter(n > 1) |> nrow(), "claves repetidas\n")
+
+# Casi-duplicados: misma clave, distinto texto -> conservamos la fila más completa
+cli <- cli |>
+  mutate(n_ok = rowSums(!is.na(pick(everything()))), nombre_ok = nombre != str_to_upper(nombre)) |>
+  arrange(id_cliente, desc(n_ok), desc(nombre_ok)) |> distinct(id_cliente, .keep_all = TRUE) |> select(-n_ok, -nombre_ok)
+
+ven <- ven |> distinct(id_venta, .keep_all = TRUE)
+cat("Después: clientes =", nrow(cli), "| ventas =", nrow(ven), "\n")
+```
+
+```{r}
+ven <- ven |>
+  group_by(producto) |>
+  mutate(lim_sup = quantile(importe_eur, .75, na.rm = TRUE) + 3 * IQR(importe_eur, na.rm = TRUE),
+         importe_atipico = coalesce(importe_eur > lim_sup | importe_eur < 0, FALSE)) |>
+  ungroup()
+
+cat("Importes atípicos (×100, ×1000, negativos):", sum(ven$importe_atipico), "\n")
+ven |> filter(importe_atipico) |> select(id_venta, producto, unidades, importe_eur) |> head(6)
+ven <- ven |> mutate(importe_eur = if_else(importe_atipico, NA_real_, importe_eur)) |> select(-lim_sup)
+```
+
+> ### Para pensar
+> 1. En el Lab 2 **marcamos** los márgenes negativos sin borrarlos. Aquí un importe negativo podría ser una **devolución**. ¿Lo ponemos a `NA` o lo modelamos aparte? ¿Quién debería decidirlo?
+> 2. Los casi-duplicados no se pueden encontrar con `distinct()`. ¿Qué hace falta para detectarlos cuando **no hay clave** común?
+
+## 4. Faltantes: aquí SÍ importa el mecanismo
+
+```{r}
+cli |> group_by(segmento) |> summarise(pct_ingresos_vacios = round(100 * mean(is.na(ingresos)), 1), n = n())
+```
+
+Y como tenemos el **gold standard** (la verdad), podemos ver lo que en la vida real quedaría oculto:
+
+```{r}
+cmp <- cli |> select(id_cliente, ingresos) |>
+  left_join(gold |> select(id_cliente, ing_real = ingresos_anuales), by = "id_cliente")
+falta <- is.na(cmp$ingresos)
+
+cmp |> summarise(`media real de todos` = mean(ing_real),
+                 `media observada (sin vacíos)` = mean(ingresos, na.rm = TRUE),
+                 `media real de quienes NO declaran` = mean(ing_real[falta])) |>
+  mutate(across(everything(), \(x) round(x)))
+```
+
+```{r}
+rmse <- function(real, imp) sqrt(mean((real - imp)^2, na.rm = TRUE))
+
+imp_media <- if_else(falta, mean(cmp$ingresos, na.rm = TRUE), cmp$ingresos)
+imp_seg   <- cli |> group_by(segmento) |> mutate(x = if_else(is.na(ingresos), median(ingresos, na.rm = TRUE), ingresos)) |> ungroup() |> pull(x)
+
+dat <- cli |> transmute(segmento = factor(segmento), provincia = factor(provincia), edad, log_ing = log(ingresos))
+set.seed(2026)
+imp <- mice::mice(dat, m = 5, method = "pmm", maxit = 10, printFlag = FALSE)
+imp_mice <- exp(mice::complete(imp, 1)$log_ing)
+
+tibble(metodo = c("Media global", "Mediana por segmento", "mice (PMM)"),
+       RMSE = c(rmse(cmp$ing_real[falta], imp_media[falta]), rmse(cmp$ing_real[falta], imp_seg[falta]), rmse(cmp$ing_real[falta], imp_mice[falta]))) |>
+  arrange(RMSE) |> mutate(RMSE = round(RMSE))
+```
+
+> ### Para pensar
+> 1. En el Lab 3 el mecanismo parecía **aleatorio** y daba igual el método. Aquí, quienes no declaran ganan casi el doble: es **MNAR**. ¿Qué método «gana» y por qué sigue siendo un mal resultado?
+> 2. `mice` **pierde** frente a la mediana por segmento en RMSE. ¿Eso significa que `mice` es peor? (pista: ¿qué mide el RMSE y qué intenta hacer `mice`?)
+> 3. Si imputas, ¿qué columna tendrías que añadir para que quien use el dato sepa qué es real y qué es estimado?
+
+## 5. Integración: los joins que fallan en silencio
+
+```{r}
+# Antes de limpiar las claves
+ven_roto <- ven_raw |> mutate(id_cliente = str_trim(id_cliente))
+cat("Ventas sin cliente (clave sucia): ", nrow(anti_join(ven_roto, cli_raw |> rename(id_cliente = `ID Cliente`), by = "id_cliente")), "\n")
+# Después de normalizar la clave
+cat("Ventas sin cliente (clave limpia): ", nrow(anti_join(ven, cli, by = "id_cliente")), "\n")
+```
+
+```{r}
+emp <- emp_raw |>
+  mutate(id_cliente = sprintf("C%04d", as.integer(cod_cliente)),
+         across(c(empleados, facturacion_anual_millones, anyo_fundacion), as.numeric)) |> select(-cod_cliente)
+
+emp |> count(id_cliente) |> filter(n > 1)            # claves repetidas en el registro
+
+# dplyr avisa si la relación no es la que esperabas:
+try(left_join(cli, emp, by = "id_cliente", relationship = "one-to-one"))
+```
+
+```{r}
+emp <- distinct(emp, id_cliente, .keep_all = TRUE)
+maestro <- left_join(cli, emp, by = "id_cliente", relationship = "one-to-one")
+ventas_clientes <- left_join(ven, select(maestro, id_cliente, provincia, segmento, cnae), by = "id_cliente", relationship = "many-to-one")
+
+cat("Empresas del registro que NO son clientes:", nrow(anti_join(emp, cli, by = "id_cliente")), "\n")
+cat("% de clientes con ficha mercantil:", round(100 * mean(!is.na(maestro$cnae))), "%\n")
+
+# El control de calidad final: si el dato cambia, el script FALLA en lugar de mentir
+stopifnot(nrow(ven) == 5000, n_distinct(maestro$id_cliente) == nrow(maestro), !any(duplicated(ven$id_venta)))
+cat("Comprobaciones superadas\n")
+```
+
+> ### Para pensar (cierre del bloque)
+> 1. Haced una tabla con dos columnas: **Estudiante_18** y **distribuidora**. Para cada problema (fechas, números, claves, duplicados, faltantes, joins) anotad «no pasó» / «sí pasó» y cuánto costó arreglarlo.
+> 2. Estudiante_18 parecía fácil, pero tenía problemas **que ningún formato ni regla de limpieza arregla** (operaciones antes del alta). ¿Cuál es más difícil: el dato sucio *de formato* o el dato incoherente *de negocio*?
+> 3. Si mañana el sistema de origen cambia el formato de las fechas, ¿qué parte de este script falla **en voz alta** y cuál **en silencio**?

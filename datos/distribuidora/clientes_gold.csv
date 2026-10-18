@@ -1,0 +1,601 @@
+﻿id_cliente,nombre,email,provincia,segmento,fecha_alta,edad,ingresos_anuales
+C0001,Claudia López Martínez,claudia.lopez1@correo.es,Barcelona,Particular,2024-11-04,34,23518.43
+C0002,Marta Torres Pérez,marta.torres2@correo.es,Barcelona,Pyme,2021-02-03,47,84844.84
+C0003,Sergio Blasco García,sergio.blasco3@correo.es,Zaragoza,Gran empresa,2019-05-16,21,286115.98
+C0004,Nuria Ferrer Ortega,nuria.ferrer4@correo.es,Bilbao,Particular,2021-05-13,61,57119.33
+C0005,Sara Gil López,sara.gil5@correo.es,Sevilla,Particular,2022-10-20,52,17904.15
+C0006,Carmen Mora Climent,carmen.mora6@correo.es,Alicante,Autónomo,2020-12-21,40,69785.9
+C0007,Álvaro Ortega Ruiz,alvaro.ortega7@correo.es,Valencia,Pyme,2022-03-01,40,63279.26
+C0008,Pau Martínez Ruiz,pau.martinez8@correo.es,Alicante,Autónomo,2022-09-25,48,31735.81
+C0009,Nuria Martínez Ferrer,nuria.martinez9@correo.es,Valencia,Gran empresa,2019-04-26,41,339665.67
+C0010,Paula Martínez Gómez,paula.martinez10@correo.es,Madrid,Gran empresa,2019-03-16,41,377305.79
+C0011,Mateo Torres Mora,mateo.torres11@correo.es,Alicante,Pyme,2023-02-11,53,85100.68
+C0012,Mateo Blasco Climent,mateo.blasco12@correo.es,Valencia,Pyme,2023-03-22,50,91734.15
+C0013,Hugo Gil Climent,hugo.gil13@correo.es,Bilbao,Particular,2020-10-28,43,44159.21
+C0014,Pau Martínez Mora,pau.martinez14@correo.es,Alicante,Particular,2023-10-24,43,67190.59
+C0015,Lucía Torres Gómez,lucia.torres15@correo.es,Sevilla,Pyme,2023-03-20,46,96455.08
+C0016,Paula Navarro Torres,paula.navarro16@correo.es,Madrid,Particular,2021-03-11,37,33852.03
+C0017,Carmen López Climent,carmen.lopez17@correo.es,Alicante,Particular,2019-10-26,39,25892.57
+C0018,Nuria Serrano Ortega,nuria.serrano18@correo.es,Valencia,Particular,2019-03-07,51,50027.38
+C0019,Hugo García Soler,hugo.garcia19@correo.es,Barcelona,Particular,2020-07-13,42,26087.49
+C0020,Mateo Sánchez Pérez,mateo.sanchez20@correo.es,Valencia,Autónomo,2023-03-21,28,39279.67
+C0021,Carmen López Gil,carmen.lopez21@correo.es,Bilbao,Gran empresa,2022-10-25,38,212390.31
+C0022,Mateo Pérez Blasco,mateo.perez22@correo.es,Sevilla,Particular,2022-10-21,52,11224.35
+C0023,Paula Pérez Gómez,paula.perez23@correo.es,Madrid,Pyme,2020-11-20,41,180359.38
+C0024,Claudia Ortega Gómez,claudia.ortega24@correo.es,Barcelona,Particular,2023-07-09,42,39315.95
+C0025,Inés Navarro Blasco,ines.navarro25@correo.es,Valencia,Pyme,2019-07-07,52,117872.39
+C0026,Claudia Navarro Gil,claudia.navarro26@correo.es,Castellón,Gran empresa,2019-11-03,66,246529.64
+C0027,Lucía Navarro Pérez,lucia.navarro27@correo.es,Barcelona,Autónomo,2021-12-09,35,19293.27
+C0028,Marta Ferrer Moreno,marta.ferrer28@correo.es,Valencia,Autónomo,2022-06-06,60,34504.15
+C0029,Raúl Pérez Gómez,raul.perez29@correo.es,Alicante,Pyme,2023-01-06,29,81411.48
+C0030,Paula Gil López,paula.gil30@correo.es,Bilbao,Particular,2021-04-24,46,35453.7
+C0031,Sara Gómez Mora,sara.gomez31@correo.es,Alicante,Gran empresa,2019-10-17,30,296712.55
+C0032,Sergio García Moreno,sergio.garcia32@correo.es,Valencia,Pyme,2019-05-17,60,137907.55
+C0033,Joan Gil Ferrer,joan.gil33@correo.es,Alicante,Gran empresa,2024-04-15,54,367288.78
+C0034,Álvaro Gómez Blasco,alvaro.gomez34@correo.es,Valencia,Pyme,2022-10-22,58,97785.08
+C0035,Mateo Moreno Soler,mateo.moreno35@correo.es,Valencia,Autónomo,2020-06-11,33,50380.0
+C0036,Sara Navarro Climent,sara.navarro36@correo.es,Zaragoza,Pyme,2022-01-11,52,68129.38
+C0037,Iván Navarro Pérez,ivan.navarro37@correo.es,Alicante,Autónomo,2024-09-06,38,39295.27
+C0038,Irene Gómez Ortega,irene.gomez38@correo.es,Castellón,Particular,2023-10-29,39,22161.38
+C0039,Iván García Ferrer,ivan.garcia39@correo.es,Valencia,Gran empresa,2022-09-19,50,253898.39
+C0040,Claudia Ortega Ortega,claudia.ortega40@correo.es,Alicante,Particular,2021-02-09,55,48312.55
+C0041,Joan Gil Serrano,joan.gil41@correo.es,Valencia,Particular,2019-12-03,46,40340.21
+C0042,Lucía Ortega Moreno,lucia.ortega42@correo.es,Valencia,Gran empresa,2021-06-13,36,365145.36
+C0043,Iván Soler Pérez,ivan.soler43@correo.es,Madrid,Gran empresa,2020-09-02,34,473323.84
+C0044,Mateo López Mora,mateo.lopez44@correo.es,Bilbao,Particular,2020-07-22,61,33355.99
+C0045,Adrián Soler Moreno,adrian.soler45@correo.es,Valencia,Gran empresa,2022-11-13,51,514815.42
+C0046,Sergio Gómez Ferrer,sergio.gomez46@correo.es,Madrid,Pyme,2021-12-04,53,64375.42
+C0047,Carmen Gómez Gil,carmen.gomez47@correo.es,Alicante,Pyme,2022-01-11,70,87431.49
+C0048,Inés Soler Mora,ines.soler48@correo.es,Madrid,Autónomo,2021-11-06,34,38680.84
+C0049,Álvaro López Sánchez,alvaro.lopez49@correo.es,Bilbao,Particular,2019-02-16,75,21779.25
+C0050,Elena Blasco López,elena.blasco50@correo.es,Valencia,Particular,2019-06-06,80,24894.16
+C0051,Iván López Sánchez,ivan.lopez51@correo.es,Madrid,Particular,2021-01-04,63,19232.54
+C0052,Carmen Serrano Mora,carmen.serrano52@correo.es,Sevilla,Particular,2024-09-30,54,36114.61
+C0053,Paula Mora López,paula.mora53@correo.es,Madrid,Particular,2024-02-12,36,22654.57
+C0054,Irene Ferrer Sánchez,irene.ferrer54@correo.es,Alicante,Particular,2023-12-08,56,31606.91
+C0055,Claudia García García,claudia.garcia55@correo.es,Valencia,Particular,2024-09-20,39,32284.83
+C0056,Mateo Martínez Gil,mateo.martinez56@correo.es,Madrid,Autónomo,2024-02-04,44,33458.8
+C0057,Paula Gómez Serrano,paula.gomez57@correo.es,Castellón,Pyme,2023-12-31,41,83102.47
+C0058,Carmen Sánchez Gil,carmen.sanchez58@correo.es,Alicante,Autónomo,2021-12-07,47,37507.27
+C0059,Sara Gil Pérez,sara.gil59@correo.es,Alicante,Autónomo,2019-12-23,59,43399.68
+C0060,Irene Ruiz Gómez,irene.ruiz60@correo.es,Valencia,Pyme,2021-04-07,37,128997.11
+C0061,Mateo Pérez García,mateo.perez61@correo.es,Alicante,Pyme,2020-08-09,32,54355.39
+C0062,Sergio Climent Pérez,sergio.climent62@correo.es,Madrid,Particular,2023-05-06,32,27001.49
+C0063,Mateo Pérez Ruiz,mateo.perez63@correo.es,Zaragoza,Autónomo,2022-02-14,32,22243.67
+C0064,Sara Climent Martínez,sara.climent64@correo.es,Sevilla,Gran empresa,2024-12-03,27,482921.82
+C0065,Carmen Sánchez Gómez,carmen.sanchez65@correo.es,Alicante,Particular,2020-08-15,33,13973.77
+C0066,Mateo Navarro García,mateo.navarro66@correo.es,Sevilla,Autónomo,2023-07-13,60,39842.85
+C0067,Iván Martínez Ruiz,ivan.martinez67@correo.es,Alicante,Pyme,2020-01-27,37,70270.77
+C0068,Sara Torres Climent,sara.torres68@correo.es,Alicante,Particular,2019-07-19,47,22822.76
+C0069,Marta Climent Martínez,marta.climent69@correo.es,Castellón,Pyme,2023-01-21,29,100380.11
+C0070,Marta Ruiz Climent,marta.ruiz70@correo.es,Alicante,Pyme,2023-10-20,46,101048.74
+C0071,Jordi Gil Soler,jordi.gil71@correo.es,Alicante,Pyme,2023-12-05,23,54954.21
+C0072,Marta Ortega Ruiz,marta.ortega72@correo.es,Barcelona,Autónomo,2021-09-22,36,40138.82
+C0073,Lucía Moreno Moreno,lucia.moreno73@correo.es,Madrid,Pyme,2021-11-21,71,102099.34
+C0074,Hugo Ruiz Blasco,hugo.ruiz74@correo.es,Zaragoza,Pyme,2019-01-28,37,62710.17
+C0075,Nuria Moreno Martínez,nuria.moreno75@correo.es,Madrid,Particular,2019-08-02,57,17487.85
+C0076,Marta Ruiz Blasco,marta.ruiz76@correo.es,Zaragoza,Particular,2020-07-11,49,36821.87
+C0077,Nuria Navarro Mora,nuria.navarro77@correo.es,Castellón,Gran empresa,2024-10-14,42,395864.91
+C0078,Carmen Gómez Soler,carmen.gomez78@correo.es,Madrid,Autónomo,2024-06-06,36,40872.65
+C0079,Iván López Ruiz,ivan.lopez79@correo.es,Zaragoza,Particular,2024-07-20,59,24271.31
+C0080,Irene Sánchez Pérez,irene.sanchez80@correo.es,Sevilla,Particular,2021-12-03,42,41362.69
+C0081,Joan Martínez Ruiz,joan.martinez81@correo.es,Valencia,Particular,2022-05-16,62,96396.05
+C0082,Carmen Blasco Martínez,carmen.blasco82@correo.es,Alicante,Autónomo,2023-06-23,35,35941.45
+C0083,Hugo Blasco Serrano,hugo.blasco83@correo.es,Barcelona,Autónomo,2022-08-09,45,42519.77
+C0084,Jordi Pérez Pérez,jordi.perez84@correo.es,Madrid,Particular,2021-08-24,50,21178.49
+C0085,Álvaro Soler Climent,alvaro.soler85@correo.es,Valencia,Particular,2021-05-22,48,21075.55
+C0086,Jordi Climent Ferrer,jordi.climent86@correo.es,Zaragoza,Gran empresa,2019-01-18,29,539705.45
+C0087,Iván Moreno Gil,ivan.moreno87@correo.es,Castellón,Particular,2020-07-27,36,58108.62
+C0088,Claudia Mora Ruiz,claudia.mora88@correo.es,Valencia,Pyme,2022-08-18,42,75678.01
+C0089,Sara Climent Ruiz,sara.climent89@correo.es,Barcelona,Particular,2019-12-31,34,20941.3
+C0090,Mateo Ferrer Martínez,mateo.ferrer90@correo.es,Barcelona,Autónomo,2020-09-11,52,26388.5
+C0091,Iván Climent López,ivan.climent91@correo.es,Alicante,Pyme,2023-10-05,51,69085.65
+C0092,Sergio Ruiz Ferrer,sergio.ruiz92@correo.es,Barcelona,Pyme,2019-11-01,21,76712.8
+C0093,Joan Gil Sánchez,joan.gil93@correo.es,Valencia,Pyme,2022-11-24,22,49108.12
+C0094,Sara Navarro Ortega,sara.navarro94@correo.es,Barcelona,Particular,2023-02-11,29,20074.7
+C0095,Sara García Ferrer,sara.garcia95@correo.es,Castellón,Pyme,2023-02-10,45,115434.74
+C0096,Irene Gómez Mora,irene.gomez96@correo.es,Alicante,Autónomo,2022-09-01,68,36255.92
+C0097,Paula Soler Serrano,paula.soler97@correo.es,Valencia,Gran empresa,2024-03-15,39,232760.77
+C0098,Adrián García Mora,adrian.garcia98@correo.es,Alicante,Gran empresa,2020-06-25,47,209633.13
+C0099,Iván Serrano Ruiz,ivan.serrano99@correo.es,Valencia,Pyme,2022-05-07,31,113526.37
+C0100,Álvaro García Serrano,alvaro.garcia100@correo.es,Alicante,Pyme,2019-04-14,31,54439.72
+C0101,Paula Gil Navarro,paula.gil101@correo.es,Madrid,Gran empresa,2021-01-10,21,268604.66
+C0102,Irene Sánchez Gómez,irene.sanchez102@correo.es,Barcelona,Pyme,2023-11-21,44,116834.15
+C0103,Iván Moreno Torres,ivan.moreno103@correo.es,Alicante,Autónomo,2024-04-03,55,44015.64
+C0104,Paula Ferrer Ferrer,paula.ferrer104@correo.es,Madrid,Autónomo,2023-03-08,40,38060.67
+C0105,Raúl Ferrer Navarro,raul.ferrer105@correo.es,Castellón,Autónomo,2024-10-20,61,41448.04
+C0106,Inés Pérez Blasco,ines.perez106@correo.es,Barcelona,Autónomo,2019-10-08,46,25352.03
+C0107,Paula Ortega Ferrer,paula.ortega107@correo.es,Madrid,Autónomo,2020-02-06,44,27219.24
+C0108,Lucía Navarro Sánchez,lucia.navarro108@correo.es,Alicante,Particular,2023-09-10,50,23691.66
+C0109,Joan Gil Soler,joan.gil109@correo.es,Madrid,Particular,2023-01-20,50,10265.73
+C0110,Sergio Ferrer Climent,sergio.ferrer110@correo.es,Valencia,Particular,2021-04-24,58,24847.05
+C0111,Joan Ferrer Pérez,joan.ferrer111@correo.es,Bilbao,Particular,2021-08-18,34,25216.29
+C0112,Paula Navarro Moreno,paula.navarro112@correo.es,Bilbao,Pyme,2023-09-16,19,72184.0
+C0113,Jordi Sánchez Sánchez,jordi.sanchez113@correo.es,Valencia,Gran empresa,2023-08-04,45,298962.68
+C0114,Álvaro Navarro Soler,alvaro.navarro114@correo.es,Barcelona,Particular,2024-02-21,37,28380.54
+C0115,Hugo Blasco Ruiz,hugo.blasco115@correo.es,Valencia,Pyme,2019-05-25,44,90693.03
+C0116,Elena García Ruiz,elena.garcia116@correo.es,Madrid,Particular,2019-12-10,64,51872.53
+C0117,Sergio Navarro Gómez,sergio.navarro117@correo.es,Zaragoza,Pyme,2021-01-06,31,82653.02
+C0118,Sara Serrano Climent,sara.serrano118@correo.es,Madrid,Particular,2021-11-20,53,37946.45
+C0119,Adrián Torres Sánchez,adrian.torres119@correo.es,Castellón,Autónomo,2019-10-07,55,29721.18
+C0120,Elena Ruiz García,elena.ruiz120@correo.es,Alicante,Autónomo,2023-08-10,50,40173.18
+C0121,Joan Blasco Sánchez,joan.blasco121@correo.es,Zaragoza,Pyme,2021-09-01,57,96293.01
+C0122,Claudia Gil Martínez,claudia.gil122@correo.es,Alicante,Particular,2024-09-26,38,24581.12
+C0123,Sara López Ferrer,sara.lopez123@correo.es,Alicante,Autónomo,2024-07-25,36,18722.59
+C0124,Mateo Mora Soler,mateo.mora124@correo.es,Castellón,Pyme,2022-12-23,56,54338.6
+C0125,Joan Ruiz Ruiz,joan.ruiz125@correo.es,Barcelona,Pyme,2024-01-22,53,100371.08
+C0126,Mateo López Climent,mateo.lopez126@correo.es,Valencia,Particular,2022-12-04,61,28639.34
+C0127,Sergio García López,sergio.garcia127@correo.es,Valencia,Pyme,2019-08-11,47,77004.94
+C0128,Hugo Sánchez Mora,hugo.sanchez128@correo.es,Madrid,Particular,2024-09-24,63,23206.29
+C0129,Carmen Moreno Serrano,carmen.moreno129@correo.es,Valencia,Particular,2023-01-14,41,27859.88
+C0130,Inés Serrano Gil,ines.serrano130@correo.es,Castellón,Particular,2019-10-05,31,31639.18
+C0131,Hugo Climent Navarro,hugo.climent131@correo.es,Madrid,Pyme,2022-06-18,20,143544.24
+C0132,Nuria Ferrer Ruiz,nuria.ferrer132@correo.es,Valencia,Pyme,2022-09-09,31,78425.45
+C0133,Sergio García López,sergio.garcia133@correo.es,Valencia,Pyme,2021-05-02,54,81389.72
+C0134,Joan Gil Gómez,joan.gil134@correo.es,Madrid,Pyme,2023-04-03,26,84933.47
+C0135,Carmen Martínez Climent,carmen.martinez135@correo.es,Alicante,Pyme,2023-11-16,39,122534.66
+C0136,Nuria Serrano García,nuria.serrano136@correo.es,Alicante,Gran empresa,2021-04-23,69,771714.59
+C0137,Joan Moreno Climent,joan.moreno137@correo.es,Bilbao,Autónomo,2021-12-03,54,44659.4
+C0138,Iván Gil Soler,ivan.gil138@correo.es,Madrid,Autónomo,2022-07-08,65,23198.77
+C0139,Irene Moreno Climent,irene.moreno139@correo.es,Valencia,Gran empresa,2022-09-29,32,301922.77
+C0140,Lucía Soler Ferrer,lucia.soler140@correo.es,Valencia,Autónomo,2021-09-11,19,21429.7
+C0141,Sara Martínez Pérez,sara.martinez141@correo.es,Madrid,Particular,2022-04-15,62,21089.09
+C0142,Álvaro López García,alvaro.lopez142@correo.es,Madrid,Gran empresa,2019-06-03,27,551682.66
+C0143,Joan Navarro García,joan.navarro143@correo.es,Valencia,Particular,2021-07-23,45,24506.64
+C0144,Raúl Gómez Blasco,raul.gomez144@correo.es,Valencia,Autónomo,2021-04-21,47,27955.73
+C0145,Jordi Climent Serrano,jordi.climent145@correo.es,Valencia,Gran empresa,2020-08-12,33,486437.0
+C0146,Sara Navarro Serrano,sara.navarro146@correo.es,Bilbao,Pyme,2019-01-04,63,92671.29
+C0147,Inés Blasco Torres,ines.blasco147@correo.es,Barcelona,Autónomo,2023-08-14,63,25732.9
+C0148,Sergio Blasco García,sergio.blasco148@correo.es,Bilbao,Autónomo,2023-04-19,51,37303.75
+C0149,Iván Blasco Gil,ivan.blasco149@correo.es,Madrid,Particular,2023-07-31,44,16987.75
+C0150,Nuria Moreno Gil,nuria.moreno150@correo.es,Barcelona,Autónomo,2024-05-09,46,26562.29
+C0151,Irene Sánchez Navarro,irene.sanchez151@correo.es,Zaragoza,Pyme,2024-06-15,31,85030.46
+C0152,Sara Pérez López,sara.perez152@correo.es,Barcelona,Autónomo,2020-01-27,41,14444.04
+C0153,Sergio Martínez Moreno,sergio.martinez153@correo.es,Valencia,Pyme,2023-04-30,43,107508.55
+C0154,Nuria Ferrer Gómez,nuria.ferrer154@correo.es,Valencia,Gran empresa,2024-05-02,34,332251.3
+C0155,Hugo Torres García,hugo.torres155@correo.es,Barcelona,Autónomo,2022-07-20,54,49722.91
+C0156,Pau Martínez Sánchez,pau.martinez156@correo.es,Bilbao,Pyme,2020-06-25,27,68456.91
+C0157,Paula Ortega Soler,paula.ortega157@correo.es,Alicante,Pyme,2021-04-11,39,95655.88
+C0158,Inés Ortega Gómez,ines.ortega158@correo.es,Madrid,Autónomo,2019-02-27,19,22747.98
+C0159,Carmen Ferrer Moreno,carmen.ferrer159@correo.es,Valencia,Particular,2023-12-16,50,20595.39
+C0160,Raúl Mora Navarro,raul.mora160@correo.es,Madrid,Pyme,2020-11-29,53,90551.14
+C0161,Irene Serrano Serrano,irene.serrano161@correo.es,Valencia,Pyme,2019-05-27,51,87523.53
+C0162,Sara Blasco Ortega,sara.blasco162@correo.es,Valencia,Gran empresa,2021-08-25,79,360841.5
+C0163,Joan Ruiz Pérez,joan.ruiz163@correo.es,Sevilla,Particular,2022-10-24,55,46516.68
+C0164,Raúl Moreno Sánchez,raul.moreno164@correo.es,Madrid,Autónomo,2024-01-13,33,31049.24
+C0165,Irene Ortega Serrano,irene.ortega165@correo.es,Barcelona,Particular,2019-11-15,76,36690.63
+C0166,Paula Mora Soler,paula.mora166@correo.es,Alicante,Autónomo,2022-06-15,33,38540.96
+C0167,Nuria Ruiz Sánchez,nuria.ruiz167@correo.es,Sevilla,Autónomo,2021-09-09,53,39143.19
+C0168,Marta Gil Mora,marta.gil168@correo.es,Valencia,Particular,2019-07-03,53,33276.4
+C0169,Mateo Ruiz Blasco,mateo.ruiz169@correo.es,Valencia,Gran empresa,2023-02-28,33,165846.37
+C0170,Sara Torres Gómez,sara.torres170@correo.es,Valencia,Pyme,2020-04-06,61,74291.39
+C0171,Inés Serrano Gil,ines.serrano171@correo.es,Valencia,Particular,2020-08-25,48,41548.95
+C0172,Hugo Navarro Sánchez,hugo.navarro172@correo.es,Barcelona,Pyme,2023-05-07,51,78339.94
+C0173,Mateo Torres Serrano,mateo.torres173@correo.es,Zaragoza,Particular,2023-03-17,36,34364.5
+C0174,Sara Navarro Navarro,sara.navarro174@correo.es,Castellón,Particular,2021-12-13,60,34902.17
+C0175,Sergio Ruiz Gómez,sergio.ruiz175@correo.es,Valencia,Pyme,2022-08-19,34,27973.31
+C0176,Iván Mora Sánchez,ivan.mora176@correo.es,Valencia,Pyme,2022-08-22,23,48924.81
+C0177,Iván Ortega Moreno,ivan.ortega177@correo.es,Barcelona,Pyme,2024-05-29,61,71463.15
+C0178,Raúl Serrano Moreno,raul.serrano178@correo.es,Valencia,Particular,2019-11-10,39,21484.14
+C0179,Elena Ferrer Martínez,elena.ferrer179@correo.es,Barcelona,Particular,2019-02-15,45,23868.74
+C0180,Jordi Soler Climent,jordi.soler180@correo.es,Valencia,Particular,2022-06-24,67,26113.4
+C0181,Sara Ferrer Mora,sara.ferrer181@correo.es,Barcelona,Pyme,2020-12-10,58,67049.05
+C0182,Irene Navarro Blasco,irene.navarro182@correo.es,Madrid,Pyme,2020-12-01,52,69008.12
+C0183,Sara Torres Ortega,sara.torres183@correo.es,Alicante,Pyme,2023-03-02,57,44841.73
+C0184,Paula Ferrer Gil,paula.ferrer184@correo.es,Valencia,Gran empresa,2019-04-15,35,603250.4
+C0185,Sara Serrano Pérez,sara.serrano185@correo.es,Madrid,Particular,2021-12-14,53,46801.12
+C0186,Irene Torres Soler,irene.torres186@correo.es,Barcelona,Pyme,2021-03-27,57,120481.11
+C0187,Sergio Moreno Sánchez,sergio.moreno187@correo.es,Valencia,Gran empresa,2024-01-04,53,319338.82
+C0188,Marta Blasco Moreno,marta.blasco188@correo.es,Alicante,Particular,2022-07-20,42,20029.28
+C0189,Carmen López Torres,carmen.lopez189@correo.es,Barcelona,Particular,2024-08-22,19,58595.8
+C0190,Pau Gómez Mora,pau.gomez190@correo.es,Valencia,Particular,2022-06-21,51,20521.35
+C0191,Adrián López García,adrian.lopez191@correo.es,Barcelona,Pyme,2019-02-03,45,139533.28
+C0192,Claudia Mora Serrano,claudia.mora192@correo.es,Alicante,Pyme,2020-11-02,40,92357.08
+C0193,Claudia Blasco Torres,claudia.blasco193@correo.es,Barcelona,Particular,2021-12-16,53,20895.34
+C0194,Lucía Ferrer Mora,lucia.ferrer194@correo.es,Bilbao,Gran empresa,2021-09-24,47,241116.48
+C0195,Joan Pérez Moreno,joan.perez195@correo.es,Valencia,Particular,2019-04-30,46,24134.23
+C0196,Hugo López Martínez,hugo.lopez196@correo.es,Bilbao,Pyme,2020-12-19,26,62791.72
+C0197,Jordi Ruiz Pérez,jordi.ruiz197@correo.es,Sevilla,Particular,2020-03-23,26,15688.41
+C0198,Claudia Martínez Moreno,claudia.martinez198@correo.es,Castellón,Pyme,2021-10-28,48,99214.5
+C0199,Joan Gil Torres,joan.gil199@correo.es,Valencia,Particular,2021-03-06,45,20186.86
+C0200,Pau Moreno Martínez,pau.moreno200@correo.es,Barcelona,Autónomo,2023-09-22,46,46926.32
+C0201,Elena Gómez Pérez,elena.gomez201@correo.es,Madrid,Particular,2022-10-14,46,26253.45
+C0202,Hugo Navarro Serrano,hugo.navarro202@correo.es,Alicante,Pyme,2022-10-24,49,90225.74
+C0203,Hugo Blasco Ruiz,hugo.blasco203@correo.es,Valencia,Pyme,2023-02-27,44,87634.92
+C0204,Joan Ortega Pérez,joan.ortega204@correo.es,Alicante,Particular,2021-08-31,46,24396.01
+C0205,Mateo Navarro Martínez,mateo.navarro205@correo.es,Valencia,Gran empresa,2021-01-02,47,309825.14
+C0206,Adrián López Sánchez,adrian.lopez206@correo.es,Alicante,Autónomo,2020-01-28,55,39526.92
+C0207,Sara Torres Ruiz,sara.torres207@correo.es,Valencia,Particular,2021-03-24,38,60714.35
+C0208,Paula Ruiz Blasco,paula.ruiz208@correo.es,Madrid,Particular,2020-05-12,53,18306.2
+C0209,Sergio Torres Gómez,sergio.torres209@correo.es,Madrid,Particular,2021-07-07,52,22357.74
+C0210,Joan López Torres,joan.lopez210@correo.es,Valencia,Particular,2023-07-14,45,24281.3
+C0211,Pau Ferrer Soler,pau.ferrer211@correo.es,Madrid,Pyme,2024-06-30,38,52791.57
+C0212,Jordi Mora García,jordi.mora212@correo.es,Valencia,Particular,2020-09-22,48,17623.64
+C0213,Nuria Pérez Pérez,nuria.perez213@correo.es,Valencia,Autónomo,2021-02-03,54,21462.64
+C0214,Marta Ferrer Sánchez,marta.ferrer214@correo.es,Alicante,Autónomo,2023-03-10,31,32905.44
+C0215,Adrián Serrano Gil,adrian.serrano215@correo.es,Valencia,Autónomo,2024-05-25,45,29461.33
+C0216,Lucía Martínez Ruiz,lucia.martinez216@correo.es,Castellón,Autónomo,2019-11-20,45,37663.83
+C0217,Joan Blasco Torres,joan.blasco217@correo.es,Madrid,Particular,2021-11-09,36,16144.22
+C0218,Álvaro García Pérez,alvaro.garcia218@correo.es,Castellón,Particular,2019-11-06,37,19550.18
+C0219,Lucía Navarro Gómez,lucia.navarro219@correo.es,Madrid,Pyme,2020-12-11,25,106001.17
+C0220,Marta Mora Pérez,marta.mora220@correo.es,Sevilla,Pyme,2024-01-22,31,102781.7
+C0221,Jordi Moreno Moreno,jordi.moreno221@correo.es,Zaragoza,Autónomo,2021-06-25,26,18974.36
+C0222,Álvaro Ortega Serrano,alvaro.ortega222@correo.es,Valencia,Particular,2022-12-04,37,35605.42
+C0223,Raúl Ferrer López,raul.ferrer223@correo.es,Madrid,Pyme,2021-11-18,37,66770.36
+C0224,Inés López Climent,ines.lopez224@correo.es,Valencia,Particular,2019-11-17,38,18150.78
+C0225,Inés Blasco Navarro,ines.blasco225@correo.es,Castellón,Autónomo,2022-02-27,48,46152.32
+C0226,Pau Torres Ruiz,pau.torres226@correo.es,Alicante,Gran empresa,2024-06-10,42,425114.13
+C0227,Paula Mora Blasco,paula.mora227@correo.es,Valencia,Particular,2024-01-24,35,11028.25
+C0228,Pau Ortega Torres,pau.ortega228@correo.es,Bilbao,Particular,2024-02-06,35,35650.42
+C0229,Paula López Navarro,paula.lopez229@correo.es,Alicante,Particular,2020-02-08,30,21637.88
+C0230,Joan Mora Soler,joan.mora230@correo.es,Castellón,Autónomo,2022-04-25,42,28944.92
+C0231,Elena Pérez Ortega,elena.perez231@correo.es,Barcelona,Pyme,2019-01-07,41,71678.75
+C0232,Paula Navarro López,paula.navarro232@correo.es,Madrid,Pyme,2021-03-20,63,129196.01
+C0233,Raúl Martínez Pérez,raul.martinez233@correo.es,Sevilla,Particular,2022-06-13,62,45204.84
+C0234,Lucía Sánchez López,lucia.sanchez234@correo.es,Valencia,Particular,2020-05-01,62,32666.23
+C0235,Elena Climent Ruiz,elena.climent235@correo.es,Valencia,Autónomo,2024-12-08,69,50243.72
+C0236,Hugo Pérez Ferrer,hugo.perez236@correo.es,Valencia,Autónomo,2021-01-12,29,68717.61
+C0237,Irene Climent Soler,irene.climent237@correo.es,Madrid,Particular,2022-10-06,52,27638.21
+C0238,Irene Serrano Ortega,irene.serrano238@correo.es,Madrid,Autónomo,2023-03-05,53,25183.42
+C0239,Mateo Pérez Blasco,mateo.perez239@correo.es,Valencia,Pyme,2020-10-25,50,100595.57
+C0240,Iván Gómez Soler,ivan.gomez240@correo.es,Valencia,Particular,2020-03-21,70,38041.91
+C0241,Álvaro Moreno Mora,alvaro.moreno241@correo.es,Madrid,Pyme,2019-02-03,74,86718.03
+C0242,Marta Martínez Sánchez,marta.martinez242@correo.es,Bilbao,Particular,2023-07-08,56,26421.38
+C0243,Joan Sánchez Mora,joan.sanchez243@correo.es,Valencia,Particular,2020-04-23,52,58927.66
+C0244,Paula Ortega Torres,paula.ortega244@correo.es,Alicante,Autónomo,2024-10-31,31,30050.61
+C0245,Raúl Ruiz Ferrer,raul.ruiz245@correo.es,Sevilla,Pyme,2021-11-25,31,56838.34
+C0246,Adrián Blasco Soler,adrian.blasco246@correo.es,Barcelona,Autónomo,2023-05-16,52,14018.66
+C0247,Raúl López García,raul.lopez247@correo.es,Madrid,Autónomo,2019-12-29,43,46040.46
+C0248,Nuria Martínez López,nuria.martinez248@correo.es,Barcelona,Particular,2019-06-20,28,39453.79
+C0249,Paula Gil Ortega,paula.gil249@correo.es,Alicante,Autónomo,2024-10-18,43,22991.97
+C0250,Raúl Climent Ruiz,raul.climent250@correo.es,Barcelona,Autónomo,2020-07-08,48,43289.72
+C0251,Carmen Martínez Navarro,carmen.martinez251@correo.es,Valencia,Particular,2019-03-24,55,25087.47
+C0252,Joan Navarro López,joan.navarro252@correo.es,Valencia,Pyme,2019-09-17,43,83746.07
+C0253,Paula Climent Ferrer,paula.climent253@correo.es,Madrid,Particular,2024-04-20,41,21783.29
+C0254,Irene Serrano Moreno,irene.serrano254@correo.es,Barcelona,Autónomo,2022-07-07,44,34702.95
+C0255,Adrián López Ferrer,adrian.lopez255@correo.es,Bilbao,Autónomo,2022-09-30,46,47540.36
+C0256,Irene Navarro López,irene.navarro256@correo.es,Castellón,Pyme,2020-07-02,30,65050.16
+C0257,Mateo Ruiz Mora,mateo.ruiz257@correo.es,Madrid,Pyme,2024-02-01,54,67590.92
+C0258,Iván García Soler,ivan.garcia258@correo.es,Zaragoza,Pyme,2020-10-24,70,63943.18
+C0259,Sara Serrano Pérez,sara.serrano259@correo.es,Bilbao,Particular,2019-04-05,54,41837.37
+C0260,Mateo Pérez Pérez,mateo.perez260@correo.es,Castellón,Particular,2019-03-04,27,18911.24
+C0261,Sara López Pérez,sara.lopez261@correo.es,Alicante,Particular,2023-09-13,45,33889.29
+C0262,Hugo Blasco López,hugo.blasco262@correo.es,Valencia,Particular,2022-11-03,23,16108.19
+C0263,Hugo Moreno Soler,hugo.moreno263@correo.es,Alicante,Pyme,2020-02-22,22,35719.55
+C0264,Joan Serrano Ruiz,joan.serrano264@correo.es,Valencia,Autónomo,2023-02-15,52,29626.93
+C0265,Jordi Moreno López,jordi.moreno265@correo.es,Valencia,Autónomo,2023-07-11,45,38062.7
+C0266,Marta Sánchez Ortega,marta.sanchez266@correo.es,Castellón,Autónomo,2022-05-11,36,49376.65
+C0267,Irene Torres Mora,irene.torres267@correo.es,Alicante,Particular,2022-10-24,19,32290.71
+C0268,Jordi Ruiz Mora,jordi.ruiz268@correo.es,Valencia,Pyme,2019-08-22,29,86760.78
+C0269,Mateo Serrano Navarro,mateo.serrano269@correo.es,Castellón,Pyme,2023-11-16,46,34831.8
+C0270,Elena Gil Mora,elena.gil270@correo.es,Alicante,Pyme,2023-03-16,44,97607.57
+C0271,Hugo Serrano Soler,hugo.serrano271@correo.es,Zaragoza,Gran empresa,2019-10-05,52,191342.84
+C0272,Claudia López Martínez,claudia.lopez272@correo.es,Valencia,Pyme,2024-07-26,62,69340.28
+C0273,Álvaro Soler Gil,alvaro.soler273@correo.es,Valencia,Pyme,2024-11-06,40,151590.24
+C0274,Adrián Climent Martínez,adrian.climent274@correo.es,Sevilla,Pyme,2024-06-05,50,119962.88
+C0275,Carmen Torres Navarro,carmen.torres275@correo.es,Alicante,Autónomo,2021-04-27,42,23811.87
+C0276,Elena Navarro Pérez,elena.navarro276@correo.es,Valencia,Gran empresa,2024-10-19,38,269045.17
+C0277,Sergio Gómez García,sergio.gomez277@correo.es,Sevilla,Particular,2022-07-07,41,35411.38
+C0278,Claudia Soler Martínez,claudia.soler278@correo.es,Bilbao,Particular,2024-03-27,56,27119.67
+C0279,Raúl García Ferrer,raul.garcia279@correo.es,Valencia,Particular,2024-02-26,32,24058.23
+C0280,Sara Ferrer Serrano,sara.ferrer280@correo.es,Bilbao,Gran empresa,2023-04-02,58,222316.31
+C0281,Adrián Ruiz Ruiz,adrian.ruiz281@correo.es,Alicante,Particular,2019-04-27,62,35254.19
+C0282,Raúl Gómez Pérez,raul.gomez282@correo.es,Sevilla,Pyme,2020-01-21,44,104595.93
+C0283,Hugo Serrano Sánchez,hugo.serrano283@correo.es,Sevilla,Particular,2023-04-22,47,20897.11
+C0284,Sergio Gil Gómez,sergio.gil284@correo.es,Alicante,Gran empresa,2024-12-25,27,143183.87
+C0285,Mateo Gómez Blasco,mateo.gomez285@correo.es,Castellón,Particular,2019-08-29,72,57031.83
+C0286,Joan Pérez Martínez,joan.perez286@correo.es,Alicante,Particular,2020-04-25,56,22400.18
+C0287,Hugo Serrano Soler,hugo.serrano287@correo.es,Castellón,Pyme,2019-10-17,46,96672.58
+C0288,Sara Martínez Gil,sara.martinez288@correo.es,Valencia,Particular,2021-04-22,45,20353.83
+C0289,Hugo Ruiz Mora,hugo.ruiz289@correo.es,Valencia,Particular,2023-03-07,49,21492.72
+C0290,Paula Ferrer García,paula.ferrer290@correo.es,Valencia,Particular,2024-08-20,36,36951.63
+C0291,Sergio Torres Ferrer,sergio.torres291@correo.es,Valencia,Particular,2020-08-12,47,24773.3
+C0292,Paula Martínez Gómez,paula.martinez292@correo.es,Barcelona,Pyme,2024-12-17,33,103898.46
+C0293,Mateo Moreno Ruiz,mateo.moreno293@correo.es,Alicante,Autónomo,2021-09-06,50,47531.07
+C0294,Carmen Pérez Ruiz,carmen.perez294@correo.es,Valencia,Pyme,2020-11-10,36,67212.43
+C0295,Inés Blasco Gil,ines.blasco295@correo.es,Valencia,Particular,2023-09-17,55,31660.75
+C0296,Lucía Torres Ruiz,lucia.torres296@correo.es,Madrid,Autónomo,2024-08-17,43,45932.47
+C0297,Mateo Serrano Gómez,mateo.serrano297@correo.es,Barcelona,Pyme,2020-09-26,47,129789.12
+C0298,Irene López Gómez,irene.lopez298@correo.es,Valencia,Pyme,2019-12-22,80,86668.94
+C0299,Lucía López Pérez,lucia.lopez299@correo.es,Alicante,Autónomo,2021-04-24,54,36770.16
+C0300,Iván López Soler,ivan.lopez300@correo.es,Madrid,Pyme,2020-05-29,47,60683.67
+C0301,Nuria Sánchez Ortega,nuria.sanchez301@correo.es,Madrid,Particular,2020-04-08,45,36173.08
+C0302,Mateo Pérez Pérez,mateo.perez302@correo.es,Valencia,Particular,2019-05-15,32,27053.37
+C0303,Nuria Mora Ruiz,nuria.mora303@correo.es,Castellón,Autónomo,2020-08-29,57,23310.71
+C0304,Hugo Martínez Serrano,hugo.martinez304@correo.es,Castellón,Particular,2023-02-17,63,26145.08
+C0305,Iván Gil Gil,ivan.gil305@correo.es,Alicante,Particular,2023-11-19,45,26487.29
+C0306,Pau Climent Torres,pau.climent306@correo.es,Barcelona,Pyme,2019-06-09,64,73326.28
+C0307,Sara López Gómez,sara.lopez307@correo.es,Madrid,Particular,2019-07-20,43,21288.81
+C0308,Paula Torres Ferrer,paula.torres308@correo.es,Madrid,Pyme,2022-04-28,23,43211.82
+C0309,Elena Serrano Ferrer,elena.serrano309@correo.es,Madrid,Particular,2023-09-19,36,27537.33
+C0310,Joan Mora Ortega,joan.mora310@correo.es,Bilbao,Pyme,2021-08-17,31,68250.2
+C0311,Nuria Blasco Ortega,nuria.blasco311@correo.es,Valencia,Autónomo,2023-03-22,41,48101.68
+C0312,Sergio García Soler,sergio.garcia312@correo.es,Sevilla,Pyme,2020-11-05,52,83127.67
+C0313,Iván Ruiz Gil,ivan.ruiz313@correo.es,Castellón,Particular,2019-09-04,33,35239.66
+C0314,Irene Blasco Navarro,irene.blasco314@correo.es,Alicante,Particular,2023-05-15,43,18079.91
+C0315,Hugo Gómez Pérez,hugo.gomez315@correo.es,Barcelona,Autónomo,2024-02-07,46,40698.05
+C0316,Hugo López Climent,hugo.lopez316@correo.es,Sevilla,Gran empresa,2022-11-03,35,390913.49
+C0317,Nuria García García,nuria.garcia317@correo.es,Madrid,Pyme,2024-01-14,33,103560.98
+C0318,Mateo Sánchez Martínez,mateo.sanchez318@correo.es,Bilbao,Particular,2021-02-16,45,25130.74
+C0319,Inés Soler Ruiz,ines.soler319@correo.es,Valencia,Particular,2022-09-23,54,21051.21
+C0320,Elena Torres Gómez,elena.torres320@correo.es,Valencia,Particular,2020-04-12,37,47968.99
+C0321,Sergio Blasco López,sergio.blasco321@correo.es,Madrid,Particular,2021-07-13,35,24863.79
+C0322,Pau Serrano López,pau.serrano322@correo.es,Castellón,Particular,2024-01-01,42,18073.84
+C0323,Lucía Soler López,lucia.soler323@correo.es,Valencia,Gran empresa,2021-06-08,47,296931.5
+C0324,Irene Blasco Torres,irene.blasco324@correo.es,Sevilla,Particular,2022-11-21,37,30139.28
+C0325,Álvaro Gómez Climent,alvaro.gomez325@correo.es,Sevilla,Autónomo,2024-08-03,40,27303.85
+C0326,Irene Ferrer Ferrer,irene.ferrer326@correo.es,Castellón,Particular,2024-11-21,41,31561.21
+C0327,Jordi Sánchez Ortega,jordi.sanchez327@correo.es,Alicante,Particular,2022-02-13,31,35893.56
+C0328,Pau Torres Moreno,pau.torres328@correo.es,Valencia,Autónomo,2020-02-29,42,34809.0
+C0329,Elena Climent Mora,elena.climent329@correo.es,Sevilla,Particular,2020-03-14,37,38335.3
+C0330,Joan Pérez Navarro,joan.perez330@correo.es,Bilbao,Particular,2024-10-14,63,28652.63
+C0331,Irene Gómez Pérez,irene.gomez331@correo.es,Barcelona,Pyme,2024-06-17,38,69794.63
+C0332,Irene Moreno Gil,irene.moreno332@correo.es,Alicante,Gran empresa,2024-09-11,49,561896.44
+C0333,Irene Sánchez Pérez,irene.sanchez333@correo.es,Valencia,Particular,2019-12-29,49,35272.15
+C0334,Joan Climent Climent,joan.climent334@correo.es,Alicante,Particular,2024-07-03,31,27350.92
+C0335,Sergio Serrano Sánchez,sergio.serrano335@correo.es,Valencia,Pyme,2022-08-06,29,42349.9
+C0336,Nuria Climent Torres,nuria.climent336@correo.es,Bilbao,Autónomo,2021-07-16,39,21635.3
+C0337,Hugo García López,hugo.garcia337@correo.es,Valencia,Particular,2022-05-17,52,16032.26
+C0338,Sergio Blasco Ferrer,sergio.blasco338@correo.es,Valencia,Particular,2023-09-13,37,26597.74
+C0339,Pau López Gómez,pau.lopez339@correo.es,Valencia,Gran empresa,2023-01-31,36,304028.45
+C0340,Irene García Navarro,irene.garcia340@correo.es,Madrid,Pyme,2021-11-30,19,87632.65
+C0341,Inés Serrano Pérez,ines.serrano341@correo.es,Castellón,Autónomo,2019-12-06,39,50171.05
+C0342,Nuria Serrano Pérez,nuria.serrano342@correo.es,Alicante,Particular,2023-12-01,48,16574.14
+C0343,Marta Ruiz Pérez,marta.ruiz343@correo.es,Alicante,Pyme,2020-11-14,49,53780.94
+C0344,Joan Pérez Soler,joan.perez344@correo.es,Valencia,Particular,2020-07-31,49,20578.3
+C0345,Paula Moreno Navarro,paula.moreno345@correo.es,Castellón,Particular,2019-11-01,40,32027.77
+C0346,Irene Ruiz Moreno,irene.ruiz346@correo.es,Valencia,Pyme,2023-07-26,41,92087.89
+C0347,Marta Gil Serrano,marta.gil347@correo.es,Bilbao,Pyme,2022-11-22,54,61010.63
+C0348,Sergio Torres Moreno,sergio.torres348@correo.es,Bilbao,Particular,2019-12-20,42,21553.71
+C0349,Lucía Gómez López,lucia.gomez349@correo.es,Alicante,Autónomo,2023-07-21,19,36663.39
+C0350,Marta Soler López,marta.soler350@correo.es,Barcelona,Particular,2020-10-03,56,29785.12
+C0351,Paula Moreno Mora,paula.moreno351@correo.es,Alicante,Gran empresa,2023-02-20,31,428401.22
+C0352,Álvaro Ferrer Pérez,alvaro.ferrer352@correo.es,Valencia,Particular,2021-07-24,61,22326.24
+C0353,Elena Climent Soler,elena.climent353@correo.es,Valencia,Particular,2022-06-27,64,28563.05
+C0354,Marta Gil Pérez,marta.gil354@correo.es,Castellón,Pyme,2019-11-25,53,61766.56
+C0355,Raúl Pérez Torres,raul.perez355@correo.es,Valencia,Pyme,2020-03-17,55,131289.09
+C0356,Nuria Moreno Torres,nuria.moreno356@correo.es,Sevilla,Autónomo,2020-08-26,66,55485.29
+C0357,Pau Ruiz Gómez,pau.ruiz357@correo.es,Barcelona,Autónomo,2021-10-08,31,40078.75
+C0358,Marta Gil Climent,marta.gil358@correo.es,Zaragoza,Particular,2023-04-16,47,39451.8
+C0359,Iván Gómez Soler,ivan.gomez359@correo.es,Bilbao,Particular,2021-10-27,47,45432.12
+C0360,Mateo Martínez Ruiz,mateo.martinez360@correo.es,Alicante,Pyme,2023-04-08,32,133359.91
+C0361,Inés Gil Ortega,ines.gil361@correo.es,Barcelona,Particular,2021-12-22,68,55078.8
+C0362,Hugo Gil López,hugo.gil362@correo.es,Madrid,Gran empresa,2024-01-07,37,240968.1
+C0363,Raúl García Mora,raul.garcia363@correo.es,Valencia,Gran empresa,2019-01-06,35,232512.86
+C0364,Jordi Pérez Torres,jordi.perez364@correo.es,Castellón,Autónomo,2024-06-11,47,56789.62
+C0365,Álvaro Blasco Moreno,alvaro.blasco365@correo.es,Valencia,Particular,2019-12-10,56,25226.84
+C0366,Iván Climent Mora,ivan.climent366@correo.es,Valencia,Gran empresa,2020-07-15,37,167586.87
+C0367,Marta Moreno Gil,marta.moreno367@correo.es,Barcelona,Pyme,2023-08-05,37,70335.35
+C0368,Álvaro Moreno Martínez,alvaro.moreno368@correo.es,Madrid,Pyme,2023-06-17,50,123950.78
+C0369,Sergio Gómez Blasco,sergio.gomez369@correo.es,Alicante,Particular,2022-10-29,27,22145.2
+C0370,Lucía Torres Ortega,lucia.torres370@correo.es,Madrid,Autónomo,2019-12-09,35,45215.33
+C0371,Sara Blasco Ortega,sara.blasco371@correo.es,Valencia,Pyme,2019-11-30,34,90628.14
+C0372,Adrián Gil Ruiz,adrian.gil372@correo.es,Madrid,Particular,2023-01-21,39,17145.29
+C0373,Lucía Moreno Pérez,lucia.moreno373@correo.es,Alicante,Particular,2023-01-11,42,32476.99
+C0374,Joan Moreno Martínez,joan.moreno374@correo.es,Valencia,Particular,2019-02-10,66,30541.9
+C0375,Jordi Climent Mora,jordi.climent375@correo.es,Sevilla,Pyme,2021-02-07,55,73211.11
+C0376,Hugo Torres García,hugo.torres376@correo.es,Bilbao,Particular,2019-03-23,44,16980.97
+C0377,Iván Torres Climent,ivan.torres377@correo.es,Alicante,Pyme,2024-01-03,41,146689.11
+C0378,Carmen García Ferrer,carmen.garcia378@correo.es,Valencia,Autónomo,2024-01-06,54,27208.6
+C0379,Marta Mora Pérez,marta.mora379@correo.es,Valencia,Pyme,2019-09-22,49,42518.98
+C0380,Irene Climent Pérez,irene.climent380@correo.es,Castellón,Particular,2023-05-03,55,39076.04
+C0381,Adrián Torres Gómez,adrian.torres381@correo.es,Barcelona,Gran empresa,2019-06-13,61,292164.22
+C0382,Hugo Ruiz Ferrer,hugo.ruiz382@correo.es,Valencia,Particular,2020-10-16,32,40285.03
+C0383,Elena Climent Martínez,elena.climent383@correo.es,Zaragoza,Pyme,2023-07-05,19,73682.02
+C0384,Paula Navarro Mora,paula.navarro384@correo.es,Madrid,Particular,2023-06-29,44,27827.1
+C0385,Álvaro Gil García,alvaro.gil385@correo.es,Bilbao,Pyme,2024-05-20,45,104638.51
+C0386,Iván Sánchez García,ivan.sanchez386@correo.es,Bilbao,Particular,2020-11-16,47,29485.2
+C0387,Sergio García Ruiz,sergio.garcia387@correo.es,Madrid,Particular,2022-03-29,37,28278.85
+C0388,Carmen Blasco Ruiz,carmen.blasco388@correo.es,Valencia,Pyme,2022-05-08,41,122446.97
+C0389,Nuria Torres Moreno,nuria.torres389@correo.es,Madrid,Particular,2021-01-09,51,20973.12
+C0390,Inés Mora Martínez,ines.mora390@correo.es,Alicante,Autónomo,2023-08-23,51,44902.88
+C0391,Inés Navarro Gómez,ines.navarro391@correo.es,Castellón,Autónomo,2021-12-16,60,42317.18
+C0392,Raúl Torres Moreno,raul.torres392@correo.es,Alicante,Particular,2020-02-24,19,14377.0
+C0393,Sergio Ferrer Ferrer,sergio.ferrer393@correo.es,Valencia,Pyme,2021-06-26,24,115134.17
+C0394,Paula Mora Soler,paula.mora394@correo.es,Alicante,Gran empresa,2021-03-06,62,448523.17
+C0395,Marta López Ortega,marta.lopez395@correo.es,Valencia,Particular,2024-04-27,51,49240.39
+C0396,Hugo Ferrer Mora,hugo.ferrer396@correo.es,Bilbao,Pyme,2021-02-11,54,75892.06
+C0397,Pau Martínez Ruiz,pau.martinez397@correo.es,Valencia,Particular,2024-06-27,41,18840.02
+C0398,Inés Serrano López,ines.serrano398@correo.es,Valencia,Autónomo,2023-01-13,38,102715.38
+C0399,Raúl Sánchez Climent,raul.sanchez399@correo.es,Alicante,Particular,2021-09-23,46,19777.01
+C0400,Mateo López Gómez,mateo.lopez400@correo.es,Barcelona,Particular,2020-04-18,33,20285.73
+C0401,Hugo Torres Martínez,hugo.torres401@correo.es,Zaragoza,Autónomo,2024-08-25,26,40548.28
+C0402,Irene Ferrer Ortega,irene.ferrer402@correo.es,Alicante,Particular,2022-09-17,31,22814.48
+C0403,Raúl Moreno Gil,raul.moreno403@correo.es,Alicante,Gran empresa,2024-03-24,45,371036.61
+C0404,Pau Torres Soler,pau.torres404@correo.es,Valencia,Pyme,2023-07-11,52,55180.71
+C0405,Hugo Sánchez Serrano,hugo.sanchez405@correo.es,Zaragoza,Particular,2021-09-14,64,16697.62
+C0406,Adrián Martínez Torres,adrian.martinez406@correo.es,Valencia,Autónomo,2020-05-20,48,30200.06
+C0407,Nuria Moreno Gómez,nuria.moreno407@correo.es,Valencia,Particular,2021-11-08,50,36287.12
+C0408,Lucía Sánchez Ortega,lucia.sanchez408@correo.es,Valencia,Pyme,2021-03-10,64,90746.64
+C0409,Joan Gil López,joan.gil409@correo.es,Barcelona,Pyme,2021-03-16,35,124453.58
+C0410,Claudia Torres Martínez,claudia.torres410@correo.es,Valencia,Pyme,2019-04-07,32,73817.57
+C0411,Sergio Ferrer Navarro,sergio.ferrer411@correo.es,Sevilla,Particular,2022-04-25,38,29186.9
+C0412,Álvaro López Soler,alvaro.lopez412@correo.es,Barcelona,Particular,2022-03-22,43,20302.97
+C0413,Sara Martínez Mora,sara.martinez413@correo.es,Barcelona,Pyme,2019-04-15,68,55897.76
+C0414,Paula Gómez Navarro,paula.gomez414@correo.es,Valencia,Particular,2022-01-09,40,18026.11
+C0415,Mateo Ortega Soler,mateo.ortega415@correo.es,Barcelona,Gran empresa,2021-06-17,60,257871.35
+C0416,Inés Gómez Moreno,ines.gomez416@correo.es,Zaragoza,Autónomo,2023-02-10,38,69813.8
+C0417,Carmen García Pérez,carmen.garcia417@correo.es,Sevilla,Autónomo,2024-07-15,50,23512.82
+C0418,Joan Navarro Gil,joan.navarro418@correo.es,Valencia,Pyme,2022-03-31,52,64448.55
+C0419,Marta Pérez Serrano,marta.perez419@correo.es,Valencia,Pyme,2024-05-20,50,140508.69
+C0420,Lucía Ortega Gómez,lucia.ortega420@correo.es,Castellón,Autónomo,2024-03-07,53,29548.62
+C0421,Marta Soler Pérez,marta.soler421@correo.es,Valencia,Autónomo,2019-12-24,36,42806.95
+C0422,Iván López Climent,ivan.lopez422@correo.es,Valencia,Particular,2024-01-25,61,13481.37
+C0423,Joan Martínez Gómez,joan.martinez423@correo.es,Valencia,Gran empresa,2020-01-20,56,238739.44
+C0424,Nuria Gil Soler,nuria.gil424@correo.es,Alicante,Pyme,2019-09-13,36,98374.36
+C0425,Álvaro Serrano Ferrer,alvaro.serrano425@correo.es,Madrid,Particular,2020-02-09,50,15825.92
+C0426,Jordi Martínez Blasco,jordi.martinez426@correo.es,Valencia,Particular,2022-07-16,31,28246.56
+C0427,Elena Navarro Sánchez,elena.navarro427@correo.es,Valencia,Pyme,2019-04-16,45,86331.38
+C0428,Lucía Blasco Gil,lucia.blasco428@correo.es,Valencia,Autónomo,2023-02-07,30,27898.51
+C0429,Sergio Gil Soler,sergio.gil429@correo.es,Barcelona,Particular,2022-10-19,53,26332.57
+C0430,Nuria García Ortega,nuria.garcia430@correo.es,Valencia,Particular,2021-10-11,80,40950.59
+C0431,Adrián Gómez Sánchez,adrian.gomez431@correo.es,Valencia,Pyme,2019-03-02,62,89381.4
+C0432,Marta Soler Climent,marta.soler432@correo.es,Sevilla,Pyme,2020-08-25,53,124077.37
+C0433,Nuria Ferrer Gómez,nuria.ferrer433@correo.es,Barcelona,Particular,2022-05-25,33,35128.2
+C0434,Joan Mora Gómez,joan.mora434@correo.es,Valencia,Particular,2019-11-26,49,48850.03
+C0435,Nuria Sánchez García,nuria.sanchez435@correo.es,Valencia,Pyme,2022-08-22,58,77300.65
+C0436,Irene López Blasco,irene.lopez436@correo.es,Bilbao,Pyme,2023-07-06,43,89696.76
+C0437,Nuria Blasco Ruiz,nuria.blasco437@correo.es,Valencia,Pyme,2023-08-22,46,59163.57
+C0438,Lucía Ortega Gómez,lucia.ortega438@correo.es,Barcelona,Pyme,2019-02-06,24,96954.07
+C0439,Raúl Mora Navarro,raul.mora439@correo.es,Castellón,Pyme,2021-11-16,34,63529.51
+C0440,Inés Ferrer Gómez,ines.ferrer440@correo.es,Barcelona,Pyme,2022-02-25,22,96010.06
+C0441,Hugo Mora Ferrer,hugo.mora441@correo.es,Alicante,Particular,2020-11-22,67,27692.12
+C0442,Claudia Ferrer Ferrer,claudia.ferrer442@correo.es,Alicante,Particular,2024-12-16,50,26962.07
+C0443,Hugo Torres Navarro,hugo.torres443@correo.es,Valencia,Particular,2021-02-27,53,31376.79
+C0444,Hugo Moreno García,hugo.moreno444@correo.es,Barcelona,Autónomo,2023-04-27,42,27501.45
+C0445,Joan Sánchez López,joan.sanchez445@correo.es,Zaragoza,Particular,2022-12-20,26,20526.68
+C0446,Sergio García Mora,sergio.garcia446@correo.es,Alicante,Pyme,2019-12-31,46,68772.72
+C0447,Álvaro Gil López,alvaro.gil447@correo.es,Alicante,Particular,2019-05-16,36,22379.85
+C0448,Jordi Blasco García,jordi.blasco448@correo.es,Barcelona,Pyme,2024-02-02,32,100303.71
+C0449,Marta Ortega Pérez,marta.ortega449@correo.es,Madrid,Particular,2020-07-06,45,24468.17
+C0450,Carmen Serrano Martínez,carmen.serrano450@correo.es,Barcelona,Particular,2022-12-09,45,22923.5
+C0451,Sergio Gómez Ferrer,sergio.gomez451@correo.es,Valencia,Particular,2021-08-05,42,36871.99
+C0452,Álvaro Sánchez Ortega,alvaro.sanchez452@correo.es,Sevilla,Particular,2023-09-09,35,34226.61
+C0453,Hugo Ferrer García,hugo.ferrer453@correo.es,Bilbao,Particular,2022-01-26,32,25121.23
+C0454,Álvaro Torres Torres,alvaro.torres454@correo.es,Madrid,Particular,2020-08-08,44,65927.78
+C0455,Inés Gil Moreno,ines.gil455@correo.es,Valencia,Gran empresa,2020-03-07,59,234138.61
+C0456,Álvaro Ferrer Mora,alvaro.ferrer456@correo.es,Madrid,Particular,2024-08-26,25,45156.43
+C0457,Sergio Blasco Gil,sergio.blasco457@correo.es,Castellón,Autónomo,2023-01-23,36,37953.47
+C0458,Joan Blasco Blasco,joan.blasco458@correo.es,Bilbao,Particular,2023-01-25,42,39262.47
+C0459,Inés Navarro Torres,ines.navarro459@correo.es,Madrid,Particular,2022-06-09,42,24869.19
+C0460,Claudia Navarro Ferrer,claudia.navarro460@correo.es,Castellón,Autónomo,2020-05-29,37,52343.87
+C0461,Paula Navarro Torres,paula.navarro461@correo.es,Castellón,Particular,2020-06-24,67,21542.92
+C0462,Paula Soler Gómez,paula.soler462@correo.es,Valencia,Particular,2021-01-27,49,37537.77
+C0463,Claudia Climent López,claudia.climent463@correo.es,Zaragoza,Particular,2024-08-06,32,29026.64
+C0464,Sergio Sánchez Moreno,sergio.sanchez464@correo.es,Madrid,Pyme,2020-01-23,21,105185.18
+C0465,Hugo Gómez Climent,hugo.gomez465@correo.es,Barcelona,Gran empresa,2021-10-10,42,266561.36
+C0466,Nuria Gómez Pérez,nuria.gomez466@correo.es,Madrid,Particular,2019-01-22,62,34606.15
+C0467,Joan Ferrer Gil,joan.ferrer467@correo.es,Valencia,Particular,2019-09-22,46,21347.95
+C0468,Iván Sánchez Blasco,ivan.sanchez468@correo.es,Barcelona,Particular,2019-06-12,19,22114.66
+C0469,Inés Soler Pérez,ines.soler469@correo.es,Valencia,Particular,2023-07-04,27,23805.5
+C0470,Sergio García Gómez,sergio.garcia470@correo.es,Valencia,Particular,2019-12-01,45,22629.15
+C0471,Nuria Serrano García,nuria.serrano471@correo.es,Alicante,Pyme,2020-03-08,57,74935.74
+C0472,Álvaro Martínez Ortega,alvaro.martinez472@correo.es,Castellón,Particular,2024-03-22,46,18310.86
+C0473,Irene Climent Navarro,irene.climent473@correo.es,Madrid,Pyme,2023-04-30,46,81595.79
+C0474,Adrián Ferrer Sánchez,adrian.ferrer474@correo.es,Bilbao,Particular,2022-08-27,57,48647.14
+C0475,Iván Soler López,ivan.soler475@correo.es,Alicante,Autónomo,2024-05-28,59,102454.61
+C0476,Álvaro Martínez Ferrer,alvaro.martinez476@correo.es,Barcelona,Pyme,2021-08-31,36,61107.88
+C0477,Paula López Ruiz,paula.lopez477@correo.es,Alicante,Particular,2022-05-13,49,21812.69
+C0478,Nuria Climent Gómez,nuria.climent478@correo.es,Barcelona,Pyme,2022-02-11,33,90940.14
+C0479,Hugo López Pérez,hugo.lopez479@correo.es,Madrid,Pyme,2024-03-18,31,95553.84
+C0480,Sara Torres García,sara.torres480@correo.es,Alicante,Autónomo,2024-08-26,51,23461.04
+C0481,Pau Climent Navarro,pau.climent481@correo.es,Alicante,Particular,2020-10-02,27,11614.29
+C0482,Carmen López Soler,carmen.lopez482@correo.es,Castellón,Particular,2021-05-07,46,30781.12
+C0483,Marta Navarro Moreno,marta.navarro483@correo.es,Madrid,Autónomo,2022-11-03,48,58118.95
+C0484,Claudia Moreno Gil,claudia.moreno484@correo.es,Sevilla,Particular,2021-05-28,54,47680.01
+C0485,Paula Ferrer Sánchez,paula.ferrer485@correo.es,Valencia,Pyme,2020-01-10,30,79727.27
+C0486,Claudia Pérez García,claudia.perez486@correo.es,Alicante,Pyme,2020-01-22,49,140503.85
+C0487,Inés García Pérez,ines.garcia487@correo.es,Barcelona,Autónomo,2019-07-12,42,33547.6
+C0488,Marta Navarro Ferrer,marta.navarro488@correo.es,Alicante,Pyme,2019-11-20,62,55733.76
+C0489,Lucía Ferrer Ortega,lucia.ferrer489@correo.es,Madrid,Pyme,2023-09-23,35,77943.02
+C0490,Irene Gómez Moreno,irene.gomez490@correo.es,Zaragoza,Particular,2019-02-20,31,37992.02
+C0491,Raúl Sánchez Serrano,raul.sanchez491@correo.es,Castellón,Particular,2023-04-01,50,29911.5
+C0492,Pau López Gómez,pau.lopez492@correo.es,Sevilla,Particular,2022-04-28,34,21982.97
+C0493,Elena Climent Ortega,elena.climent493@correo.es,Valencia,Autónomo,2024-08-05,28,34232.3
+C0494,Hugo Navarro García,hugo.navarro494@correo.es,Madrid,Pyme,2022-05-31,55,99511.16
+C0495,Joan Sánchez Martínez,joan.sanchez495@correo.es,Madrid,Pyme,2024-07-01,49,90735.69
+C0496,Claudia Gil Sánchez,claudia.gil496@correo.es,Madrid,Particular,2022-02-28,19,27936.84
+C0497,Inés Ruiz Navarro,ines.ruiz497@correo.es,Valencia,Gran empresa,2024-03-25,33,348124.87
+C0498,Adrián Pérez Pérez,adrian.perez498@correo.es,Valencia,Particular,2023-06-06,31,38458.79
+C0499,Adrián Mora Sánchez,adrian.mora499@correo.es,Madrid,Particular,2022-09-22,52,30184.3
+C0500,Sara Mora Pérez,sara.mora500@correo.es,Valencia,Particular,2019-11-20,62,28387.89
+C0501,Adrián Ferrer Soler,adrian.ferrer501@correo.es,Castellón,Autónomo,2022-05-07,69,44776.19
+C0502,Elena Martínez Ferrer,elena.martinez502@correo.es,Madrid,Gran empresa,2022-06-18,52,405062.09
+C0503,Lucía Ortega García,lucia.ortega503@correo.es,Zaragoza,Pyme,2020-06-29,31,43711.52
+C0504,Iván Mora Navarro,ivan.mora504@correo.es,Zaragoza,Autónomo,2024-08-30,30,50629.69
+C0505,Irene Serrano Soler,irene.serrano505@correo.es,Madrid,Pyme,2020-02-07,33,146743.87
+C0506,Mateo Gómez Serrano,mateo.gomez506@correo.es,Bilbao,Gran empresa,2022-08-20,50,329897.53
+C0507,Iván Sánchez Gil,ivan.sanchez507@correo.es,Madrid,Autónomo,2021-09-10,59,47201.12
+C0508,Irene García Climent,irene.garcia508@correo.es,Madrid,Pyme,2023-08-30,21,59483.83
+C0509,Inés Sánchez Sánchez,ines.sanchez509@correo.es,Alicante,Gran empresa,2022-08-19,51,415413.94
+C0510,Inés Torres Martínez,ines.torres510@correo.es,Barcelona,Particular,2022-01-15,55,21667.94
+C0511,Inés Ortega Soler,ines.ortega511@correo.es,Valencia,Autónomo,2021-06-09,48,38886.1
+C0512,Mateo Gómez García,mateo.gomez512@correo.es,Valencia,Pyme,2019-08-29,80,118708.51
+C0513,Lucía Martínez Martínez,lucia.martinez513@correo.es,Madrid,Autónomo,2024-11-05,50,27946.48
+C0514,Claudia Moreno Ferrer,claudia.moreno514@correo.es,Barcelona,Particular,2024-11-27,44,18972.59
+C0515,Claudia López Mora,claudia.lopez515@correo.es,Valencia,Particular,2023-12-25,51,25464.76
+C0516,Claudia Moreno Moreno,claudia.moreno516@correo.es,Zaragoza,Pyme,2021-02-02,37,67705.67
+C0517,Iván Martínez Blasco,ivan.martinez517@correo.es,Barcelona,Pyme,2022-09-25,31,71834.06
+C0518,Sergio Navarro Navarro,sergio.navarro518@correo.es,Valencia,Particular,2020-01-16,49,19406.03
+C0519,Jordi Ortega Sánchez,jordi.ortega519@correo.es,Barcelona,Pyme,2021-06-10,58,130869.94
+C0520,Jordi Ortega Soler,jordi.ortega520@correo.es,Valencia,Pyme,2022-06-07,41,76248.89
+C0521,Álvaro Torres Ortega,alvaro.torres521@correo.es,Barcelona,Autónomo,2019-05-05,55,43770.19
+C0522,Irene Blasco Sánchez,irene.blasco522@correo.es,Valencia,Particular,2019-09-21,39,15501.71
+C0523,Jordi Serrano Navarro,jordi.serrano523@correo.es,Valencia,Particular,2024-05-24,64,24571.85
+C0524,Adrián Pérez Martínez,adrian.perez524@correo.es,Alicante,Pyme,2021-03-26,47,150002.9
+C0525,Lucía Mora Serrano,lucia.mora525@correo.es,Madrid,Autónomo,2023-08-13,50,27063.14
+C0526,Sara Climent Soler,sara.climent526@correo.es,Madrid,Pyme,2022-04-11,53,97065.38
+C0527,Hugo Gómez Sánchez,hugo.gomez527@correo.es,Alicante,Pyme,2021-01-11,28,164917.51
+C0528,Paula Climent Mora,paula.climent528@correo.es,Barcelona,Gran empresa,2019-01-17,42,316497.64
+C0529,Pau Sánchez Mora,pau.sanchez529@correo.es,Castellón,Pyme,2019-12-25,66,156218.83
+C0530,Jordi Ortega Ferrer,jordi.ortega530@correo.es,Alicante,Particular,2024-04-26,44,20415.76
+C0531,Álvaro Sánchez Pérez,alvaro.sanchez531@correo.es,Barcelona,Particular,2023-08-12,61,25234.35
+C0532,Iván Gómez Ortega,ivan.gomez532@correo.es,Barcelona,Autónomo,2020-06-12,55,36710.58
+C0533,Paula Ferrer Soler,paula.ferrer533@correo.es,Zaragoza,Particular,2022-02-20,22,21079.99
+C0534,Paula Navarro Serrano,paula.navarro534@correo.es,Valencia,Autónomo,2022-06-09,52,41772.79
+C0535,Sergio Ruiz Serrano,sergio.ruiz535@correo.es,Zaragoza,Particular,2023-02-14,31,14221.19
+C0536,Inés Climent Moreno,ines.climent536@correo.es,Valencia,Particular,2023-01-14,47,19495.28
+C0537,Lucía Soler Ferrer,lucia.soler537@correo.es,Valencia,Particular,2022-10-29,39,43249.62
+C0538,Irene Gómez Gómez,irene.gomez538@correo.es,Madrid,Particular,2021-06-09,44,29109.81
+C0539,Adrián Sánchez Ruiz,adrian.sanchez539@correo.es,Valencia,Particular,2022-11-12,43,32968.86
+C0540,Marta Blasco Serrano,marta.blasco540@correo.es,Madrid,Gran empresa,2024-06-13,47,581456.15
+C0541,Iván Climent Ortega,ivan.climent541@correo.es,Alicante,Particular,2019-10-05,39,14847.35
+C0542,Jordi Gómez Sánchez,jordi.gomez542@correo.es,Zaragoza,Gran empresa,2023-09-03,28,105014.88
+C0543,Mateo Mora Climent,mateo.mora543@correo.es,Barcelona,Particular,2021-07-12,32,49353.49
+C0544,Carmen García Ortega,carmen.garcia544@correo.es,Castellón,Autónomo,2022-12-21,55,23174.69
+C0545,Iván Pérez Martínez,ivan.perez545@correo.es,Madrid,Autónomo,2021-11-15,65,39952.91
+C0546,Joan Navarro López,joan.navarro546@correo.es,Valencia,Autónomo,2022-07-13,47,20514.82
+C0547,Nuria Torres Gómez,nuria.torres547@correo.es,Castellón,Pyme,2022-11-23,54,35936.34
+C0548,Iván Mora Ortega,ivan.mora548@correo.es,Barcelona,Particular,2023-10-16,56,28379.33
+C0549,Joan Ferrer Gómez,joan.ferrer549@correo.es,Castellón,Pyme,2021-10-10,28,92994.79
+C0550,Mateo Gil Moreno,mateo.gil550@correo.es,Alicante,Particular,2019-07-21,22,18995.07
+C0551,Joan Blasco Sánchez,joan.blasco551@correo.es,Valencia,Pyme,2019-04-20,43,34541.93
+C0552,Sara Gil Blasco,sara.gil552@correo.es,Castellón,Autónomo,2024-04-09,21,36096.75
+C0553,Carmen Gil Gómez,carmen.gil553@correo.es,Barcelona,Particular,2024-04-06,41,53312.96
+C0554,Claudia Ferrer Ferrer,claudia.ferrer554@correo.es,Barcelona,Particular,2020-12-14,26,14059.39
+C0555,Elena Climent Navarro,elena.climent555@correo.es,Valencia,Particular,2024-07-28,37,35239.3
+C0556,Álvaro Climent Navarro,alvaro.climent556@correo.es,Alicante,Pyme,2019-04-19,35,89453.08
+C0557,Nuria Moreno Mora,nuria.moreno557@correo.es,Alicante,Particular,2024-01-17,50,14865.6
+C0558,Nuria López Serrano,nuria.lopez558@correo.es,Alicante,Autónomo,2021-03-11,36,49165.42
+C0559,Pau Ruiz Sánchez,pau.ruiz559@correo.es,Zaragoza,Autónomo,2020-07-28,30,35917.6
+C0560,Carmen Soler Mora,carmen.soler560@correo.es,Barcelona,Particular,2021-01-09,45,26515.26
+C0561,Jordi Serrano Pérez,jordi.serrano561@correo.es,Valencia,Gran empresa,2023-09-30,80,567294.27
+C0562,Carmen Sánchez Moreno,carmen.sanchez562@correo.es,Madrid,Pyme,2024-12-29,50,87270.42
+C0563,Raúl Pérez López,raul.perez563@correo.es,Valencia,Autónomo,2020-02-22,21,50714.66
+C0564,Elena Ruiz Navarro,elena.ruiz564@correo.es,Alicante,Particular,2020-09-23,45,69747.21
+C0565,Inés Sánchez Mora,ines.sanchez565@correo.es,Madrid,Particular,2020-05-20,75,33686.09
+C0566,Irene Ferrer Gómez,irene.ferrer566@correo.es,Alicante,Particular,2021-01-23,46,32709.02
+C0567,Irene Blasco Gil,irene.blasco567@correo.es,Castellón,Pyme,2020-08-14,59,73338.59
+C0568,Mateo Serrano Gómez,mateo.serrano568@correo.es,Castellón,Particular,2023-12-30,57,50166.4
+C0569,Elena García Martínez,elena.garcia569@correo.es,Valencia,Particular,2024-03-21,58,19160.47
+C0570,Nuria Martínez Gil,nuria.martinez570@correo.es,Valencia,Pyme,2023-11-11,57,74521.43
+C0571,Adrián Torres Ortega,adrian.torres571@correo.es,Madrid,Particular,2024-06-22,47,27716.33
+C0572,Sara Serrano Ruiz,sara.serrano572@correo.es,Madrid,Particular,2021-10-06,42,26055.06
+C0573,Marta Mora Martínez,marta.mora573@correo.es,Bilbao,Particular,2023-10-15,41,21551.53
+C0574,Elena Moreno Ortega,elena.moreno574@correo.es,Valencia,Particular,2024-03-25,45,38214.41
+C0575,Irene Martínez López,irene.martinez575@correo.es,Bilbao,Particular,2021-09-08,49,25617.68
+C0576,Joan Torres Gómez,joan.torres576@correo.es,Valencia,Autónomo,2019-02-02,29,15932.29
+C0577,Mateo Pérez Serrano,mateo.perez577@correo.es,Barcelona,Gran empresa,2023-12-27,41,474534.79
+C0578,Sergio Sánchez López,sergio.sanchez578@correo.es,Alicante,Pyme,2023-05-06,44,155767.1
+C0579,Sara Gil Torres,sara.gil579@correo.es,Zaragoza,Particular,2024-04-17,45,23122.48
+C0580,Marta Serrano Martínez,marta.serrano580@correo.es,Valencia,Pyme,2019-06-24,40,134525.77
+C0581,Marta Pérez Ferrer,marta.perez581@correo.es,Valencia,Particular,2024-11-10,54,24160.03
+C0582,Pau Climent Soler,pau.climent582@correo.es,Madrid,Pyme,2020-01-10,43,59786.22
+C0583,Sergio García García,sergio.garcia583@correo.es,Barcelona,Particular,2023-02-08,39,19872.22
+C0584,Hugo Soler Torres,hugo.soler584@correo.es,Sevilla,Pyme,2024-10-06,29,141713.89
+C0585,Jordi Pérez Moreno,jordi.perez585@correo.es,Bilbao,Gran empresa,2024-07-05,35,497856.63
+C0586,Pau Torres Serrano,pau.torres586@correo.es,Barcelona,Gran empresa,2024-12-02,47,413055.96
+C0587,Jordi Blasco Pérez,jordi.blasco587@correo.es,Zaragoza,Autónomo,2024-08-16,45,25366.04
+C0588,Elena Ferrer Soler,elena.ferrer588@correo.es,Valencia,Particular,2022-10-25,20,33486.04
+C0589,Raúl Soler Navarro,raul.soler589@correo.es,Alicante,Particular,2023-01-16,55,19988.06
+C0590,Álvaro Soler Climent,alvaro.soler590@correo.es,Valencia,Particular,2021-09-08,36,33735.84
+C0591,Marta López García,marta.lopez591@correo.es,Barcelona,Particular,2021-07-09,33,22115.07
+C0592,Inés López Gómez,ines.lopez592@correo.es,Castellón,Particular,2024-03-26,57,24132.42
+C0593,Mateo Ortega Martínez,mateo.ortega593@correo.es,Madrid,Pyme,2021-06-10,58,74749.38
+C0594,Sara Moreno Moreno,sara.moreno594@correo.es,Valencia,Particular,2021-06-26,35,13065.35
+C0595,Irene Ortega López,irene.ortega595@correo.es,Sevilla,Particular,2020-05-29,40,14903.67
+C0596,Jordi Climent Gómez,jordi.climent596@correo.es,Castellón,Pyme,2022-04-21,29,75811.05
+C0597,Nuria Martínez Sánchez,nuria.martinez597@correo.es,Valencia,Pyme,2024-08-12,54,60688.33
+C0598,Iván Torres Blasco,ivan.torres598@correo.es,Valencia,Particular,2019-08-29,55,38978.71
+C0599,Elena Ortega Gómez,elena.ortega599@correo.es,Madrid,Autónomo,2022-10-31,39,53221.87
+C0600,Lucía Serrano Blasco,lucia.serrano600@correo.es,Madrid,Autónomo,2022-02-07,61,22273.34

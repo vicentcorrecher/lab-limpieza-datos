@@ -1,0 +1,10 @@
+sede_id,nombre,provincia,latitud,longitud,fecha_apertura,superficie_m2,formato
+S001,Sede 1,Barcelona,41.18884,2.18316,2014-04-15,1040,centro
+S002,Sede 2,Valencia,39.42009,-0.25597,2020-03-11,1100,urbana
+S003,Sede 3,Madrid,40.52055,-3.75791,2017-12-07,300,centro
+S004,Sede 4,Murcia,38.0732,-1.31106,2018-10-19,720,centro
+S005,Sede 5,Murcia,38.05576,-1.03881,2018-06-05,660,centro
+S006,Sede 6,Alicante,38.26932,-0.43587,2013-10-28,320,urbana
+S007,Sede 7,Tarragona,41.12512,1.2877,2013-12-28,120,urbana
+S008,Sede 8,Alicante,38.44032,-0.55314,2012-09-25,740,urbana
+S009,Sede 9,Tarragona,40.97492,1.3181,2017-08-03,1060,periferia

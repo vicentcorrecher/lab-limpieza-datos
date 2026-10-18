@@ -1,0 +1,641 @@
+﻿ID Cliente,Nombre Completo,E-mail,Provincia ,Segmento,Fecha Alta,Edad,Ingresos Anuales (€)
+C0109,Joan Gil Soler,joan.gil109@correo.es,Madrid,Particular,2023-01-20,50,"10.265,73 €"
+C0355,Raúl Pérez Torres,raul.perez355@correo.es,Valencia,Pyme,20200317,55,"131.289,09 €"
+C0262,Hugo Blasco López,hugo.blasco262@correo.es,Valéncia ,Particular,2022-11-03,23,N/A
+C0156,Pau Martínez Sánchez,pau.martinez156correo.es,Bilbao,Pyme,2020-06-25,27,"68.456,91 €"
+C0521,Álvaro Torres Ortega,alvaro.torres521@correo.es,Barcelona,Autónomo,2019-05-05,55,"43.770,19 €"
+C0141,Sara Martínez Pérez,sara.martinez141@correo.es,Madrid,Particular,2022-04-15,62,"21.089,09 €"
+ C0387 ,Sergio García Ruiz,sergio.garcia387@correo.es,MADRID,Particular,2022-03-29,999,"28.278,85 €"
+ C0286 ,Joan Pérez Martínez,joan.perez286@correo.es,Alicante,Particular,2020-04-25,56,"22.400,18 €"
+C0308,Paula Torres Ferrer,paula.torres308@correo.es,MADRID,Pyme,28-04-22,23,"43.211,82 €"
+C0193,Claudia Blasco Torres,claudia.blasco193@correo.es,Barcelona,Particular,16/12/2021,53,"20.895,34 €"
+C0359,Iván Gómez Soler,,Bilbao,Particular,2021-10-27,47,"45.432,12 €"
+C0588,Elena Ferrer Soler,elena.ferrer588@correo.es,Valencia,Particular,"October 25, 2022",20,NULL
+C0187,Sergio Moreno Sánchez,sergio.moreno187@correo.es,Valencia,Gran empresa,"January 04, 2024",53,-
+C0192,Claudia Mora Serrano,claudia.mora192@correo.es,Alicante,Pyme,02-11-20,,"92.357,08 €"
+C0253,Paula Climent Ferrer,paula.climent253@correo.es,Madrid,Particular,2024-04-20,41,-
+C-0180,Jordi Soler Climent,jordi.soler180@correo.es,Valencia,Particular,"June 24, 2022",67,
+C0557,Nuria Moreno Mora,nuria.moreno557@correo.es,Alacant,Particular,2024-01-17,50,"14.865,60 €"
+C0324,Irene Blasco Torres,irene.blasco324@correo.es,Sevilla,Particular,21/11/2022,37,"30.139,28 €"
+C0210,Joan López Torres,joan.lopez210@correo.es,VALENCIA,Particular,2023-07-14,45,"24.281,30 €"
+C0567,Irene Blasco Gil,irene.blasco567@correo.es,Castellón,Pyme,14/08/2020,59,"73.338,59 €"
+C0575,Irene Martínez López,irene.martinez575@correo.es,Bilbao,Particular,2031-09-08,-1,s/d
+C0116,Elena García Ruiz,elena.garcia116@correo.es,MADRID,Particular,2019-12-10,64,"51.872,53 €"
+C0440,Inés Ferrer Gómez,ines.ferrer440@correo.es,Barcelona,Pyme,"February 25, 2022",22,96010.06
+C0305,Iván Gil Gil,ivan.gil305@correo.es,Alacant,Particular,2023-11-19,45,"26.487,29 €"
+C0582,Pau Climent Soler,pau.climent582@correo.es,Madrid,Pyme,2020-01-10,43,"59.786,22 €"
+C0411,Sergio Ferrer Navarro,sergio.ferrer411@correo.es,Sevilla,Particular,25/04/2022,38,"29.186,90 €"
+C0272,Claudia López Martínez,claudia.lopez272@correo.es,valencia,Pyme,20240726,,"69.340,28 €"
+C0345,Paula Moreno Navarro,paula.moreno345@correo.es,Castellón,Particular,"November 01, 2019",40,"32.027,77 €"
+C0446,Sergio García Mora,sergio.garcia446@correo.es,Alicante,Pyme,2019-12-31,46,"68.772,72 €"
+C0373,Lucía Moreno Pérez,lucia.moreno373@correo.es,Alicante,Particular,"January 11, 2023",42,"32.476,99 €"
+C0328,Pau Torres Moreno,pau.torres328@correo.es,Valencia,Autónomo,2020-02-29,42,"34.809,00 €"
+C0099,Iván Serrano Ruiz,ivan.serrano99@correo.es,Valencia,Pyme,20220507,31,113526.37
+C0336,Nuria Climent Torres,nuria.climent336@correo.es,Bilbao,Autónomo,20210716,39,"21.635,30 €"
+ C0430 ,Nuria García Ortega,nuria.garcia430@correo.es,Valencia,Particular,2021-10-11,80,"40.950,59 €"
+C0596,Jordi Climent Gómez,jordi.climent596@correo.es,Castellón,Pyme,21-04-22,29,N/A
+C-0100,Álvaro García Serrano,alvaro.garcia100@correo.es,Alicante,Pyme,14-04-19,31,"54.439,72 €"
+C0450,Carmen Serrano Martínez,carmen.serrano450@correo.es,Barcelona,Particular,20221209,,"22.923,50 €"
+C0054,Irene Ferrer Sánchez,irene.ferrer54@correo.es,Alicante,Particular,2023-12-08,56,"31.606,91 €"
+C0424,Nuria Gil Soler,nuria.gil424@correo.es,Alicante,Pyme,20190913,36,"98.374,36 €"
+C0340,Irene García Navarro,irene.garcia340@correo.es,Madrid,Pyme,20211130,19,-
+C0356,Nuria Moreno Torres,nuria.moreno356@correo.es,Sevilla,Autónomo,2020-08-26,66,"55.485,29 €"
+C0485,Paula Ferrer Sánchez,paula.ferrer485@correo.es,Valencia,Pyme,2020-01-10,30,"79.727,27 €"
+C0142,Álvaro López García,alvaro.lopez142@correo.es,Madrid,Gran empresa,03/06/2019,27,s/d
+C0543,Mateo Mora Climent,mateo.mora543@correo.es,barcelona ,Particular,2021-07-12,32,
+C0546,Joan Navarro López,joan.navarro546@correo.es,Valencia,Autónomo,2022-07-13,47,"20.514,82 €"
+C0492,Pau López Gómez,pau.lopez492@correo.es,Sevilla,Particular,20220428,34,"21.982,97 €"
+C0194,Lucía Ferrer Mora,lucia.ferrer194@correo.es,Bilbao,Gran empresa,2021-09-24,47,241116.48
+C0236,Hugo Pérez Ferrer,hugo.perez236@correo.es,Valencia,Autónomo,20210112,,"68.717,61 €"
+C0274,Adrián Climent Martínez,adrian.climent274@correo.es,Sevilla,Pyme,2024-06-05,50,"119.962,88 €"
+C0554,Claudia Ferrer Ferrer,,Barcelona,Particular,2020-12-14,26,"14.059,39 €"
+C0455,Inés Gil Moreno,ines.gil455@correo.es,Valencia,Gran empresa,"March 07, 2020",59,234138.61
+C0135,Carmen Martínez Climent,carmen.martinez135@correo.es,Alicante,Pyme,2023-11-16,39,"122.534,66 €"
+C-0334,Joan Climent Climent,joan.climent334@correo.es,Alicante,Particular,03/07/2024,31,"27.350,92 €"
+C0023,Paula Pérez Gómez,paula.perez23@correo.es,Madrid,Pyme,2020-11-20,41,"180.359,38 €"
+C-0598,Iván Torres Blasco,ivan.torres598@correo.es,valencia,Particular,29-08-19,55,"38.978,71 €"
+C0230,Joan Mora Soler,joan.mora230@correo.es,Castellón,Autónomo,2022-04-25,42,"28.944,92 €"
+C0298,Irene López Gómez,irene.lopez298@correo.es,Valencia,Pyme,2019-12-22,80,"86.668,94 €"
+C0472,Álvaro Martínez Ortega,alvaro.martinez472@correo.es,Castellón,Particular,2024-03-22,46,"18.310,86 €"
+C0396,Hugo Ferrer Mora,hugo.ferrer396@correo.es,Bilbao,Pyme,11-02-21,54,N/A
+C0389,Nuria Torres Moreno,nuria.torres389@correo.es,Madrid,Particular,2021-01-09,51,"20.973,12 €"
+C0071,Jordi Gil Soler,jordi.gil71@correo.es,Alicante,Pyme,05/12/2023,23,"54.954,21 €"
+C0438,Lucía Ortega Gómez,lucia.ortega438@correo.es,Barcelona,Pyme,2019-02-06,999,96954.07
+C0075,Nuria Moreno Martínez,nuria.moreno75@correo.es,Madrid,Particular,2019-08-02,57,"17.487,85 €"
+C0398,Inés Serrano López,ines.serrano398@correo.es,valencia,Autónomo,2023-01-13,38,"102.715,38 €"
+c0281,Adrián Ruiz Ruiz,adrian.ruiz281@correo.es,Alicante,Particular,27/04/2019,62,"35.254,19 €"
+c0384,Paula Navarro Mora,paula.navarro384@correo.es,Madrid,Particular,"June 29, 2023",44,"27.827,10 €"
+C0576,Joan Torres Gómez,joan.torres576@correo.es,Valencia,Autónomo,2019-02-02,,-
+C0393,Sergio Ferrer Ferrer,sergio.ferrer393@correo.es,Valencia,Pyme,2021-06-26,24,"115.134,17 €"
+C0358,Marta Gil Climent,marta.gil358@correo.es,Zaragoza,Particular,2023-04-16,47,"39.451,80 €"
+C0547,NURIA TORRES GÓMEZ,nuria.torres547@correo.es,Castellón,Pyme,2022-11-23,54,35936.34
+C0385,Álvaro Gil García,alvaro.gil385@correo.es,Bilbao,Pyme,20240520,45,"104.638,51 €"
+C0379,Marta Mora Pérez,marta.mora379@correo.es,Valencia,Pyme,2019-09-22,49,"42.518,98 €"
+C0263,Hugo Moreno Soler,hugo.moreno263@correo.es,Alicante,Pyme,20200222,22,
+C0497,Inés Ruiz Navarro,ines.ruiz497@correo.es,Valencia,Gran empresa,25-03-24,,NULL
+C0434,Joan Mora Gómez,joan.mora434@correo.es,Valencia,Particular,2019-11-26,49,"48.850,03 €"
+C0243,Joan Sánchez Mora,joan.sanchez243@correo.es,Valencia,Particular,"April 23, 2020",52,"58.927,66 €"
+C0330,Joan Pérez Navarro,joan.perez330@correo.es,Bilbao,Particular,2024-10-14,63,"28.652,63 €"
+C0314,Irene Blasco Navarro,irene.blasco314@correo.es,Alicante,Particular,2023-05-15,43,18079.91
+C0562,Carmen Sánchez Moreno,carmen.sanchez562@correo.es,MADRID,Pyme,20241229,50,"87.270,42 €"
+C0246,Adrián Blasco Soler,adrian.blasco246@correo.es,Barcelona,Autónomo,2023-05-16,999,"14.018,66 €"
+C0552,SARA GIL BLASCO,sara.gil552@correo.es,Castellón,Autónomo,09-04-24,21,
+C0147,Inés Blasco Torres,ines.blasco147@correo.es,Barcelona,Autónomo,"August 14, 2023",63,"25.732,90 €"
+C0201,Elena Gómez Pérez,elena.gomez201@correo.es,MADRID,Particular,20221014,46,"26.253,45 €"
+C0169,Mateo Ruiz Blasco,mateo.ruiz169@correo.es,Valencia,Gran empresa,20230228,33,"165.846,37 €"
+C0526,Sara Climent Soler,sara.climent526@correo.es,Madrid,Pyme,11-04-22,53,"97.065,38 €"
+C0466,Nuria Gómez Pérez,nuria.gomez466@correo.es,Madrid,Particular,22-01-19,62,34606.15
+C0067,Iván Martínez Ruiz,ivan.martinez67@correo.es,Alicante,Pyme,27-01-20,37,70270.77
+C0431,Adrián Gómez Sánchez,adrian.gomez431@correo.es,Valencia,Pyme,2019-03-02,62,"89.381,40 €"
+C0014,Pau Martínez Mora,pau.martinez14@correo.es,Alicante,Particular,2023-10-24,999,"67.190,59 €"
+C0386,Iván Sánchez García,ivan.sanchez386@correo.es,Bilbao,Particular,2020-11-16,47,"29.485,20 €"
+C0061,Mateo Pérez García,mateo.perez61@correo.es,Alicante,Pyme,2020-08-09,,"54.355,39 €"
+C0329,Elena Climent Mora,elena.climent329@correo.es,Sevilla,Particular,2020-03-14,37,"38.335,30 €"
+C0240,Iván Gómez Soler,ivan.gomez240@correo.es,Valencia,Particular,2020-03-21,70,"38.041,91 €"
+C0301,Nuria Sánchez Ortega,nuria.sanchez301@correo.es,Madrid,Particular,2020-04-08,45,"36.173,08 €"
+C0279,Raúl García Ferrer,raul.garcia279@correo.es,Valencia,Particular,2024-02-26,32,s/d
+C0155,Hugo Torres García,hugo.torres155@correo.es,Barcelona,Autónomo,"July 20, 2022",54,"49.722,91 €"
+C0250,Raúl Climent Ruiz,raul.climent250@correo.es,Barna,Autónomo,2020-07-08,48,"43.289,72 €"
+C0004,Nuria Ferrer Ortega,nuria.ferrer4@correo.es,Bilbao,Particular,13/05/2021,61,"57.119,33 €"
+C0143,Joan Navarro García,joan.navarro143@correo.es,Valencia,Particular,2021-07-23,45,NULL
+C0408,Lucía Sánchez Ortega,lucia.sanchez408@correo.es,VALENCIA,Pyme,2021-03-10,,"90.746,64 €"
+C0142,ALVARO  LÓPEZ GARCÍA,alvaro.lopez142@correo.es,Madrid,Gran empresa,03/06/2019,27,s/d
+c0222,Álvaro Ortega Serrano,alvaro.ortega222@correo.es,Valencia,Particular,"December 04, 2022",37,"35.605,42 €"
+C0456,Álvaro Ferrer Mora,alvaro.ferrer456@correo.es,madrid,Particular,2024-08-26,25,"45.156,43 €"
+C0483,Marta Navarro Moreno,marta.navarro483@correo.es,Madrid,Autónomo,2022-11-03,48,"58.118,95 €"
+C0488,Marta Navarro Ferrer,marta.navarro488@correo.es,alicante,Pyme,20191120,62,"55.733,76 €"
+ C0053 ,Paula Mora López,paula.mora53@correo.es,Madrid,Particular,20240212,36,"22.654,57 €"
+C0018,Nuria Serrano Ortega,nuria.serrano18@correo.es,Valéncia ,Particular,2019-03-07,51,50027.38
+C0102,Irene Sánchez Gómez,irene.sanchez102@correo.es,Barna,Pyme,2023-11-21,44,"116.834,15 €"
+C0309,Elena Serrano Ferrer,elena.serrano309@correo.es,MADRID,Particular,2023-09-19,36,"27.537,33 €"
+C0320,Elena Torres Gómez,elena.torres320correo.es,Valencia,Particular,2020-04-12,37,"47.968,99 €"
+C0051,Iván López Sánchez,ivan.lopez51@correo.es,MADRID,Particular,"January 04, 2021",63,"19.232,54 €"
+C0160,Raúl Mora Navarro,raul.mora160@correo.es,Madrid,Pyme,2020-11-29,150,NULL
+C0133,Sergio García López,sergio.garcia133@correo.es,Valencia,Pyme,2021-05-02,54,NULL
+C0376,Hugo Torres García,hugo.torres376@correo.es,Bilbao,Particular,23/03/2019,44,NULL
+C0600,Lucía Serrano Blasco,lucia.serrano600@correo.es,Madrid,Autónomo,2022-02-07,61,22273.34
+C0578,Sergio Sánchez López,sergio.sanchez578@correo.es,Alicante,Pyme,06-05-23,44,"155.767,10 €"
+C0535,Sergio Ruiz Serrano,sergio.ruiz535@correo.es,Zaragoza,Particular,2023-02-14,31,"14.221,19 €"
+C0271,Hugo Serrano Soler,hugo.serrano271@correo.es,Zaragoza,Gran empresa,20191005,52,"191.342,84 €"
+C0110,Sergio Ferrer Climent,sergio.ferrer110@correo.es,Valencia,Particular,2021-04-24,-1,"24.847,05 €"
+C0047,Carmen Gómez Gil,carmen.gomez47@correo.es,Alicante,Pyme,"January 11, 2022",70,"87.431,49 €"
+C0058,Carmen Sánchez Gil,carmen.sanchez58@correo.es,Alacant,Autónomo,07/12/2021,47,"37.507,27 €"
+C0335,Sergio Serrano Sánchez,sergio.serrano335@correo.es,Valencia,Pyme,20220806,29,"42.349,90 €"
+C0540,Marta Blasco Serrano,marta.blasco540@correo.es,Madrid,Gran empresa,20240613,47,-
+C0031,Sara Gómez Mora,sara.gomez31@correo.es,Alicante,Gran empresa,17-10-19,30,
+C0111,Joan Ferrer Pérez,joan.ferrer111@correo.es,Bilbao,Particular,2021-08-18,34,25216.29
+C0595,Irene Ortega López,irene.ortega595@correo.es,Sevilla,Particular,2020-05-29,40,14903.67
+C0056,Mateo Martínez Gil,mateo.martinez56@correo.es,madrid,Autónomo,2024-02-04,,"33.458,80 €"
+C0405,Hugo Sánchez Serrano,hugo.sanchez405@correo.es,Zaragoza,Particular,14-09-21,,"16.697,62 €"
+C0245,Raúl Ruiz Ferrer,raul.ruiz245@correo.es,Sevilla,Pyme,20211125,31,"56.838,34 €"
+C0066,MATEO  NAVARRO GARCÍA,mateo.navarro66@correo.es,Sevilla,Autónomo,2023-07-13,60,"39.842,85 €"
+C0504,Iván Mora Navarro,ivan.mora504@correo.es,Zaragoza,Autónomo,2024-08-30,30,"50.629,69 €"
+C0202,Hugo Navarro Serrano,hugo.navarro202@correo.es,Alicante,Pyme,2022-10-24,49,"90.225,74 €"
+C0479,Hugo López Pérez,hugo.lopez479@correo.es,Madrid,Pyme,2024-03-18,31,"95.553,84 €"
+C0407,Nuria Moreno Gómez,nuria.moreno407@correo.es,Valéncia ,Particular,20211108,50,s/d
+ C0052 ,Carmen Serrano Mora,carmen.serrano52@correo.es,Sevilla,Particular,2024-09-30,54,N/A
+ C0454 ,Álvaro Torres Torres,alvaro.torres454@correo.es,Madrid,Particular,2020-08-08,,"65.927,78 €"
+C0465,Hugo Gómez Climent,hugo.gomez465@correo.es,Barcelona,Gran empresa,20211010,42,"266.561,36 €"
+C0366,Iván Climent Mora,ivan.climent366@correo.es,Valencia,Gran empresa,2020-07-15,37,"167.586,87 €"
+C0284,Sergio Gil Gómez,sergio.gil284@correo.es,Alicante,Gran empresa,2024-12-25,27,143183.87
+C0529,Pau Sánchez Mora,pau.sanchez529@correo.es,Castellón,Pyme,2019-12-25,66,"156.218,83 €"
+C0499,Adrián Mora Sánchez,adrian.mora499@correo.es,Madrid,Particular,22-09-22,52,"30.184,30 €"
+C0203,Hugo Blasco Ruiz,hugo.blasco203@correo.es,Valencia,Pyme,20230227,44,"87.634,92 €"
+C0059,Sara Gil Pérez,sara.gil59@correo.es,Alacant,Autónomo,2019-12-23,59,"43.399,68 €"
+C0481,Pau Climent Navarro,pau.climent481@correo.es,Alicante,Particular,2020-10-02,27,11614.29
+C0417,Carmen García Pérez,carmen.garcia417@correo.es,Sevilla,Autónomo,2024-07-15,50,"23.512,82 €"
+C0486,Claudia Pérez García,claudia.perez486@correo.es,Alicante,Pyme,22/01/2020,49,"140.503,85 €"
+C0098,Adrián García Mora,adrian.garcia98@correo.es,Alicante,Gran empresa,2020-06-25,,"209.633,13 €"
+C0501,Adrián Ferrer Soler,adrian.ferrer501@correo.es,Castellón,Autónomo,07-05-22,69,44776.19
+C0579,Sara Gil Torres,sara.gil579@correo.es,Zaragoza,Particular,2024-04-17,45,"23.122,48 €"
+C0427,Elena Navarro Sánchez,elena.navarro427@correo.es,Valencia,Pyme,20190416,45,"86.331,38 €"
+C0024,Claudia Ortega Gómez,claudia.ortega24@correo.es,Barcelona,Particular,2023-07-09,42,"39.315,95 €"
+C0443,Hugo Torres Navarro,hugo.torres443@correo.es,Valencia,Particular,2021-02-27,,"31.376,79 €"
+C0378,Carmen García Ferrer,carmen.garcia378@correo.es,Valencia,Autónomo,2024-01-06,,"27.208,60 €"
+C0509,Inés Sánchez Sánchez,ines.sanchez509@correo.es,Alacant,Gran empresa,19-08-22,51,"415.413,94 €"
+C0218,Álvaro García Pérez,alvaro.garcia218@correo.es,Castellón,Particular,20191106,37,s/d
+c0278,Claudia Soler Martínez,claudia.soler278@correo.es,Bilbao,Particular,27-03-24,56,-
+C0549,Joan Ferrer Gómez,joan.ferrer549@correo.es,Castellón,Pyme,2021-10-10,28,"92.994,79 €"
+C0223,Raúl Ferrer López,raul.ferrer223@correo.es,Madrid,Pyme,2021-11-18,37,"66.770,36 €"
+C0282,Raúl Gómez Pérez,raul.gomez282@correo.es,Sevilla,Pyme,2020-01-21,44,-
+C0003,Sergio Blasco García,sergio.blasco3@correo.es,Zaragoza,Gran empresa,2019-05-16,21,"286.115,98 €"
+C0214,Marta Ferrer Sánchez,marta.ferrer214@correo.es,Alicante,Autónomo,10/03/2023,31,32905.44
+C0474,Adrián Ferrer Sánchez,adrian.ferrer474@correo.es,Bilbao,Particular,2022-08-27,57,"48.647,14 €"
+C0083,Hugo Blasco Serrano,hugo.blasco83correo.es,Barcelona,Autónomo,2022-08-09,45,"42.519,77 €"
+C-0371,Sara Blasco Ortega,sara.blasco371@correo.es,Valencia,Pyme,2019-11-30,34,"90.628,14 €"
+C0590,Álvaro Soler Climent,alvaro.soler590@correo.es,Valéncia ,Particular,2021-09-08,36,"33.735,84 €"
+C0290,Paula Ferrer García,paula.ferrer290@correo.es,Valencia,Particular,20240820,36,NULL
+ C0237 ,Irene Climent Soler,irene.climent237@correo.es,madrid,Particular,2022-10-06,,"27.638,21 €"
+C0039,Iván García Ferrer,ivan.garcia39@correo.es,Valencia,Gran empresa,2022-09-19,50,"253.898,39 €"
+c0508,Irene García Climent,irene.garcia508@correo.es,Madrid,Pyme,30-08-23,21,s/d
+C0244,Paula Ortega Torres,paula.ortega244@correo.es,Alicante,Autónomo,2024-10-31,31,"30.050,61 €"
+C0418,Joan Navarro Gil,joan.navarro418@correo.es,VALENCIA,Pyme,2022-03-31,52,"64.448,55 €"
+C0011,Mateo Torres Mora,mateo.torres11@correo.es,Alicante,Pyme,20230211,,"85.100,68 €"
+C0064,Sara Climent Martínez,sara.climent64@correo.es,Sevilla,Gran empresa,"December 03, 2024",27,"482.921,82 €"
+C0033,Joan Gil Ferrer,joan.gil33@correo.es,Alicante,Gran empresa,20240415,54,367288.78
+C0524,Adrián Pérez Martínez,adrian.perez524@correo.es,Alicante,Pyme,2021-03-26,47,"150.002,90 €"
+C0372,Adrián Gil Ruiz,adrian.gil372@correo.es,madrid,Particular,2023-01-21,39,"17.145,29 €"
+C0400,Mateo López Gómez,mateo.lopez400@correo.es,Barcelona,Particular,2020-04-18,,"20.285,73 €"
+C0331,Irene Gómez Pérez,irene.gomez331@correo.es,Barcelona,Pyme,17/06/2024,38,-
+C0026,Claudia Navarro Gil,claudia.navarro26@correo.es,CASTELLÓN,Gran empresa,2019-11-03,66,"246.529,64 €"
+C0285,Mateo Gómez Blasco,mateo.gomez285@correo.es,Castelló,Particular,20190829,72,"57.031,83 €"
+C0229,Paula López Navarro,paula.lopez229@correo.es,Alicante,Particular,2020-02-08,30,"21.637,88 €"
+C0568,Mateo Serrano Gómez,mateo.serrano568@correo.es,Castellón,Particular,2023-12-30,57,"50.166,40 €"
+C0292,Paula Martínez Gómez,paula.martinez292@correo.es,Barcelona,Pyme,2024-12-17,999,"103.898,46 €"
+C0539,Adrián Sánchez Ruiz,adrian.sanchez539@correo.es,Valencia,Particular,"November 12, 2022",43,"32.968,86 €"
+C0318,MATEO SANCHEZ MARTÍNEZ,mateo.sanchez318correo.es,Bilbao,Particular,16-02-21,45,"25.130,74 €"
+ C0515 ,CLAUDIA  LÓPEZ MORA,claudia.lopez515@correo.es,Valencia,Particular,2023-12-25,,"25.464,76 €"
+C0412,Álvaro López Soler,alvaro.lopez412@correo.es,Barcelona,Particular,20220322,43,"20.302,97 €"
+C-0090,Mateo Ferrer Martínez,mateo.ferrer90@correo.es,Barcelona,Autónomo,11-09-20,52,NULL
+C0066,Mateo Navarro García,mateo.navarro66@correo.es,Sevilla,Autónomo,2023-07-13,60,"39.842,85 €"
+C0514,Claudia Moreno Ferrer,claudia.moreno514@correo.es,Barcelona,Particular,2024-11-27,,"18.972,59 €"
+C0500,Sara Mora Pérez,sara.mora500@correo.es,Valencia,Particular,2019-11-20,62,"28.387,89 €"
+C0233,Raúl Martínez Pérez,,Sevilla,Particular,2022-06-13,62,45204.84
+C0307,Sara López Gómez,sara.lopez307@correo.es,Madrid,Particular,2019-07-20,43,"21.288,81 €"
+C0459,Inés Navarro Torres,ines.navarro459@correo.es,Madrid,Particular,2022-06-09,42,"24.869,19 €"
+C0205,Mateo Navarro Martínez,mateo.navarro205@correo.es, Valencia,Gran empresa,2021-01-02,47,"309.825,14 €"
+c0423,Joan Martínez Gómez,joan.martinez423@correo.es, Valencia,Gran empresa,2020-01-20,,"238.739,44 €"
+C0188,Marta Blasco Moreno,marta.blasco188@correo.es,Alicante,Particular,2022-07-20,42,"20.029,28 €"
+C0380,Irene Climent Pérez,irene.climent380@correo.es,Castellón,Particular,2023-05-03,999,s/d
+C0510,Inés Torres Martínez,ines.torres510@correo.es,Barcelona,Particular,"January 15, 2022",55,N/A
+C0041,Joan Gil Serrano,joan.gil41@correo.es,Valencia,Particular,2019-12-03,,"40.340,21 €"
+C0583,Sergio García García,sergio.garcia583@correo.es,BARCELONA,Particular,20230208,39,"19.872,22 €"
+C0260,Mateo Pérez Pérez,mateo.perez260@correo.es,Castellón,Particular,2019-03-04,27,"18.911,24 €"
+C0338,Sergio Blasco Ferrer,sergio.blasco338@correo.es,Valencia,Particular,20230913,37,26597.74
+C0173,Mateo Torres Serrano,mateo.torres173@correo.es,Zaragoza,Particular,2023-03-17,36,"34.364,50 €"
+C0295,Inés Blasco Gil,ines.blasco295@correo.es, Valencia,Particular,2023-09-17,55,"31.660,75 €"
+C0325,Álvaro Gómez Climent,alvaro.gomez325@correo.es,Sevilla,Autónomo,"August 03, 2024",40,-
+C0577,Mateo Pérez Serrano,mateo.perez577@correo.es,Barcelona,Gran empresa,"December 27, 2023",41,"474.534,79 €"
+C0545,Iván Pérez Martínez,ivan.perez545@correo.es,MADRID,Autónomo,2021-11-15,65,39952.91
+C0266,MARTA  SANCHEZ ORTEGA,,Castellón,Autónomo,2022-05-11,36,"49.376,65 €"
+C0057,Paula Gómez Serrano,paula.gomez57@correo.es,Castellón,Pyme,2023-12-31,,83102.47
+C0352,Álvaro Ferrer Pérez,alvaro.ferrer352@correo.es,Valencia,Particular,2021-07-24,61,22326.24
+C0072,Marta Ortega Ruiz,marta.ortega72@correo.es,barcelona ,Autónomo,"September 22, 2021",36,40138.82
+C0442,Claudia Ferrer Ferrer,claudia.ferrer442@correo.es,Alicante,Particular,2024-12-16,50,26962.07
+C-0249,Paula Gil Ortega,paula.gil249@correo.es,Alicante,Autónomo,2024-10-18,43,22991.97
+C0091,Iván Climent López,ivan.climent91@correo.es,Alicante,Pyme,2023-10-05,51,NULL
+C0167,Nuria Ruiz Sánchez,nuria.ruiz167@correo.es,Sevilla,Autónomo,2021-09-09,53,"39.143,19 €"
+C0404,Pau Torres Soler,pau.torres404@correo.es,Valencia,Pyme,2023-07-11,999,s/d
+C0171,Inés Serrano Gil,ines.serrano171@correo.es,Valencia,Particular,20200825,48,"41.548,95 €"
+C0055,Claudia García García,claudia.garcia55@correo.es,VALENCIA,Particular,"September 20, 2024",39,"32.284,83 €"
+C0419,Marta Pérez Serrano,,València,Pyme,2024-05-20,50,"140.508,69 €"
+C0322,Pau Serrano López,pau.serrano322@correo.es,Castellón,Particular,01/01/2024,42,"18.073,84 €"
+C0377,Iván Torres Climent,ivan.torres377@correo.es,Alicante,Pyme,03-01-24,41,"146.689,11 €"
+C0067,Iván Martínez Ruiz,ivan.martinez67@correo.es,Alicante,Pyme,27-01-20,37,70270.77
+C0511,Inés Ortega Soler,ines.ortega511@correo.es,Valencia,Autónomo,20210609,48,38886.10
+C0241,Álvaro Moreno Mora,alvaro.moreno241@correo.es,Madrid,Pyme,"February 03, 2019",74,"86.718,03 €"
+C0257,Mateo Ruiz Mora,mateo.ruiz257@correo.es,Madrid,Pyme,01-02-24,54,"67.590,92 €"
+C0510,Inés Torres Martínez,ines.torres510@correo.es,Barcelona,Particular,"January 15, 2022",55,N/A
+C0448,Jordi Blasco García,jordi.blasco448@correo.es,Barcelona,Pyme,02/02/2024,32,"100.303,71 €"
+C0121,Joan Blasco Sánchez,joan.blasco121@correo.es,Zaragoza,Pyme,2021-09-01,57,"96.293,01 €"
+C0056,MATEO MARTÍNEZ GIL,mateo.martinez56@correo.es,madrid,Autónomo,2024-02-04,,"33.458,80 €"
+C0221,Jordi Moreno Moreno,jordi.moreno221@correo.es,Zaragoza,Autónomo,2021-06-25,26,"18.974,36 €"
+C0088,Claudia Mora Ruiz,claudia.mora88@correo.es,Valencia,Pyme,2022-08-18,42,"75.678,01 €"
+C0215,Adrián Serrano Gil,adrian.serrano215@correo.es,Valencia,Autónomo,2024-05-25,45,"29.461,33 €"
+C0189,Carmen López Torres,carmen.lopez189@correo.es,Barcelona,Particular,"August 22, 2024",19,"58.595,80 €"
+C0402,Irene Ferrer Ortega,irene.ferrer402@correo.es,Alicante,Particular,2022-09-17,31,"22.814,48 €"
+C0174,Sara Navarro Navarro,sara.navarro174@correo.es,Castellón,Particular,2021-12-13,60,"34.902,17 €"
+C0409,Joan Gil López,joan.gil409@correo.es,Barcelona,Pyme,16/03/2021,35,"124.453,58 €"
+C0581,Marta Pérez Ferrer,marta.perez581@correo.es,Valencia,Particular,2024-11-10,54,"24.160,03 €"
+C0132,NURIA  FERRER RUIZ,nuria.ferrer132@correo.es,Valéncia ,Pyme,20220909,31,NULL
+C0547,Nuria Torres Gómez,nuria.torres547@correo.es,Castellón,Pyme,2022-11-23,54,35936.34
+C0469,Inés Soler Pérez,ines.soler469@correo.es,Valencia,Particular,2023-07-04,27,23805.50
+C0119,Adrián Torres Sánchez,adrian.torres119@correo.es,Castellon,Autónomo,2019-10-07,55,"29.721,18 €"
+C0120,Elena Ruiz García,elena.ruiz120@correo.es,Alicante,Autónomo,2023-08-10,50,"40.173,18 €"
+C0460,Claudia Navarro Ferrer,claudia.navarro460@correo.es,Castellón,Autónomo,2020-05-29,37,"52.343,87 €"
+C-0317,Nuria García García,nuria.garcia317@correo.es,Madrid,Pyme,2024-01-14,33,s/d
+C0456,Álvaro Ferrer Mora,alvaro.ferrer456@correo.es,madrid,Particular,2024-08-26,25,"45.156,43 €"
+C0233,Raúl Martínez Pérez,,Sevilla,Particular,2022-06-13,62,45204.84
+C0139,Irene Moreno Climent,irene.moreno139@correo.es,Valencia,Gran empresa,2022-09-29,32,
+C0146,Sara Navarro Serrano,sara.navarro146@correo.es,Bilbao,Pyme,04-01-19,63,"92.671,29 €"
+C0149,Iván Blasco Gil,ivan.blasco149@correo.es,Madrid,Particular,31-07-23,44,"16.987,75 €"
+C0293,Mateo Moreno Ruiz,mateo.moreno293@correo.es,ALICANTE,Autónomo,2021-09-06,50,s/d
+c0383,Elena Climent Martínez,elena.climent383@correo.es,Zaragoza,Pyme,2023-07-05,19,"73.682,02 €"
+C0163,Joan Ruiz Pérez,joan.ruiz163@correo.es,Sevilla,Particular,2022-10-24,55,"46.516,68 €"
+C0561,Jordi Serrano Pérez,jordi.serrano561@correo.es,Valencia,Gran empresa,2023-09-30,80,NULL
+C0115,Hugo Blasco Ruiz,hugo.blasco115@correo.es,Valéncia ,Pyme,2019-05-25,44,"90.693,03 €"
+C0159,Carmen Ferrer Moreno,carmen.ferrer159@correo.es,Valencia,Particular,20231216,50,20595.39
+C0151,Irene Sánchez Navarro,irene.sanchez151@correo.es,Zaragoza,Pyme,20240615,31,"85.030,46 €"
+C0542,Jordi Gómez Sánchez,jordi.gomez542@correo.es,Zaragoza,Gran empresa,03-09-23,28,-
+C0153,SERGIO MARTÍNEZ MORENO,sergio.martinez153@correo.es,Valencia,Pyme,30-04-23,43,"107.508,55 €"
+C0032,Sergio García Moreno,sergio.garcia32@correo.es,Valencia,Pyme,2019-05-17,60,"137.907,55 €"
+C0426,Jordi Martínez Blasco,jordi.martinez426@correo.es,Valencia,Particular,2022-07-16,31,"28.246,56 €"
+C0021,Carmen López Gil,carmen.lopez21@correo.es,Bilbao,Gran empresa,2022-10-25,38,"212.390,31 €"
+C0114,Álvaro Navarro Soler,alvaro.navarro114@correo.es,Barna,Particular,21/02/2024,37,"28.380,54 €"
+C0395,Marta López Ortega,marta.lopez395@correo.es,Valencia,Particular,"April 27, 2024",230,"49.240,39 €"
+C0001,Claudia López Martínez,claudia.lopez1@correo.es,Barcelona,Particular,2024-11-04,34,NULL
+C0273,Álvaro Soler Gil,alvaro.soler273@correo.es,Valencia,Pyme,"November 06, 2024",40,"151.590,24 €"
+C0321,Sergio Blasco López,sergio.blasco321@correo.es,Madrid,Particular,2021-07-13,35,"24.863,79 €"
+C0259,Sara Serrano Pérez,sara.serrano259@correo.es,Bilbao,Particular,20190405,54,"41.837,37 €"
+C0330,Joan Pérez Navarro,joan.perez330@correo.es,Bilbao,Particular,2024-10-14,63,"28.652,63 €"
+C-0068,SARA TORRES CLIMENT,sara.torres68@correo.es,Alicante,Particular,19-07-19,47,"22.822,76 €"
+C0148,Sergio Blasco García,sergio.blasco148@correo.es,Bilbao,Autónomo,2023-04-19,51,
+C0361,Inés Gil Ortega,ines.gil361@correo.es,Barcelona,Particular,2021-12-22,68,"55.078,80 €"
+C0005,Sara Gil López,sara.gil5@correo.es,Sevilla,Particular,2022-10-20,52,
+C0587,Jordi Blasco Pérez,jordi.blasco587@correo.es,Zaragoza,Autónomo,2024-08-16,45,"25.366,04 €"
+C0081,Joan Martínez Ruiz,joan.martinez81@correo.es,Valencia,Particular,20220516,62,"96.396,05 €"
+C0027,Lucía Navarro Pérez,,Barna,Autónomo,2021-12-09,35,"19.293,27 €"
+C0341,Inés Serrano Pérez,ines.serrano341@correo.es,Castellón,Autónomo,2019-12-06,39,"50.171,05 €"
+C0217,Joan Blasco Torres,joan.blasco217@correo.es,Madrid,Particular,2021-11-09,36,"16.144,22 €"
+C0416,Inés Gómez Moreno,ines.gomez416@correo.es,Zaragoza,Autónomo,10-02-23,,s/d
+C0306,Pau Climent Torres,,Barcelona,Pyme,09/06/2019,64,"73.326,28 €"
+C0148,Sergio Blasco García,sergio.blasco148@correo.es,Bilbao,Autónomo,2023-04-19,51,
+ C0015 ,Lucía Torres Gómez,,Sevilla,Pyme,2023-03-20,46,"96.455,08 €"
+C0175,Sergio Ruiz Gómez,sergio.ruiz175@correo.es,Valencia,Pyme,2022-08-19,999,"27.973,31 €"
+C0087,Iván Moreno Gil,ivan.moreno87@correo.es,Castellón,Particular,2020-07-27,36,"58.108,62 €"
+C0166,Paula Mora Soler,paula.mora166@correo.es,Alicante,Autónomo,2022-06-15,33,"38.540,96 €"
+C0560,Carmen Soler Mora,carmen.soler560@correo.es,Barcelona,Particular,2021-01-09,45,"26.515,26 €"
+C0060,Irene Ruiz Gómez,irene.ruiz60@correo.es,VALENCIA,Pyme,2021-04-07,37,s/d
+C0550,Mateo Gil Moreno,mateo.gil550@correo.es,ALICANTE,Particular,2019-07-21,22,NULL
+ C0165 ,Irene Ortega Serrano,irene.ortega165@correo.es,Barcelona,Particular,2019-11-15,76,"36.690,63 €"
+C0319,Inés Soler Ruiz,ines.soler319@correo.es,Valéncia ,Particular,2022-09-23,54,"21.051,21 €"
+C0042,Lucía Ortega Moreno,lucia.ortega42@correo.es,Valencia,Gran empresa,2021-06-13,36,"365.145,36 €"
+C0368,Álvaro Moreno Martínez,alvaro.moreno368@correo.es,Madrid,Pyme,2023-06-17,50,"123.950,78 €"
+C0080,Irene Sánchez Pérez,irene.sanchez80@correo.es,Sevilla,Particular,2021-12-03,999,"41.362,69 €"
+C0390,Inés Mora Martínez,ines.mora390correo.es,Alicante,Autónomo,"August 23, 2023",51,"44.902,88 €"
+C0029,Raúl Pérez Gómez,raul.perez29@correo.es,alicante,Pyme,2023-01-06,29,"81.411,48 €"
+ C0515 ,Claudia López Mora,claudia.lopez515@correo.es,Valencia,Particular,2023-12-25,,"25.464,76 €"
+C0337,Hugo García López,hugo.garcia337@correo.es,Valencia,Particular,"May 17, 2022",52,
+C0464,Sergio Sánchez Moreno,sergio.sanchez464@correo.es,Madrid,Pyme,2020-01-23,21,"105.185,18 €"
+C0347,Marta Gil Serrano,marta.gil347@correo.es,Bilbao,Pyme,2022-11-22,54,"61.010,63 €"
+C0085,Álvaro Soler Climent,alvaro.soler85@correo.es,Valencia,Particular,2021-05-22,48,"21.075,55 €"
+C0063,Mateo Pérez Ruiz,mateo.perez63@correo.es,Zaragoza,Autónomo,2022-02-14,32,"22.243,67 €"
+C0450,CARMEN SERRANO MARTÍNEZ,carmen.serrano450@correo.es,Barcelona,Particular,20221209,,"22.923,50 €"
+C0137,Joan Moreno Climent,joan.moreno137@correo.es,Bilbao,Autónomo,2021-12-03,54,"44.659,40 €"
+C0112,Paula Navarro Moreno,paula.navarro112@correo.es,Bilbao,Pyme,"September 16, 2023",19,"72.184,00 €"
+C0195,Joan Pérez Moreno,joan.perez195@correo.es,Valencia,Particular,"April 30, 2019",46,"24.134,23 €"
+C0505,Irene Serrano Soler,irene.serrano505@correo.es,Madrid,Pyme,2020-02-07,33,146743.87
+C0044,Mateo López Mora,mateo.lopez44@correo.es,Bilbao,Particular,2020-07-22,61,"33.355,99 €"
+C0420,Lucía Ortega Gómez,lucia.ortega420@correo.es,Castellón,Autónomo,2024-03-07,53,"29.548,62 €"
+C0531,Álvaro Sánchez Pérez,alvaro.sanchez531@correo.es,BARCELONA,Particular,2023-08-12,61,"25.234,35 €"
+C0294,Carmen Pérez Ruiz,carmen.perez294correo.es,valencia,Pyme,20201110,36,"67.212,43 €"
+C0130,Inés Serrano Gil,ines.serrano130@correo.es,Castellón,Particular,2031-10-05,31,31639.18
+C0572,Sara Serrano Ruiz,sara.serrano572@correo.es,Madrid,Particular,2021-10-06,42,26055.06
+C0219,Lucía Navarro Gómez,lucia.navarro219@correo.es,Madrid,Pyme,"December 11, 2020",25,106001.17
+C0097,Paula Soler Serrano,paula.soler97@correo.es,valencia,Gran empresa,2024-03-15,39,232760.77
+C0125,Joan Ruiz Ruiz,joan.ruiz125@correo.es,BARCELONA,Pyme,2024-01-22,53,"100.371,08 €"
+C0405,Hugo Sánchez Serrano,hugo.sanchez405@correo.es,Zaragoza,Particular,14-09-21,,"16.697,62 €"
+ C0227 ,Paula Mora Blasco,paula.mora227@correo.es,Valencia,Particular,2024-01-24,35,"11.028,25 €"
+C0178,Raúl Serrano Moreno,raul.serrano178@correo.es,Valencia,Particular,10-11-19,39,"21.484,14 €"
+C0388,Carmen Blasco Ruiz,carmen.blasco388@correo.es,Valencia,Pyme,2022-05-08,41,"122.446,97 €"
+C0532,Iván Gómez Ortega,ivan.gomez532@correo.es,Barcelona,Autónomo,20200612,55,"36.710,58 €"
+C0447,Álvaro Gil López,alvaro.gil447@correo.es,ALICANTE,Particular,"May 16, 2019",36,"22.379,85 €"
+C0104,Paula Ferrer Ferrer,paula.ferrer104@correo.es,Madrid,Autónomo,2023-03-08,40,NULL
+C0082,Carmen Blasco Martínez,carmen.blasco82@correo.es,Alicante,Autónomo,2023-06-23,35,35941.45
+C0382,Hugo Ruiz Ferrer,hugo.ruiz382@correo.es,Valencia,Particular,2031-10-16,32,"40.285,03 €"
+c0415,Mateo Ortega Soler,mateo.ortega415@correo.es,Barcelona,Gran empresa,2021-06-17,60,"257.871,35 €"
+C0265,Jordi Moreno López,jordi.moreno265@correo.es,Valencia,Autónomo,11/07/2023,45,"38.062,70 €"
+C0344,Joan Pérez Soler,joan.perez344@correo.es,Valencia,Particular,"July 31, 2020",49,"20.578,30 €"
+ C0228 ,Pau Ortega Torres,pau.ortega228@correo.es,Bilbao,Particular,2024-02-06,35,"35.650,42 €"
+C0302,Mateo Pérez Pérez,mateo.perez302@correo.es,valencia,Particular,15/05/2019,32,NULL
+C0276,Elena Navarro Pérez,elena.navarro276@correo.es,Valencia,Gran empresa,2024-10-19,38,s/d
+C0421,Marta Soler Pérez,marta.soler421@correo.es,Valencia,Autónomo,2019-12-24,36,"42.806,95 €"
+C0264,Joan Serrano Ruiz,joan.serrano264@correo.es,valencia,Autónomo,2023-02-15,52,"29.626,93 €"
+C0565,Inés Sánchez Mora,ines.sanchez565correo.es,Madrid,Particular,2020-05-20,75,"33.686,09 €"
+C0200,Pau Moreno Martínez,pau.moreno200@correo.es,Barcelona,Autónomo,2023-09-22,46,"46.926,32 €"
+C0254,Irene Serrano Moreno,irene.serrano254@correo.es,Barcelona,Autónomo,07/07/2022,44,"34.702,95 €"
+C0172,Hugo Navarro Sánchez,hugo.navarro172@correo.es,Barna,Pyme,2023-05-07,51,"78.339,94 €"
+C0238,Irene Serrano Ortega,irene.serrano238@correo.es,Madrid,Autónomo,2023-03-05,53,"25.183,42 €"
+C0471,Nuria Serrano García,nuria.serrano471@correo.es,Alicante,Pyme,2020-03-08,57,N/A
+C0140,Lucía Soler Ferrer,lucia.soler140@correo.es,Valencia,Autónomo,2021-09-11,19,21429.70
+C0304,Hugo Martínez Serrano,hugo.martinez304@correo.es,Castellón,Particular,20230217,-5,"26.145,08 €"
+C0268,Jordi Ruiz Mora,jordi.ruiz268@correo.es,Valencia,Pyme,2019-08-22,29,"86.760,78 €"
+C0323,Lucía Soler López,lucia.soler323@correo.es,VALENCIA,Gran empresa,2021-06-08,47,N/A
+C0573,Marta Mora Martínez,marta.mora573@correo.es,Bilbao,Particular,2023-10-15,41,21551.53
+C-0558,Nuria López Serrano,nuria.lopez558@correo.es,Alicante,Autónomo,2021-03-11,36,s/d
+C0213,Nuria Pérez Pérez,nuria.perez213@correo.es,Valencia,Autónomo,2021-02-03,54,"21.462,64 €"
+C0199,Joan Gil Torres,joan.gil199@correo.es,Valencia,Particular,06-03-21,45,N/A
+C0532,Iván Gómez Ortega,ivan.gomez532@correo.es,Barcelona,Autónomo,20200612,55,"36.710,58 €"
+C0016,Paula Navarro Torres,paula.navarro16@correo.es,Madrid,Particular,11-03-21,,"33.852,03 €"
+C0164,Raúl Moreno Sánchez,raul.moreno164@correo.es,MADRID,Autónomo,2024-01-13,33,"31.049,24 €"
+C0491,Raúl Sánchez Serrano,raul.sanchez491@correo.es,Castelló,Particular,"April 01, 2023",,"29.911,50 €"
+C0452,Álvaro Sánchez Ortega,alvaro.sanchez452@correo.es,Sevilla,Particular,"September 09, 2023",35,s/d
+C0490,Irene Gómez Moreno,irene.gomez490@correo.es,Zaragoza,Particular,20/02/2019,31,"37.992,02 €"
+c0343,Marta Ruiz Pérez,marta.ruiz343@correo.es,Alicante,Pyme,2020-11-14,49,"53.780,94 €"
+C0038,Irene Gómez Ortega,irene.gomez38@correo.es,Castellón,Particular,2023-10-29,39,"22.161,38 €"
+C0544,Carmen García Ortega,carmen.garcia544@correo.es,Castellón,Autónomo,20221221,55,NULL
+C0207,Sara Torres Ruiz,sara.torres207@correo.es,Valencia,Particular,2021-03-24,38,"60.714,35 €"
+C0296,Lucía Torres Ruiz,lucia.torres296@correo.es,Madrid,Autónomo,"August 17, 2024",43,-
+C0494,Hugo Navarro García,hugo.navarro494@correo.es,madrid,Pyme,2022-05-31,55,"99.511,16 €"
+C0074,Hugo Ruiz Blasco,hugo.ruiz74@correo.es,Zaragoza,Pyme,"January 28, 2019",,"62.710,17 €"
+C0177,IVAN ORTEGA MORENO,ivan.ortega177@correo.es,barcelona ,Pyme,2024-05-29,61,"71.463,15 €"
+C0105,Raúl Ferrer Navarro,raul.ferrer105correo.es,Castellon,Autónomo,20-10-24,61,"41.448,04 €"
+C0553,Carmen Gil Gómez,carmen.gil553@correo.es,Barcelona,Particular,06/04/2024,41,s/d
+C0017,Carmen López Climent,carmen.lopez17@correo.es,Alicante,Particular,2019-10-26,39,"25.892,57 €"
+C0092,Sergio Ruiz Ferrer,sergio.ruiz92@correo.es,Barcelona,Pyme,"November 01, 2019",21,"76.712,80 €"
+C0089,Sara Climent Ruiz,sara.climent89@correo.es,Barcelona,Particular,20191231,34,"20.941,30 €"
+C0474,Adrián Ferrer Sánchez,adrian.ferrer474@correo.es,Bilbao,Particular,2022-08-27,57,"48.647,14 €"
+C0206,Adrián López Sánchez,adrian.lopez206@correo.es,Alicante,Autónomo,20200128,55,39526.92
+C0103,Iván Moreno Torres,ivan.moreno103@correo.es,Alacant,Autónomo,2024-04-03,150,"44.015,64 €"
+C0239,Mateo Pérez Blasco,mateo.perez239@correo.es,Valencia,Pyme,2031-10-25,50,100595.57
+C0410,Claudia Torres Martínez,claudia.torres410@correo.es,Valencia,Pyme,2019-04-07,32,73817.57
+C0247,Raúl López García,raul.lopez247@correo.es,Madrid,Autónomo,20191229,43,
+C0158,Inés Ortega Gómez,ines.ortega158@correo.es,Madrid,Autónomo,2019-02-27,19,"22.747,98 €"
+C0327,Jordi Sánchez Ortega,jordi.sanchez327@correo.es,ALICANTE,Particular,2022-02-13,31,"35.893,56 €"
+ C0134 ,Joan Gil Gómez,joan.gil134@correo.es,Madrid,Pyme,2023-04-03,26,s/d
+ C0541 ,Iván Climent Ortega,ivan.climent541@correo.es,Alicante,Particular,2019-10-05,39,"14.847,35 €"
+C0467,Joan Ferrer Gil,joan.ferrer467@correo.es,València,Particular,2019-09-22,46,21347.95
+C0360,Mateo Martínez Ruiz,mateo.martinez360@correo.es,Alicante,Pyme,"April 08, 2023",32,"133.359,91 €"
+C0019,Hugo García Soler,hugo.garcia19@correo.es,barcelona ,Particular,"July 13, 2020",,"26.087,49 €"
+C0122,Claudia Gil Martínez,claudia.gil122@correo.es,Alicante,Particular,2024-09-26,38,24581.12
+C0150,Nuria Moreno Gil,nuria.moreno150@correo.es,Barcelona,Autónomo,"May 09, 2024",46,"26.562,29 €"
+C0391,Inés Navarro Gómez,ines.navarro391@correo.es,Castellón,Autónomo,2021-12-16,60,42317.18
+C0275,Carmen Torres Navarro,carmen.torres275@correo.es,Alacant,Autónomo,27/04/2021,42,"23.811,87 €"
+C0300,Iván López Soler,ivan.lopez300@correo.es,Madrid,Pyme,2020-05-29,47,"60.683,67 €"
+C0566,Irene Ferrer Gómez,irene.ferrer566@correo.es,Alicante,Particular,2021-01-23,46,"32.709,02 €"
+C0312,Sergio García Soler,sergio.garcia312@correo.es,Sevilla,Pyme,"November 05, 2020",52,"83.127,67 €"
+C0451,Sergio Gómez Ferrer,sergio.gomez451@correo.es,Valencia,Particular,2021-08-05,42,36871.99
+C0528,Paula Climent Mora,paula.climent528@correo.es,Barcelona,Gran empresa,2019-01-17,42,"316.497,64 €"
+C0269,Mateo Serrano Navarro,mateo.serrano269@correo.es,Castellón,Pyme,2023-11-16,46,"34.831,80 €"
+C0035,Mateo Moreno Soler,mateo.moreno35@correo.es,Valéncia ,Autónomo,2020-06-11,33,"50.380,00 €"
+C0182,Irene Navarro Blasco,irene.navarro182@correo.es,Madrid,Pyme,2020-12-01,52,"69.008,12 €"
+c0185,Sara Serrano Pérez,sara.serrano185@correo.es,Madrid,Particular,2021-12-14,53,"46.801,12 €"
+c0208,Paula Ruiz Blasco,paula.ruiz208@correo.es,Madrid,Particular,2020-05-12,53,"18.306,20 €"
+C0397,Pau Martínez Ruiz,pau.martinez397@correo.es,Valencia,Particular,27/06/2024,41,18840.02
+C0095,Sara García Ferrer,sara.garcia95@correo.es,Castellón,Pyme,2023-02-10,45,"115.434,74 €"
+C0548,Iván Mora Ortega,ivan.mora548@correo.es,Barcelona,Particular,2023-10-16,56,"28.379,33 €"
+ C0478 ,Nuria Climent Gómez,nuria.climent478@correo.es,Barcelona,Pyme,2022-02-11,33,"90.940,14 €"
+c0354,Marta Gil Pérez,marta.gil354@correo.es,Castellón,Pyme,2019-11-25,53,N/A
+C0381,Adrián Torres Gómez,adrian.torres381@correo.es,Barcelona,Gran empresa,2019-06-13,61,"292.164,22 €"
+C0123,Sara López Ferrer,sara.lopez123@correo.es,Alacant,Autónomo,2024-07-25,36,"18.722,59 €"
+C0370,Lucía Torres Ortega,lucia.torres370@correo.es,Madrid,Autónomo,20191209,35,NULL
+C0518,Sergio Navarro Navarro,sergio.navarro518@correo.es,VALENCIA,Particular,"January 16, 2020",49,"19.406,03 €"
+C0365,Álvaro Blasco Moreno,alvaro.blasco365@correo.es,València,Particular,2019-12-10,56,"25.226,84 €"
+C0079,Iván López Ruiz,ivan.lopez79@correo.es,Zaragoza,Particular,2024-07-20,59,"24.271,31 €"
+C0351,Paula Moreno Mora,paula.moreno351@correo.es,Alicante,Gran empresa,20-02-23,31,s/d
+C0062,Sergio Climent Pérez,sergio.climent62@correo.es,Madrid,Particular,2023-05-06,32,s/d
+C0252,Joan Navarro López,joan.navarro252@correo.es,Valencia,Pyme,17/09/2019,43,83746.07
+C-0126,Mateo López Climent,mateo.lopez126@correo.es,Valencia,Particular,04/12/2022,61,"28.639,34 €"
+C0024,Claudia Ortega Gómez,claudia.ortega24@correo.es,Barcelona,Particular,2023-07-09,42,"39.315,95 €"
+C0493,Elena Climent Ortega,elena.climent493@correo.es,Valencia,Autónomo,2024-08-05,28,"34.232,30 €"
+C0135,CARMEN MARTÍNEZ CLIMENT,carmen.martinez135@correo.es,Alicante,Pyme,2023-11-16,39,"122.534,66 €"
+C0348,Sergio Torres Moreno,sergio.torres348@correo.es,Bilbao,Particular,20/12/2019,42,21553.71
+C0570,Nuria Martínez Gil,nuria.martinez570@correo.es,Valencia,Pyme,2023-11-11,57,"74.521,43 €"
+C0516,CLAUDIA MORENO MORENO,claudia.moreno516@correo.es,Zaragoza,Pyme,2021-02-02,37,"67.705,67 €"
+C0432,Marta Soler Climent,marta.soler432@correo.es,Sevilla,Pyme,2020-08-25,53,"124.077,37 €"
+C0591,Marta López García,,Barcelona,Particular,2021-07-09,33,"22.115,07 €"
+C-0068,Sara Torres Climent,sara.torres68@correo.es,Alicante,Particular,19-07-19,47,"22.822,76 €"
+C0025,Inés Navarro Blasco,ines.navarro25@correo.es,Valencia,Pyme,2019-07-07,52,"117.872,39 €"
+ C0512 ,Mateo Gómez García,mateo.gomez512@correo.es,valencia,Pyme,2019-08-29,80,"118.708,51 €"
+C0106,Inés Pérez Blasco,ines.perez106@correo.es,Barcelona,Autónomo,2019-10-08,46,"25.352,03 €"
+c0222,ALVARO  ORTEGA SERRANO,alvaro.ortega222@correo.es,Valencia,Particular,"December 04, 2022",37,"35.605,42 €"
+C0127,Sergio García López,sergio.garcia127@correo.es,Valencia,Pyme,11-08-19,47,"77.004,94 €"
+C0571,Adrián Torres Ortega,adrian.torres571@correo.es,Madrid,Particular,22-06-24,47,"27.716,33 €"
+C0335,Sergio Serrano Sánchez,sergio.serrano335@correo.es,Valencia,Pyme,20220806,29,"42.349,90 €"
+C0447,Álvaro Gil López,alvaro.gil447@correo.es,ALICANTE,Particular,"May 16, 2019",36,"22.379,85 €"
+C0179,Elena Ferrer Martínez,elena.ferrer179@correo.es,Barcelona,Particular,2019-02-15,45,"23.868,74 €"
+C0473,Irene Climent Navarro,irene.climent473@correo.es,Madrid,Pyme,20230430,46,"81.595,79 €"
+c0589,Raúl Soler Navarro,raul.soler589@correo.es,Alicante,Particular,16-01-23,55,"19.988,06 €"
+C0136,Nuria Serrano García,nuria.serrano136@correo.es,Alicante,Gran empresa,2021-04-23,69,
+C0224,Inés López Climent,ines.lopez224@correo.es,Valencia,Particular,2019-11-17,38,"18.150,78 €"
+C0124,MATEO MORA SOLER,mateo.mora124@correo.es,Castellón,Pyme,2022-12-23,56,"54.338,60 €"
+C0592,Inés López Gómez,ines.lopez592@correo.es,Castellón,Particular,2024-03-26,57,"24.132,42 €"
+C0533,Paula Ferrer Soler,paula.ferrer533@correo.es,Zaragoza,Particular,2022-02-20,22,"21.079,99 €"
+c0094,Sara Navarro Ortega,sara.navarro94@correo.es,barcelona ,Particular,2023-02-11,29,20074.70
+C0364,Jordi Pérez Torres,jordi.perez364@correo.es,Castellón,Autónomo,20240611,47,"56.789,62 €"
+C0413,Sara Martínez Mora,sara.martinez413@correo.es,Barcelona,Pyme,2019-04-15,68,"55.897,76 €"
+C0070,Marta Ruiz Climent,marta.ruiz70@correo.es,ALICANTE,Pyme,2023-10-20,46,"101.048,74 €"
+C0037,Iván Navarro Pérez,ivan.navarro37@correo.es,Alicante,Autónomo,06-09-24,38,"39.295,27 €"
+C0297,Mateo Serrano Gómez,mateo.serrano297@correo.es,Barcelona,Pyme,"September 26, 2020",47,"129.789,12 €"
+C0161,Irene Serrano Serrano,irene.serrano161@correo.es,Valencia,Pyme,2019-05-27,51,"87.523,53 €"
+C0363,Raúl García Mora,raul.garcia363@correo.es,Valencia,Gran empresa,2019-01-06,35,"232.512,86 €"
+C0012,Mateo Blasco Climent,mateo.blasco12@correo.es,VALENCIA,Pyme,2023-03-22,50,"91.734,15 €"
+C0145,Jordi Climent Serrano,jordi.climent145@correo.es,Valencia,Gran empresa,"August 12, 2020",33,
+C0406,Adrián Martínez Torres,adrian.martinez406@correo.es,Valencia,Autónomo,20/05/2020,-5,"30.200,06 €"
+C0534,Paula Navarro Serrano,paula.navarro534@correo.es,Valencia,Autónomo,09-06-22,52,"41.772,79 €"
+C0537,Lucía Soler Ferrer,lucia.soler537@correo.es,Valencia,Particular,29/10/2022,39,"43.249,62 €"
+C0128,Hugo Sánchez Mora,hugo.sanchez128@correo.es,madrid,Particular,2024-09-24,63,"23.206,29 €"
+C0453,Hugo Ferrer García,hugo.ferrer453@correo.es,Bilbao,Particular,"January 26, 2022",32,25121.23
+C0441,Hugo Mora Ferrer,hugo.mora441@correo.es,Alicante,Particular,2020-11-22,67,NULL
+C0303,Nuria Mora Ruiz,nuria.mora303@correo.es,Castelló,Autónomo,2020-08-29,999,"23.310,71 €"
+C0010,Paula Martínez Gómez,paula.martinez10@correo.es,madrid,Gran empresa,"March 16, 2019",41,
+C0552,Sara Gil Blasco,sara.gil552@correo.es,Castellón,Autónomo,09-04-24,21,
+C0593,Mateo Ortega Martínez,mateo.ortega593@correo.es,Madrid,Pyme,"June 10, 2021",58,"74.749,38 €"
+C0177,Iván Ortega Moreno,ivan.ortega177@correo.es,barcelona ,Pyme,2024-05-29,61,"71.463,15 €"
+C0232,Paula Navarro López,paula.navarro232@correo.es,MADRID,Pyme,2021-03-20,63,N/A
+C0211,Pau Ferrer Soler,,Madrid,Pyme,2024-06-30,,52791.57
+C0129,Carmen Moreno Serrano,carmen.moreno129@correo.es,Valencia,Particular,2023-01-14,41,"27.859,88 €"
+C0144,Raúl Gómez Blasco,raul.gomez144@correo.es,Valencia,Autónomo,2021-04-21,47,"27.955,73 €"
+C0242,Marta Martínez Sánchez,marta.martinez242@correo.es,Bilbao,Particular,2023-07-08,56,"26.421,38 €"
+C0008,Pau Martínez Ruiz,pau.martinez8@correo.es,alicante,Autónomo,2022-09-25,48,N/A
+C0397,PAU  MARTÍNEZ RUIZ,pau.martinez397@correo.es,Valencia,Particular,27/06/2024,41,18840.02
+c0299,Lucía López Pérez,lucia.lopez299@correo.es,Alicante,Autónomo,2021-04-24,54,36770.16
+C0311,Nuria Blasco Ortega,nuria.blasco311@correo.es,Valencia,Autónomo,2023-03-22,41,"48.101,68 €"
+C0436,Irene López Blasco,irene.lopez436@correo.es,Bilbao,Pyme,06/07/2023,43,"89.696,76 €"
+C0255,Adrián López Ferrer,adrian.lopez255@correo.es,Bilbao,Autónomo,2022-09-30,46,"47.540,36 €"
+C0429,Sergio Gil Soler,sergio.gil429@correo.es,Barcelona,Particular,2022-10-19,53,"26.332,57 €"
+C0549,Joan Ferrer Gómez,joan.ferrer549@correo.es,Castellón,Pyme,2021-10-10,28,"92.994,79 €"
+C0520,Jordi Ortega Soler,jordi.ortega520@correo.es,Valencia,Pyme,20220607,41,76248.89
+C0009,Nuria Martínez Ferrer,nuria.martinez9@correo.es,València,Gran empresa,2019-04-26,41,-
+ C0157 ,Paula Ortega Soler,paula.ortega157@correo.es,Alicante,Pyme,2021-04-11,39,"95.655,88 €"
+C0028,Marta Ferrer Moreno,marta.ferrer28@correo.es,Valencia,Autónomo,2022-06-06,60,"34.504,15 €"
+C0437,Nuria Blasco Ruiz,nuria.blasco437@correo.es,Valencia,Pyme,2023-08-22,46,"59.163,57 €"
+C0267,Irene Torres Mora,irene.torres267@correo.es,Alicante,Particular,2022-10-24,19,N/A
+C0315,Hugo Gómez Pérez,hugo.gomez315@correo.es,Barcelona,Autónomo,20240207,46,"40.698,05 €"
+C0462,Paula Soler Gómez,paula.soler462@correo.es,Valencia,Particular,2021-01-27,49,"37.537,77 €"
+C0065,Carmen Sánchez Gómez,carmen.sanchez65@correo.es,Alicante,Particular,15/08/2020,33,"13.973,77 €"
+C0339,Pau López Gómez,pau.lopez339@correo.es,Valencia,Gran empresa,2023-01-31,36,NULL
+C0256,Irene Navarro López,irene.navarro256@correo.es,Castellon,Pyme,2020-07-02,30,"65.050,16 €"
+ C0468 ,Iván Sánchez Blasco,ivan.sanchez468@correo.es,Barcelona,Particular,"June 12, 2019",19,"22.114,66 €"
+ C0594 ,Sara Moreno Moreno,sara.moreno594@correo.es,Valencia,Particular,2021-06-26,35,"13.065,35 €"
+C0507,Iván Sánchez Gil,ivan.sanchez507@correo.es,MADRID,Autónomo,2021-09-10,0,"47.201,12 €"
+C0154,Nuria Ferrer Gómez,nuria.ferrer154@correo.es,Valencia,Gran empresa,2024-05-02,34,s/d
+C0049,Álvaro López Sánchez,alvaro.lopez49@correo.es,Bilbao,Particular,2019-02-16,75,"21.779,25 €"
+C0209,Sergio Torres Gómez,sergio.torres209@correo.es,Madrid,Particular,"July 07, 2021",52,-
+C0502,Elena Martínez Ferrer,elena.martinez502@correo.es,Madrid,Gran empresa,20220618,52,"405.062,09 €"
+C0288,Sara Martínez Gil,sara.martinez288@correo.es,valencia,Particular,2021-04-22,45,"20.353,83 €"
+C0002,Marta Torres Pérez,marta.torres2@correo.es,Barcelona,Pyme,03-02-21,47,"84.844,84 €"
+C0428,Lucía Blasco Gil,lucia.blasco428@correo.es,Valencia,Autónomo,2023-02-07,30,"27.898,51 €"
+C0342,Nuria Serrano Pérez,,ALICANTE,Particular,2023-12-01,48,16574.14
+C0270,Elena Gil Mora,elena.gil270@correo.es,alicante,Pyme,2023-03-16,44,"97.607,57 €"
+C0458,Joan Blasco Blasco,joan.blasco458@correo.es,Bilbao,Particular,2031-01-25,42,"39.262,47 €"
+C0266,Marta Sánchez Ortega,,Castellón,Autónomo,2022-05-11,36,"49.376,65 €"
+C0574,Elena Moreno Ortega,elena.moreno574@correo.es,Valencia,Particular,20240325,45,"38.214,41 €"
+C0516,Claudia Moreno Moreno,claudia.moreno516@correo.es,Zaragoza,Pyme,2021-02-02,37,"67.705,67 €"
+ C0519 ,Jordi Ortega Sánchez,jordi.ortega519@correo.es,Barcelona,Pyme,10/06/2021,58,"130.869,94 €"
+C0369,Sergio Gómez Blasco,sergio.gomez369@correo.es,alicante,Particular,29/10/2022,27,"22.145,20 €"
+C0096,Irene Gómez Mora,irene.gomez96@correo.es,Alacant,Autónomo,2022-09-01,68,36255.92
+C0166,Paula Mora Soler,paula.mora166@correo.es,Alicante,Autónomo,2022-06-15,33,"38.540,96 €"
+C0353,Elena Climent Soler,elena.climent353@correo.es,Valencia,Particular,2022-06-27,64,N/A
+C0043,Iván Soler Pérez,ivan.soler43@correo.es,Madrid,Gran empresa,2020-09-02,,NULL
+C0362,Hugo Gil López,hugo.gil362@correo.es,Madrid,Gran empresa,20240107,37,-
+C0506,Mateo Gómez Serrano,mateo.gomez506@correo.es,Bilbao,Gran empresa,2022-08-20,50,
+C0520,JORDI  ORTEGA SOLER,jordi.ortega520@correo.es,Valencia,Pyme,20220607,41,76248.89
+c0527,Hugo Gómez Sánchez,hugo.gomez527@correo.es,Alicante,Pyme,11-01-21,28,"164.917,51 €"
+C0117,Sergio Navarro Gómez,sergio.navarro117@correo.es,Zaragoza,Pyme,2021-01-06,31,"82.653,02 €"
+C-0425,Álvaro Serrano Ferrer,alvaro.serrano425@correo.es,Madrid,Particular,2020-02-09,,"15.825,92 €"
+ C0046 ,Sergio Gómez Ferrer,sergio.gomez46@correo.es,Madrid,Pyme,2021-12-04,53,"64.375,42 €"
+C0162,Sara Blasco Ortega,sara.blasco162@correo.es,València,Gran empresa,2021-08-25,79,-
+C0480,Sara Torres García,sara.torres480@correo.es,Alicante,Autónomo,2024-08-26,51,"23.461,04 €"
+C0559,Pau Ruiz Sánchez,pau.ruiz559@correo.es,Zaragoza,Autónomo,"July 28, 2020",30,s/d
+C0118,Sara Serrano Climent,sara.serrano118@correo.es,MADRID,Particular,2021-11-20,53,37946.45
+C0289,Hugo Ruiz Mora,hugo.ruiz289@correo.es,Valencia,Particular,2023-03-07,49,21492.72
+C0078,Carmen Gómez Soler,,Madrid,Autónomo,2024-06-06,36,40872.65
+C0564,Elena Ruiz Navarro,elena.ruiz564@correo.es,Alicante,Particular,2020-09-23,45,"69.747,21 €"
+C0599,Elena Ortega Gómez,elena.ortega599@correo.es,Madrid,Autónomo,31-10-22,39,"53.221,87 €"
+C0316,Hugo López Climent,hugo.lopez316@correo.es,Sevilla,Gran empresa,2022-11-03,35,s/d
+C0231,Elena Pérez Ortega,elena.perez231@correo.es,Barcelona,Pyme,2019-01-07,41,"71.678,75 €"
+C0522,Irene Blasco Sánchez,irene.blasco522@correo.es,Valencia,Particular,2019-09-21,39,"15.501,71 €"
+C0077,Nuria Navarro Mora,nuria.navarro77@correo.es,Castellón,Gran empresa,2024-10-14,42,395864.91
+C0001,Claudia López Martínez,claudia.lopez1@correo.es,Barcelona,Particular,2024-11-04,34,NULL
+C0248,Nuria Martínez López,nuria.martinez248@correo.es,Barcelona,Particular,2019-06-20,28,s/d
+C0477,Paula López Ruiz,paula.lopez477@correo.es,Alicante,Particular,2022-05-13,49,"21.812,69 €"
+C0086,Jordi Climent Ferrer,jordi.climent86@correo.es,Zaragoza,Gran empresa,2019-01-18,29,N/A
+C0470,Sergio García Gómez,sergio.garcia470@correo.es,Valencia,Particular,2019-12-01,45,"22.629,15 €"
+C0226,Pau Torres Ruiz,pau.torres226@correo.es,Alicante,Gran empresa,"June 10, 2024",42,-
+C0332,Irene Moreno Gil,irene.moreno332@correo.es,Alicante,Gran empresa,20240911,49,-
+C0234,Lucía Sánchez López,lucia.sanchez234@correo.es, Valencia,Particular,2020-05-01,62,"32.666,23 €"
+C0476,Álvaro Martínez Ferrer,alvaro.martinez476@correo.es,Barcelona,Pyme,31-08-21,,"61.107,88 €"
+C0563,Raúl Pérez López,raul.perez563@correo.es,Valencia,Autónomo,22-02-20,999,"50.714,66 €"
+ C0422 ,Iván López Climent,ivan.lopez422@correo.es,Valencia,Particular,2024-01-25,61,13481.37
+C0183,Sara Torres Ortega,sara.torres183@correo.es,Alicante,Pyme,2023-03-02,57,"44.841,73 €"
+c0333,Irene Sánchez Pérez,irene.sanchez333@correo.es, Valencia,Particular,"December 29, 2019",49,"35.272,15 €"
+C0439,Raúl Mora Navarro,raul.mora439@correo.es,Castellón,Pyme,2021-11-16,,"63.529,51 €"
+C0050,Elena Blasco López,elena.blasco50@correo.es,Valencia,Particular,2019-06-06,80,"24.894,16 €"
+C0006,Carmen Mora Climent,carmen.mora6@correo.es,Alicante,Autónomo,2020-12-21,40,"69.785,90 €"
+C0530,Jordi Ortega Ferrer,jordi.ortega530@correo.es,ALICANTE,Particular,2024-04-26,44,"20.415,76 €"
+C0235,Elena Climent Ruiz,elena.climent235@correo.es,Valencia,Autónomo,"December 08, 2024",69,"50.243,72 €"
+C0487,Inés García Pérez,ines.garcia487@correo.es,Barcelona,Autónomo,2019-07-12,42,s/d
+C0569,Elena García Martínez,elena.garcia569@correo.es,València,Particular,20240321,58,"19.160,47 €"
+C0498,Adrián Pérez Pérez,adrian.perez498@correo.es,Valencia,Particular,2023-06-06,31,"38.458,79 €"
+C0107,Paula Ortega Ferrer,paula.ortega107@correo.es,Madrid,Autónomo,2020-02-06,44,"27.219,24 €"
+C-0444,Hugo Moreno García,hugo.moreno444@correo.es,BARCELONA,Autónomo,2023-04-27,42,"27.501,45 €"
+C0489,Lucía Ferrer Ortega,lucia.ferrer489@correo.es,Madrid,Pyme,2023-09-23,35,"77.943,02 €"
+C0013,Hugo Gil Climent,hugo.gil13@correo.es,Bilbao,Particular,2020-10-28,43,"44.159,21 €"
+C0191,Adrián López García,adrian.lopez191@correo.es,Barcelona,Pyme,2019-02-03,45,"139.533,28 €"
+C0283,Hugo Serrano Sánchez,,Sevilla,Particular,2023-04-22,47,"20.897,11 €"
+C0030,Paula Gil López,paula.gil30@correo.es,Bilbao,Particular,20210424,46,"35.453,70 €"
+C0170,Sara Torres Gómez,sara.torres170@correo.es,Valencia,Pyme,2020-04-06,61,"74.291,39 €"
+C0181,Sara Ferrer Mora,sara.ferrer181@correo.es,BARCELONA,Pyme,"December 10, 2020",58,s/d
+C0101,Paula Gil Navarro,paula.gil101@correo.es,Madrid,Gran empresa,10-01-21,21,s/d
+C0198,Claudia Martínez Moreno,claudia.martinez198@correo.es,Castellón,Pyme,2021-10-28,48,99214.50
+C0496,Claudia Gil Sánchez,claudia.gil496@correo.es,Madrid,Particular,28/02/2022,19,"27.936,84 €"
+C0322,PAU SERRANO LÓPEZ,pau.serrano322@correo.es,Castellón,Particular,01/01/2024,42,"18.073,84 €"
+C0374,Joan Moreno Martínez,joan.moreno374@correo.es,Valencia,Particular,2019-02-10,66,"30.541,90 €"
+C0461,Paula Navarro Torres,paula.navarro461@correo.es,Castellón,Particular,2020-06-24,67,"21.542,92 €"
+C0414,Paula Gómez Navarro,paula.gomez414@correo.es,valencia,Particular,"January 09, 2022",40,"18.026,11 €"
+C0132,Nuria Ferrer Ruiz,nuria.ferrer132@correo.es,Valéncia ,Pyme,20220909,31,NULL
+C0040,Claudia Ortega Ortega,claudia.ortega40@correo.es,Alicante,Particular,2021-02-09,,NULL
+C0435,Nuria Sánchez García,nuria.sanchez435@correo.es,Valencia,Pyme,2022-08-22,58,"77.300,65 €"
+C0216,Lucía Martínez Ruiz,lucia.martinez216@correo.es,Castellón,Autónomo,2019-11-20,45,"37.663,83 €"
+C0556,Álvaro Climent Navarro,alvaro.climent556@correo.es,alicante,Pyme,"April 19, 2019",35,89453.08
+C0475,Iván Soler López,ivan.soler475@correo.es,Alicante,Autónomo,2024-05-28,59,-
+C0457,Sergio Blasco Gil,sergio.blasco457@correo.es,Castellón,Autónomo,20230123,36,"37.953,47 €"
+C0261,Sara López Pérez,sara.lopez261@correo.es,Alicante,Particular,2023-09-13,45,"33.889,29 €"
+C0036,Sara Navarro Climent,sara.navarro36@correo.es,Zaragoza,Pyme,2022-01-11,52,"68.129,38 €"
+C0310,Joan Mora Ortega,joan.mora310@correo.es,Bilbao,Pyme,2021-08-17,31,"68.250,20 €"
+C0277,Sergio Gómez García,sergio.gomez277@correo.es,Sevilla,Particular,07-07-22,41,"35.411,38 €"
+C0394,Paula Mora Soler,paula.mora394@correo.es,Alicante,Gran empresa,2021-03-06,62,"448.523,17 €"
+C0108,Lucía Navarro Sánchez,lucia.navarro108@correo.es,Alicante,Particular,2023-09-10,50,23691.66
+C0597,Nuria Martínez Sánchez,nuria.martinez597@correo.es,Valencia,Pyme,2024-08-12,54,"60.688,33 €"
+C-0525,Lucía Mora Serrano,lucia.mora525correo.es,madrid,Autónomo,2023-08-13,50,"27.063,14 €"
+C0048,Inés Soler Mora,ines.soler48@correo.es,Madrid,Autónomo,2021-11-06,34,"38.680,84 €"
+C0204,Joan Ortega Pérez,joan.ortega204@correo.es,Alacant,Particular,"August 31, 2021",46,"24.396,01 €"
+C0022,Mateo Pérez Blasco,mateo.perez22@correo.es,Sevilla,Particular,21-10-22,52,"11.224,35 €"
+C0403,Raúl Moreno Gil,raul.moreno403@correo.es,Alicante,Gran empresa,2024-03-24,45,"371.036,61 €"
+C0084,Jordi Pérez Pérez,jordi.perez84@correo.es,Madrid,Particular,20210824,50,"21.178,49 €"
+C0131,Hugo Climent Navarro,hugo.climent131@correo.es,Madrid,Pyme,2022-06-18,20,s/d
+C0416,Inés Gómez Moreno,ines.gomez416@correo.es,Zaragoza,Autónomo,10-02-23,,s/d
+C0287,Hugo Serrano Soler,hugo.serrano287@correo.es,Castellón,Pyme,17-10-19,46,"96.672,58 €"
+C0124,Mateo Mora Soler,mateo.mora124@correo.es,Castellón,Pyme,2022-12-23,56,"54.338,60 €"
+C0034,Álvaro Gómez Blasco,alvaro.gomez34@correo.es,Valencia,Pyme,22/10/2022,58,"97.785,08 €"
+ C0517 ,Iván Martínez Blasco,ivan.martinez517@correo.es,Barcelona,Pyme,2022-09-25,31,71834.06
+C0020,Mateo Sánchez Pérez,mateo.sanchez20@correo.es,València,Autónomo,21/03/2023,28,s/d
+C0586,Pau Torres Serrano,pau.torres586@correo.es,Barcelona,Gran empresa,2024-12-02,47,"413.055,96 €"
+ C0220 ,Marta Mora Pérez,marta.mora220@correo.es,Sevilla,Pyme,2024-01-22,31,"102.781,70 €"
+C0310,JOAN MORA ORTEGA,joan.mora310@correo.es,Bilbao,Pyme,2021-08-17,31,"68.250,20 €"
+C0482,Carmen López Soler,carmen.lopez482@correo.es,Castellón,Particular,2021-05-07,46,"30.781,12 €"
+C0357,Pau Ruiz Gómez,pau.ruiz357@correo.es,Barcelona,Autónomo,2021-10-08,31,"40.078,75 €"
+C0225,Inés Blasco Navarro,ines.blasco225@correo.es,Castellón,Autónomo,2031-02-27,48,"46.152,32 €"
+C0093,Joan Gil Sánchez,joan.gil93@correo.es,Valencia,Pyme,2022-11-24,22,"49.108,12 €"
+C0152,Sara Pérez López,sara.perez152@correo.es,Barcelona,Autónomo,2020-01-27,41,NULL
+C0312,SERGIO GARCÍA SOLER,sergio.garcia312@correo.es,Sevilla,Pyme,"November 05, 2020",52,"83.127,67 €"
+C0318,Mateo Sánchez Martínez,mateo.sanchez318correo.es,Bilbao,Particular,16-02-21,45,"25.130,74 €"
+C0449,Marta Ortega Pérez,marta.ortega449@correo.es,Madrid,Particular,06-07-20,45,"24.468,17 €"
+C0523,Jordi Serrano Navarro,jordi.serrano523@correo.es,Valencia,Particular,2024-05-24,64,NULL
+C0280,Sara Ferrer Serrano,sara.ferrer280@correo.es,Bilbao,Gran empresa,02-04-23,58,"222.316,31 €"
+C0584,Hugo Soler Torres,hugo.soler584@correo.es,Sevilla,Pyme,"October 06, 2024",,"141.713,89 €"
+C0350,Marta Soler López,marta.soler350@correo.es,Barcelona,Particular,2020-10-03,,"29.785,12 €"
+C0375,Jordi Climent Mora,jordi.climent375@correo.es,Sevilla,Pyme,07-02-21,55,73211.11
+C0401,Hugo Torres Martínez,hugo.torres401@correo.es,Zaragoza,Autónomo,2024-08-25,26,40548.28
+C0258,Iván García Soler,ivan.garcia258@correo.es,Zaragoza,Pyme,2020-10-24,70,63943.18
+C0073,Lucía Moreno Moreno,lucia.moreno73@correo.es,Madrid,Pyme,"November 21, 2021",71,s/d
+C0196,Hugo López Martínez,hugo.lopez196@correo.es,Bilbao,Pyme,20201219,26,"62.791,72 €"
+C0484,Claudia Moreno Gil,claudia.moreno484@correo.es,Sevilla,Particular,2021-05-28,,"47.680,01 €"
+C0138,Iván Gil Soler,ivan.gil138@correo.es,Madrid,Autónomo,"July 08, 2022",,"23.198,77 €"
+C0495,Joan Sánchez Martínez,joan.sanchez495@correo.es,Madrid,Pyme,01/07/2024,49,-
+c0551,Joan Blasco Sánchez,joan.blasco551@correo.es,Valencia,Pyme,20190420,43,"34.541,93 €"
+C0463,Claudia Climent López,claudia.climent463@correo.es,Zaragoza,Particular,2024-08-06,,"29.026,64 €"
+C0202,Hugo Navarro Serrano,hugo.navarro202@correo.es,Alicante,Pyme,2022-10-24,49,"90.225,74 €"
+C0313,Iván Ruiz Gil,ivan.ruiz313@correo.es,Castellon,Particular,2019-09-04,33,s/d
+c0291,Sergio Torres Ferrer,sergio.torres291@correo.es,Valencia,Particular,"August 12, 2020",,"24.773,30 €"
+C0190,Pau Gómez Mora,pau.gomez190@correo.es,Valencia,Particular,2022-06-21,51,"20.521,35 €"
+C0113,Jordi Sánchez Sánchez,jordi.sanchez113@correo.es,Valencia,Gran empresa,2023-08-04,45,s/d
+C0184,Paula Ferrer Gil,paula.ferrer184@correo.es,Valencia,Gran empresa,2019-04-15,35,603250.40
+C0153,Sergio Martínez Moreno,sergio.martinez153@correo.es,Valencia,Pyme,30-04-23,43,"107.508,55 €"
+C0326,Irene Ferrer Ferrer,irene.ferrer326@correo.es,Castellón,Particular,2024-11-21,41,"31.561,21 €"
+C0045,Adrián Soler Moreno,adrian.soler45@correo.es,Valencia,Gran empresa,"November 13, 2022",51,"514.815,42 €"
+C0445,Joan Sánchez López,joan.sanchez445@correo.es,Zaragoza,Particular,2022-12-20,26,"20.526,68 €"
+C0007,Álvaro Ortega Ruiz,alvaro.ortega7@correo.es,Valencia,Pyme,2022-03-01,40,"63.279,26 €"
+C0251,Carmen Martínez Navarro,carmen.martinez251correo.es, Valencia,Particular,2019-03-24,999,"25.087,47 €"
+C0076,Marta Ruiz Blasco,marta.ruiz76@correo.es,Zaragoza,Particular,2020-07-11,49,"36.821,87 €"
+C0513,Lucía Martínez Martínez,lucia.martinez513@correo.es,Madrid,Autónomo,2024-11-05,50,NULL
+C0392,Raúl Torres Moreno,raul.torres392@correo.es,Alicante,Particular,20200224,19,
+C0433,Nuria Ferrer Gómez,nuria.ferrer433@correo.es,Barcelona,Particular,25-05-22,33,"35.128,20 €"
+C0069,Marta Climent Martínez,marta.climent69@correo.es,Castelló,Pyme,2023-01-21,29,"100.380,11 €"
+C0168,Marta Gil Mora,marta.gil168@correo.es,Valencia,Particular,2019-07-03,53,"33.276,40 €"
+C0555,Elena Climent Navarro,elena.climent555@correo.es,Valéncia ,Particular,2024-07-28,,35239.30
+c0367,Marta Moreno Gil,marta.moreno367@correo.es,Barcelona,Pyme,2023-08-05,37,"70.335,35 €"
+C0346,Irene Ruiz Moreno,irene.ruiz346@correo.es,Valéncia ,Pyme,2023-07-26,41,"92.087,89 €"
+C0585,Jordi Pérez Moreno,jordi.perez585@correo.es,Bilbao,Gran empresa,2024-07-05,35,N/A
+C0536,Inés Climent Moreno,ines.climent536@correo.es,valencia,Particular,2023-01-14,47,19495.28
+ C0399 ,Raúl Sánchez Climent,raul.sanchez399correo.es,Alicante,Particular,2021-09-23,46,"19.777,01 €"
+C0186,Irene Torres Soler,irene.torres186@correo.es,Barna,Pyme,2021-03-27,57,"120.481,11 €"
+C-0349,Lucía Gómez López,lucia.gomez349@correo.es,Alicante,Autónomo,2023-07-21,19,"36.663,39 €"
+C0201,Elena Gómez Pérez,elena.gomez201@correo.es,MADRID,Particular,20221014,46,"26.253,45 €"
+C0212,Jordi Mora García,jordi.mora212@correo.es,Valencia,Particular,2020-09-22,48,NULL
+C0580,Marta Serrano Martínez,marta.serrano580@correo.es,Valencia,Pyme,24-06-19,40,"134.525,77 €"
+C0503,Lucía Ortega García,lucia.ortega503@correo.es,Zaragoza,Pyme,2020-06-29,31,s/d
+C0538,Irene Gómez Gómez,irene.gomez538@correo.es,Madrid,Particular,2021-06-09,44,"29.109,81 €"
+C0197,Jordi Ruiz Pérez,jordi.ruiz197correo.es,Sevilla,Particular,23/03/2020,26,"15.688,41 €"
+C0176,Iván Mora Sánchez,ivan.mora176@correo.es,Valencia,Pyme,2022-08-22,23,"48.924,81 €"

@@ -1,0 +1,5 @@
+.Rhistory
+.Rproj.user/
+*_files/
+datos/checkpoints/
+.quarto/

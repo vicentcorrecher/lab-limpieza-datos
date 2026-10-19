@@ -2,20 +2,25 @@
 title: "Lab 4 · Impacto: ¿cambian tus KPIs al limpiar?"
 subtitle: "Desaprendiendo sobre... Limpieza de datos · Estudiante_18 (sector Servicios)"
 lang: es
-format:
-  html:
+output:
+  html_document:
     toc: true
-    embed-resources: true
-execute:
-  warning: false
-  message: false
+    toc_float: true
+    self_contained: true
 ---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
 
 > **Objetivo.** Limpiar no es un fin: sirve para que **las cifras que das sean defendibles**. Calculamos los mismos KPIs con cuatro niveles de limpieza y comprobamos cuánto se mueve cada uno. Es el «tres personas, tres cifras» de la parte de gobierno, pero con datos de verdad.
 
 ```{r}
 # ── Preparación (ejecutar una vez) ───────────────────────────────────────────
-# En Colab/Linux usamos binarios precompilados: los paquetes se instalan en segundos.
+# Funciona en cualquier máquina con R: instala lo que falte y descarga los datos si no están.
+if (is.null(getOption("repos")) || isTRUE(unname(getOption("repos")["CRAN"]) == "@CRAN@"))
+  options(repos = c(CRAN = "https://cloud.r-project.org"))
+# En Linux (Colab, Codespaces) usamos binarios precompilados: se instalan en segundos.
 if (Sys.info()[["sysname"]] == "Linux")
   options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
 

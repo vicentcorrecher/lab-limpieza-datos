@@ -4,13 +4,27 @@ Material del taller **«Desaprendiendo sobre... Limpieza de datos»** · Máster
 
 Seis laboratorios **ya resueltos**: no hay que escribir código. Se ejecuta, se lee lo que sale, se responde a las preguntas de **Para pensar** y se prueba el bloque **Toca esto**. Todos los datos son sintéticos.
 
-## Cómo abrirlos (sin instalar nada)
+## Tres formas de usarlos
 
-1. Pulsa el botón del laboratorio. Se abre en **Google Colab** (hace falta una cuenta de Google).
-2. Si Colab no abre el cuaderno con R, ve a *Entorno de ejecución → Cambiar tipo de entorno de ejecución → R*.
-3. *Entorno de ejecución → Ejecutar todo*. La primera celda instala paquetes y descarga los datos (1-2 minutos la primera vez).
+### A · En tu ordenador, con RStudio (recomendada)
+Necesitas [R](https://cran.r-project.org/) (4.3 o superior) y [RStudio](https://posit.co/download/rstudio-desktop/). Ambos son gratuitos.
 
-| Lab | Qué se hace | Datos | Abrir |
+1. Pulsa el botón verde **Code → Download ZIP** y descomprímelo en una carpeta **con ruta sin tildes ni eñes**, por ejemplo `C:\labs`.
+2. Haz doble clic en **`laboratorios.Rproj`** (abre RStudio en la carpeta correcta).
+3. Abre `lab0_conexion.Rmd`.
+4. Ejecuta **celda a celda** con el botón ▶ (o `Ctrl+Enter`), o pulsa **Knit** para generar el informe completo.
+
+La primera celda instala los paquetes que falten y descarga los datos si no están: la primera vez tarda 2-5 minutos. Si prefieres instalarlos antes, abre `instalar_paquetes.R` y pulsa *Source*.
+
+> Si el botón **Knit** falla con `file name conversion problem`, la ruta de la carpeta tiene tildes o eñes (p. ej. `C:\Users\Muñoz`). Mueve la carpeta a `C:\labs` o ejecuta celda a celda, que funciona igual.
+
+### B · Solo leer, sin instalar nada
+Cada laboratorio tiene su `.html` con todas las salidas ya calculadas. Se abren en cualquier navegador.
+
+### C · En Google Colab
+Es opcional: a veces tarda en conectar el entorno de R.
+
+| Lab | Qué se hace | Datos | Colab |
 |---|---|---|---|
 | 0 · Conexión | Qué es cada tabla, relaciones y una base DuckDB conectada | Estudiante_18 | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/lab0_conexion.ipynb) |
 | 1 · Auditoría | Cuadro de calidad con semáforo | Estudiante_18 | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/lab1_auditoria.ipynb) |
@@ -19,12 +33,13 @@ Seis laboratorios **ya resueltos**: no hay que escribir código. Se ejecuta, se 
 | 4 · Impacto en KPIs | ¿Cambian los KPIs al limpiar? | Estudiante_18 | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/lab4_impacto_kpis.ipynb) |
 | 5 · Dato sucio | Cuando el dato viene mal de verdad | Distribuidora | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/lab5_dato_sucio.ipynb) |
 
-Cada laboratorio tiene también una versión `.html` con las salidas ya calculadas (para leerla sin ejecutar nada) y el `.qmd` fuente.
+En Colab: *Entorno de ejecución → Cambiar tipo de entorno de ejecución → R*, y después *Ejecutar todo*.
 
 ## Contenido
 
 ```
-lab0..lab5   .ipynb (Colab, kernel R) · .html (con salidas) · .qmd (fuente)
+lab0..lab5     .Rmd (RStudio) · .html (con salidas) · .ipynb (Colab, kernel R)
+laboratorios.Rproj · instalar_paquetes.R
 datos/
   estudiante_18/    5 CSV de una empresa de servicios (2022-2025)
   distribuidora/    dataset sucio a propósito, con su «verdad» (gold standard)

@@ -3,3 +3,4 @@
 *_files/
 datos/checkpoints/
 .quarto/
+*.qmd

@@ -16,7 +16,7 @@ Necesitas [R](https://cran.r-project.org/) (4.3 o superior) y [RStudio](https://
 
 La primera celda instala los paquetes que falten y descarga los datos si no están: la primera vez tarda 2-5 minutos. Si prefieres instalarlos antes, abre `instalar_paquetes.R` y pulsa *Source*.
 
-> Si el botón **Knit** falla con `file name conversion problem`, la ruta de la carpeta tiene tildes o eñes (p. ej. `C:\Users\Muñoz`). Mueve la carpeta a `C:\labs` o ejecuta celda a celda, que funciona igual.
+> **Nota para Windows con tildes o eñes en el usuario** (p. ej. `C:\Users\Muñoz`). R puede fallar al hacer *Knit* con `file name conversion problem`. El proyecto incluye un `.Rprofile` que lo evita, pero si aun así te ocurre: ejecuta **celda a celda** (funciona igual) o mueve la carpeta a `C:\labs`.
 
 ### B · Solo leer, sin instalar nada
 Cada laboratorio tiene su `.html` con todas las salidas ya calculadas. Se abren en cualquier navegador.

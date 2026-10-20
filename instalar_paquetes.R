@@ -19,12 +19,12 @@ if (length(faltan)) {
 ok <- vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)
 print(ok)
 if (all(ok)) {
-  message("Todo listo. Abre lab0_conexion.Rmd")
+  message("Todo listo. Abre rmarkdown/lab0_conexion.Rmd")
   message("Versiones: R ", getRversion(), " · ", paste(paquetes, vapply(paquetes, function(p) as.character(packageVersion(p)), ""), collapse = " · "))
 } else message("Faltan paquetes: ", paste(names(ok)[!ok], collapse = ", "))
 
 # El botón "Knit" necesita pandoc. RStudio lo trae incluido; con R a secas no.
-# Si no lo tienes, ejecuta celda a celda (funciona igual) o abre los .html ya generados.
+# Si no lo tienes, ejecuta los guiones de R/ (funciona igual) o abre los .html de html/.
 tiene_pandoc <- tryCatch(rmarkdown::pandoc_available(), error = function(e) FALSE)
 if (!tiene_pandoc) message("Aviso: no se encuentra pandoc, así que 'Knit' no funcionará. Instala RStudio o ejecuta celda a celda.")
 

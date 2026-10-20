@@ -2,19 +2,21 @@
 title: "Lab 3 · Faltantes: ¿imputar o no imputar?"
 subtitle: "Desaprendiendo sobre... Limpieza de datos · Estudiante_18 (sector Servicios)"
 lang: es
+knit: (function(input, ...) rmarkdown::render(input, output_dir = "../html", ...))
 output:
   html_document:
     toc: true
     toc_float: true
     self_contained: true
     mathjax: null
-    css: assets/marca.css
+    css: ../assets/marca.css
     includes:
-      after_body: assets/marca_pie.html
+      after_body: ../assets/marca_pie.html
 ---
 
-```{r include=FALSE}
+```{r setup, include=FALSE, purl=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+knitr::opts_knit$set(root.dir = normalizePath(".."))   # el código lee datos/ desde la carpeta del proyecto
 ```
 
 > **Objetivo.** En este dataset solo falta una cosa: **152 puntuaciones de satisfacción**. Es poco, pero nos sirve para entender lo importante: **por qué** faltan decide **qué hacer**. Y como en la vida real nunca sabemos la verdad, vamos a **borrar datos a propósito** para comprobar qué método acierta.

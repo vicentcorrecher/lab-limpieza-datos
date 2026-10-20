@@ -2,19 +2,21 @@
 title: "Lab 5 · Cuando el dato viene de verdad sucio"
 subtitle: "Desaprendiendo sobre... Limpieza de datos · Distribuidora agroalimentaria (datos sintéticos con errores plantados)"
 lang: es
+knit: (function(input, ...) rmarkdown::render(input, output_dir = "../html", ...))
 output:
   html_document:
     toc: true
     toc_float: true
     self_contained: true
     mathjax: null
-    css: assets/marca.css
+    css: ../assets/marca.css
     includes:
-      after_body: assets/marca_pie.html
+      after_body: ../assets/marca_pie.html
 ---
 
-```{r include=FALSE}
+```{r setup, include=FALSE, purl=FALSE}
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+knitr::opts_knit$set(root.dir = normalizePath(".."))   # el código lee datos/ desde la carpeta del proyecto
 ```
 
 > **Objetivo.** Estudiante_18 viene casi limpio. **Esto no es lo normal.** Aquí tenéis un dataset construido con los errores típicos de los sistemas reales (formatos mezclados, centinelas, claves sucias, faltantes con motivo, joins que fallan en silencio). Como **conocemos la verdad** (un *gold standard* que en la vida real no tendríais), podemos medir si cada decisión acierta. Todo está resuelto: leed la salida, y **contrastad con lo que visteis en los Labs 1-4**.

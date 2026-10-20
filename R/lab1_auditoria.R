@@ -1,25 +1,9 @@
----
-title: "Lab 1 · Auditoría: ¿qué tan fiable es lo que tengo?"
-subtitle: "Desaprendiendo sobre... Limpieza de datos · Estudiante_18 (sector Servicios)"
-lang: es
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    self_contained: true
-    mathjax: null
-    css: assets/marca.css
-    includes:
-      after_body: assets/marca_pie.html
----
+# Lab 1 · Auditoría: ¿qué tan fiable es lo que tengo?
+# Guion para ir paso a paso: abre laboratorios.Rproj y ejecuta línea a línea con Ctrl+Enter (Cmd+Enter en Mac).
+# El texto del laboratorio está en los comentarios que empiezan por #'. Lo mismo, con salidas, en html/.
 
-```{r include=FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE)
-```
-
-> **Objetivo.** Antes de limpiar nada, **medir**. Pasamos los cinco ficheros por las dimensiones de calidad de la teoría (completitud, unicidad, validez, consistencia) y obtenemos un **cuadro de calidad** con semáforo. Tu trabajo: leerlo y decidir qué importa.
-
-```{r}
+#' > **Objetivo.** Antes de limpiar nada, **medir**. Pasamos los cinco ficheros por las dimensiones de calidad de la teoría (completitud, unicidad, validez, consistencia) y obtenemos un **cuadro de calidad** con semáforo. Tu trabajo: leerlo y decidir qué importa.
+#'
 # ── Preparación (ejecutar una vez) ───────────────────────────────────────────
 # Funciona en cualquier máquina con R: instala lo que falte y descarga los datos si no están.
 if (getRversion() < "4.3.0")
@@ -60,17 +44,13 @@ for (f in c(
   "estudiante_18/campanas.csv"
 )) obtener(f)
 source("datos/funciones_labs.R")
-```
 
-```{r}
 d <- cargar_e18()
 o <- d$operaciones
 n_tab <- map_int(d, nrow)
-```
 
-## 1. Completitud: ¿falta algo?
-
-```{r}
+#' ## 1. Completitud: ¿falta algo?
+#'
 vacias <- function(x) sum(is.na(x) | (is.character(x) & str_squish(x) == ""), na.rm = TRUE)
 
 completitud <- imap_dfr(d, \(df, tabla) tibble(
@@ -78,17 +58,13 @@ completitud <- imap_dfr(d, \(df, tabla) tibble(
   celdas_vacias = sum(map_int(df, vacias)),
   pct_vacias = round(100 * celdas_vacias / (filas * columnas), 3)))
 completitud
-```
 
-```{r}
 # ¿En qué columnas están esas celdas vacías?
 imap_dfr(d, \(df, tabla) tibble(tabla, columna = names(df), vacias = map_int(df, vacias))) |>
   filter(vacias > 0)
-```
 
-## 2. Unicidad: ¿cada cosa aparece una sola vez?
-
-```{r}
+#' ## 2. Unicidad: ¿cada cosa aparece una sola vez?
+#'
 claves <- c(operaciones = "operacion_id", clientes = "cliente_id", productos = "producto_id",
             sedes = "sede_id", campanas = "campana_id")
 
@@ -98,13 +74,11 @@ unicidad <- imap_dfr(d, \(df, tabla) tibble(
   filas_repetidas = filas - claves_distintas,
   filas_identicas = sum(duplicated(df))))
 unicidad
-```
 
-## 3. Validez: ¿cumple las reglas del negocio?
-
-Escribimos las reglas **por escrito** (no «de memoria») y contamos cuántas filas las incumplen.
-
-```{r}
+#' ## 3. Validez: ¿cumple las reglas del negocio?
+#'
+#' Escribimos las reglas **por escrito** (no «de memoria») y contamos cuántas filas las incumplen.
+#'
 alta_ini <- as.Date("2022-01-01"); alta_fin <- as.Date("2025-12-31")
 c_ <- d$clientes; p_ <- d$productos; s_ <- d$sedes; k_ <- d$campanas
 
@@ -125,24 +99,20 @@ validez <- bind_rows(
   regla("campanas",    "fecha_fin >= fecha_inicio",               sum(k_$fecha_fin < k_$fecha_inicio)),
   regla("campanas",    "inversion > 0",                           sum(k_$inversion <= 0)))
 validez
-```
 
-## 4. Consistencia: ¿cuadra entre tablas y dentro de cada columna?
-
-**4.1 Integridad referencial** (¿hay operaciones que apuntan a un cliente, producto o sede que no existe?)
-
-```{r}
+#' ## 4. Consistencia: ¿cuadra entre tablas y dentro de cada columna?
+#'
+#' **4.1 Integridad referencial** (¿hay operaciones que apuntan a un cliente, producto o sede que no existe?)
+#'
 huerfanas <- tribble(
   ~relacion, ~operaciones_huerfanas,
   "operaciones.cliente_id  -> clientes",  nrow(anti_join(o, d$clientes,  by = "cliente_id")),
   "operaciones.producto_id -> productos", nrow(anti_join(o, d$productos, by = "producto_id")),
   "operaciones.sede_id     -> sedes",     nrow(anti_join(o, d$sedes,     by = "sede_id")))
 huerfanas
-```
 
-**4.2 Categorías escritas de forma distinta** (misma cosa, distinto texto: «web» y «Web »)
-
-```{r}
+#' **4.2 Categorías escritas de forma distinta** (misma cosa, distinto texto: «web» y «Web »)
+#'
 # filas que usan una grafía minoritaria de un valor que, normalizado, es el mismo
 filas_en_variantes <- function(x) {
   tibble(x = x[!is.na(x)]) |>
@@ -158,15 +128,11 @@ texto <- imap_dfr(d, \(df, tabla) df |>
   mutate(tabla = tabla)) |>
   filter(filas_afectadas > 0)
 texto
-```
 
-```{r}
 d$clientes |> count(canal_alta, sort = TRUE)   # aquí se ve el culpable
-```
 
-**4.3 Coherencia en el tiempo** (una operación no debería ocurrir antes de que exista el cliente, el producto o la sede)
-
-```{r}
+#' **4.3 Coherencia en el tiempo** (una operación no debería ocurrir antes de que exista el cliente, el producto o la sede)
+#'
 oj <- o |>
   left_join(select(d$clientes,  cliente_id, fecha_alta),        by = "cliente_id") |>
   left_join(select(d$productos, producto_id, fecha_lanzamiento), by = "producto_id") |>
@@ -177,13 +143,11 @@ temporal <- bind_rows(
   regla("operaciones", "operación anterior al lanzamiento del servicio", sum(oj$fecha < oj$fecha_lanzamiento)),
   regla("operaciones", "operación anterior a la apertura de la sede",    sum(oj$fecha < oj$fecha_apertura)))
 temporal
-```
 
-## 5. El cuadro de calidad
-
-Juntamos todo en una sola tabla. El **semáforo** lo decides tú con dos umbrales.
-
-```{r}
+#' ## 5. El cuadro de calidad
+#'
+#' Juntamos todo en una sola tabla. El **semáforo** lo decides tú con dos umbrales.
+#'
 # >>> TOCA AQUÍ: cambia los umbrales y vuelve a ejecutar la celda <<<
 UMBRAL_ROJO <- 1       # % de filas afectadas a partir del cual es rojo
 # (verde = 0 incumplimientos; ámbar = hay incumplimientos pero por debajo del umbral rojo)
@@ -199,23 +163,20 @@ cuadro <- bind_rows(
          semaforo = case_when(incumplen == 0 ~ "verde", pct < UMBRAL_ROJO ~ "ámbar", TRUE ~ "rojo"))
 
 cuadro |> filter(semaforo != "verde") |> arrange(desc(pct)) |> select(dimension, tabla, comprobacion, incumplen, pct, semaforo)
-```
 
-```{r}
 cuadro |> count(dimension, semaforo) |>
   ggplot(aes(dimension, n, fill = semaforo)) +
   geom_col() +
   scale_fill_manual(values = c(verde = "#11D0CA", `ámbar` = "#F2B84B", rojo = "#F26B5B")) +
   labs(title = "Comprobaciones por dimensión y resultado", x = NULL, y = "nº de comprobaciones", fill = NULL) +
   theme_marca(base_size = 13)
-```
 
-> ### Para pensar
-> 1. ¿Qué dimensión falla más? ¿Es **la que más importa** para calcular ingresos, margen o satisfacción?
-> 2. Hay problemas en **rojo** que no son errores de tecleo sino de **proceso** (fechas que no cuadran entre tablas). ¿Quién en la empresa podría explicarlos?
-> 3. Las filas duplicadas son solo 8 en 19.000. ¿Merece la pena arreglarlas? ¿Y si cada una fuera un pedido de 50.000 €?
-> 4. Todas las claves y todos los `JOIN` están perfectos. ¿Significa eso que los **datos** están bien?
-
-### Toca esto
-
-Sube `UMBRAL_ROJO` a 5 y ejecuta de nuevo. ¿Qué problemas pasan de rojo a ámbar? ¿Estás de acuerdo con el semáforo resultante? **El umbral es una decisión de negocio, no técnica.**
+#' > ### Para pensar
+#' > 1. ¿Qué dimensión falla más? ¿Es **la que más importa** para calcular ingresos, margen o satisfacción?
+#' > 2. Hay problemas en **rojo** que no son errores de tecleo sino de **proceso** (fechas que no cuadran entre tablas). ¿Quién en la empresa podría explicarlos?
+#' > 3. Las filas duplicadas son solo 8 en 19.000. ¿Merece la pena arreglarlas? ¿Y si cada una fuera un pedido de 50.000 €?
+#' > 4. Todas las claves y todos los `JOIN` están perfectos. ¿Significa eso que los **datos** están bien?
+#'
+#' ### Toca esto
+#'
+#' Sube `UMBRAL_ROJO` a 5 y ejecuta de nuevo. ¿Qué problemas pasan de rojo a ámbar? ¿Estás de acuerdo con el semáforo resultante? **El umbral es una decisión de negocio, no técnica.**

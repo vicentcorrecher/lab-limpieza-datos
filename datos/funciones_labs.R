@@ -68,3 +68,16 @@ kpis <- function(ops) {
          tasa_incidencia = 100 * mean(ops$incidencia),
          pct_margen_negativo = 100 * mean(ops$margen < 0))
 }
+
+# ---- 4. Marca: tema de los gráficos (colores de la presentación) ----------------------
+theme_marca <- function(base_size = 13) {
+  ggplot2::theme_minimal(base_size = base_size) +
+    ggplot2::theme(
+      text = ggplot2::element_text(colour = "#1D324D"),
+      axis.text = ggplot2::element_text(colour = "#5B6F86"),
+      plot.title = ggplot2::element_text(face = "bold", colour = "#1D324D"),
+      panel.grid.minor = ggplot2::element_blank(),
+      panel.grid.major = ggplot2::element_line(colour = "#E3EBF1"),
+      legend.position = "top"
+    )
+}

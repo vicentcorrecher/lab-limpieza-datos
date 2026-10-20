@@ -1,0 +1,18 @@
+<div class="pie-marca">
+  <strong>Vicent Correcher</strong> · Desaprendiendo sobre... Limpieza de datos · Máster en Análisis de Datos para la Economía y la Empresa (Universitat de València). Datos sintéticos: no representan a ninguna empresa ni persona real.
+</div>
+<script>
+// Envuelve cada «Toca esto» (título + lo que le sigue) en una tarjeta ámbar.
+document.querySelectorAll("h3").forEach(function (h) {
+  if (!/^toca esto/i.test(h.textContent.trim())) return;
+  var caja = document.createElement("div");
+  caja.className = "toca-esto";
+  h.parentNode.insertBefore(caja, h);
+  var n = h;
+  while (n && !(n !== h && /^(H1|H2|H3|HR)$/.test(n.tagName))) {
+    var sig = n.nextElementSibling;
+    caja.appendChild(n);
+    n = sig;
+  }
+});
+</script>

@@ -7,6 +7,10 @@ output:
     toc: true
     toc_float: true
     self_contained: true
+    mathjax: null
+    css: assets/marca.css
+    includes:
+      after_body: assets/marca_pie.html
 ---
 
 ```{r include=FALSE}
@@ -18,11 +22,18 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ```{r}
 # ── Preparación (ejecutar una vez) ───────────────────────────────────────────
 # Funciona en cualquier máquina con R: instala lo que falte y descarga los datos si no están.
+if (getRversion() < "4.3.0")
+  stop("Estos laboratorios necesitan R 4.3 o superior (tienes ", getRversion(), "). Actualiza desde https://cran.r-project.org/")
 if (is.null(getOption("repos")) || isTRUE(unname(getOption("repos")["CRAN"]) == "@CRAN@"))
   options(repos = c(CRAN = "https://cloud.r-project.org"))
 # En Linux (Colab, Codespaces) usamos binarios precompilados: se instalan en segundos.
-if (Sys.info()[["sysname"]] == "Linux")
-  options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
+# Solo para las versiones de Ubuntu que los publican; en cualquier otra se instala desde CRAN.
+if (Sys.info()[["sysname"]] == "Linux") {
+  cod <- tryCatch(sub("^VERSION_CODENAME=", "", grep("^VERSION_CODENAME=", readLines("/etc/os-release"), value = TRUE)[1]),
+                  error = function(e) NA_character_)
+  if (cod %in% c("jammy", "noble"))
+    options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/", cod, "/latest")))
+}
 
 paquetes <- c("tidyverse")
 faltan <- paquetes[!vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)]
@@ -194,9 +205,9 @@ cuadro |> filter(semaforo != "verde") |> arrange(desc(pct)) |> select(dimension,
 cuadro |> count(dimension, semaforo) |>
   ggplot(aes(dimension, n, fill = semaforo)) +
   geom_col() +
-  scale_fill_manual(values = c(verde = "#2BB5A6", `ámbar` = "#F2B84B", rojo = "#E4572E")) +
+  scale_fill_manual(values = c(verde = "#11D0CA", `ámbar` = "#F2B84B", rojo = "#F26B5B")) +
   labs(title = "Comprobaciones por dimensión y resultado", x = NULL, y = "nº de comprobaciones", fill = NULL) +
-  theme_minimal(base_size = 13)
+  theme_marca(base_size = 13)
 ```
 
 > ### Para pensar

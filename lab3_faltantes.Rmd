@@ -7,6 +7,10 @@ output:
     toc: true
     toc_float: true
     self_contained: true
+    mathjax: null
+    css: assets/marca.css
+    includes:
+      after_body: assets/marca_pie.html
 ---
 
 ```{r include=FALSE}
@@ -18,11 +22,18 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ```{r}
 # ── Preparación (ejecutar una vez) ───────────────────────────────────────────
 # Funciona en cualquier máquina con R: instala lo que falte y descarga los datos si no están.
+if (getRversion() < "4.3.0")
+  stop("Estos laboratorios necesitan R 4.3 o superior (tienes ", getRversion(), "). Actualiza desde https://cran.r-project.org/")
 if (is.null(getOption("repos")) || isTRUE(unname(getOption("repos")["CRAN"]) == "@CRAN@"))
   options(repos = c(CRAN = "https://cloud.r-project.org"))
 # En Linux (Colab, Codespaces) usamos binarios precompilados: se instalan en segundos.
-if (Sys.info()[["sysname"]] == "Linux")
-  options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
+# Solo para las versiones de Ubuntu que los publican; en cualquier otra se instala desde CRAN.
+if (Sys.info()[["sysname"]] == "Linux") {
+  cod <- tryCatch(sub("^VERSION_CODENAME=", "", grep("^VERSION_CODENAME=", readLines("/etc/os-release"), value = TRUE)[1]),
+                  error = function(e) NA_character_)
+  if (cod %in% c("jammy", "noble"))
+    options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/", cod, "/latest")))
+}
 
 paquetes <- c("tidyverse", "mice")
 faltan <- paquetes[!vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)]
@@ -158,11 +169,11 @@ resultados |> mutate(across(where(is.numeric), \(x) round(x, 3)))
 ggplot(resultados, aes(metodo, sesgo_media, fill = mecanismo)) +
   geom_col(position = "dodge") +
   geom_hline(yintercept = 0) +
-  scale_fill_manual(values = c(MCAR = "#2BB5A6", MNAR = "#F2B84B")) +
+  scale_fill_manual(values = c(MCAR = "#11D0CA", MNAR = "#F2B84B")) +
   labs(title = paste0("Error en la satisfacción media si falta el ", PCT_BORRADO * 100, " % de los datos"),
        subtitle = "0 = acierta la verdad. MCAR = al azar · MNAR = faltan las puntuaciones bajas",
        x = NULL, y = "media estimada − media real", fill = NULL) +
-  theme_minimal(base_size = 13)
+  theme_marca(base_size = 13)
 ```
 
 > ### Para pensar

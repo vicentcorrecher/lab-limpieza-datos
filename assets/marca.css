@@ -1,0 +1,134 @@
+/* Marca Vicent Correcher · mismos colores y tipografías que la presentación del taller.
+   Montserrat (títulos) y DM Sans (texto) van incrustadas: el HTML se ve igual sin conexión. */
+
+@font-face { font-family: "Montserrat"; font-weight: 100 900; font-style: normal; font-display: swap;
+             src: url("fonts/Montserrat-latin.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans";    font-weight: 100 1000; font-style: normal; font-display: swap;
+             src: url("fonts/DMSans-latin.woff2") format("woff2"); }
+
+:root {
+  --marino:      #1D324D;   /* fondo de la presentación */
+  --marino-prof: #163044;   /* tarjetas y bloques de código */
+  --marino-osc:  #0F1E30;
+  --acero:       #38668C;   /* bordes y textos secundarios */
+  --turquesa:    #11D0CA;   /* acento principal */
+  --turquesa-cl: #6CD7D9;
+  --ambar:       #F2B84B;
+  --menta:       #ACDAC7;
+  --coral:       #F26B5B;
+  --texto:       #1D324D;
+  --suave:       #5B6F86;
+  --fondo:       #FFFFFF;
+  --panel:       #F3F7FA;
+}
+
+html, body { background: var(--fondo); }
+body {
+  font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px; line-height: 1.65; color: var(--texto);
+}
+.main-container { max-width: 1100px; }
+
+/* ── Cabecera ─────────────────────────────────────────────── */
+#header {
+  background: var(--marino); color: #fff;
+  margin: 24px 0 36px; padding: 40px 44px 36px; border-radius: 14px;
+}
+#header::before {
+  content: "TALLER · MÁSTER EN ANÁLISIS DE DATOS";
+  display: block; margin-bottom: 14px;
+  font: 700 12px/1 "Montserrat", sans-serif; letter-spacing: .14em; color: var(--turquesa-cl);
+}
+h1.title {
+  font: 800 34px/1.2 "Montserrat", sans-serif; color: #fff; margin: 0 0 12px;
+}
+#header .subtitle, #header h3.subtitle, #header h4 {
+  font: 400 17px/1.5 "DM Sans", sans-serif; color: var(--turquesa-cl); margin: 0;
+}
+#header h4.author, #header h4.date { color: var(--menta); }
+
+/* ── Títulos ──────────────────────────────────────────────── */
+h1, h2, h3, h4 { font-family: "Montserrat", sans-serif; color: var(--marino); font-weight: 700; }
+h2 { font-size: 26px; margin: 38px 0 16px; }
+h3 { font-size: 20px;  margin: 29px 0 13px; }
+strong, b { font-weight: 700; }
+a { color: var(--acero); text-decoration-color: var(--turquesa); text-underline-offset: 3px; }
+a:hover { color: var(--marino); }
+
+/* ── Índice lateral ───────────────────────────────────────── */
+#TOC { font-size: 15px; }
+.list-group-item { border-color: #DCE5EC; color: var(--suave); }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
+  background-color: var(--marino); border-color: var(--marino); color: #fff; font-weight: 600;
+}
+
+/* ── Código ───────────────────────────────────────────────── */
+pre, code { font-family: Consolas, "Cascadia Mono", "SFMono-Regular", Menlo, monospace; }
+pre.r {
+  background: var(--marino-prof); color: #E8EEF4; border: 0; border-radius: 10px;
+  padding: 14px 18px; font-size: 13.5px; line-height: 1.55;
+}
+pre.r code { background: transparent; color: inherit; padding: 0; }
+:not(pre) > code { background: var(--panel); color: var(--marino); border: 0; padding: 2px 6px; border-radius: 4px; font-size: .88em; }
+
+/* Salidas de R: fondo claro, para distinguirlas del código */
+pre:not(.r) {
+  background: var(--panel); color: var(--marino); border: 1px solid #DCE5EC; border-radius: 10px;
+  padding: 12px 16px; font-size: 13px;
+}
+pre:not(.r) code { background: transparent; color: inherit; padding: 0; }
+
+/* Colores de sintaxis sobre fondo oscuro (resaltado highlight.js de rmarkdown) */
+pre.r code span { color: #E8EEF4; }
+pre.r code span.hljs-keyword { color: var(--menta); font-weight: 600; }
+pre.r code span.hljs-built_in, pre.r code span.hljs-title { color: var(--turquesa-cl); }
+pre.r code span.hljs-string { color: var(--ambar); }
+pre.r code span.hljs-number, pre.r code span.hljs-literal { color: var(--coral); }
+pre.r code span.hljs-comment { color: #7C97B2; font-style: italic; }
+
+/* ── Tablas ───────────────────────────────────────────────── */
+table { border-collapse: collapse; font-size: 15px; }
+table:not(.table-condensed) { width: auto; }
+thead th { background: var(--marino); color: #fff; font-family: "Montserrat", sans-serif; font-weight: 600; border: 0; }
+td, th { padding: 7px 14px; border-top: 1px solid #DCE5EC; }
+tbody tr:nth-child(even) { background: var(--panel); }
+
+/* ── Bloques de aula ──────────────────────────────────────── */
+/* Aviso inicial («Objetivo», «Cómo funciona este laboratorio») */
+blockquote {
+  background: var(--panel); color: var(--texto); border: 1px solid #DCE5EC; border-radius: 12px;
+  padding: 16px 22px; margin: 22px 0; font-size: 16px;
+}
+blockquote p:last-child, blockquote ol:last-child { margin-bottom: 0; }
+blockquote ol { padding-left: 22px; }
+
+/* «Para pensar» */
+blockquote:has(> h3) { background: var(--marino); color: #E8EEF4; border: 0; padding: 22px 28px; }
+blockquote:has(> h3) h3 { color: var(--turquesa); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 12px; }
+blockquote:has(> h3) strong { color: #fff; }
+blockquote:has(> h3) code { background: var(--marino-prof); color: var(--turquesa-cl); }
+blockquote:has(> h3) li::marker { color: var(--turquesa); font-weight: 700; }
+
+/* «Toca esto» (lo envuelve marca_pie.html) */
+.toca-esto {
+  background: #FFF8E6; border: 1px solid var(--ambar); border-radius: 12px;
+  padding: 18px 26px 14px; margin: 26px 0;
+}
+.toca-esto h3 { color: #8A5A00; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; margin: 0 0 10px; }
+.toca-esto > :last-child { margin-bottom: 0; }
+
+/* ── Pie ──────────────────────────────────────────────────── */
+.pie-marca {
+  margin: 56px 0 24px; padding-top: 18px; border-top: 1px solid #DCE5EC;
+  font-size: 13px; color: var(--suave);
+}
+.pie-marca strong { font-family: "Montserrat", sans-serif; color: var(--marino); }
+
+@media print {
+  #header { background: var(--marino) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  pre.r, blockquote:has(> h3) { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+@media (max-width: 700px) {
+  #header { padding: 28px 22px; }
+  h1.title { font-size: 26px; }
+}

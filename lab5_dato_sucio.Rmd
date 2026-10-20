@@ -7,6 +7,10 @@ output:
     toc: true
     toc_float: true
     self_contained: true
+    mathjax: null
+    css: assets/marca.css
+    includes:
+      after_body: assets/marca_pie.html
 ---
 
 ```{r include=FALSE}
@@ -18,11 +22,18 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 ```{r}
 # ── Preparación (ejecutar una vez) ───────────────────────────────────────────
 # Funciona en cualquier máquina con R: instala lo que falte y descarga los datos si no están.
+if (getRversion() < "4.3.0")
+  stop("Estos laboratorios necesitan R 4.3 o superior (tienes ", getRversion(), "). Actualiza desde https://cran.r-project.org/")
 if (is.null(getOption("repos")) || isTRUE(unname(getOption("repos")["CRAN"]) == "@CRAN@"))
   options(repos = c(CRAN = "https://cloud.r-project.org"))
 # En Linux (Colab, Codespaces) usamos binarios precompilados: se instalan en segundos.
-if (Sys.info()[["sysname"]] == "Linux")
-  options(repos = c(CRAN = "https://packagemanager.posit.co/cran/__linux__/jammy/latest"))
+# Solo para las versiones de Ubuntu que los publican; en cualquier otra se instala desde CRAN.
+if (Sys.info()[["sysname"]] == "Linux") {
+  cod <- tryCatch(sub("^VERSION_CODENAME=", "", grep("^VERSION_CODENAME=", readLines("/etc/os-release"), value = TRUE)[1]),
+                  error = function(e) NA_character_)
+  if (cod %in% c("jammy", "noble"))
+    options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/", cod, "/latest")))
+}
 
 paquetes <- c("tidyverse", "mice")
 faltan <- paquetes[!vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)]
@@ -90,6 +101,8 @@ a_numero <- function(x) {
   suppressWarnings(as.numeric(x))
 }
 
+# Fecha de corte fija (no «hoy»): así el laboratorio da lo mismo se ejecute cuando se ejecute
+FECHA_CORTE <- ymd("2026-01-01")
 a_fecha <- function(x) suppressWarnings(case_when(
   str_detect(x, "^\\d{4}-\\d{2}-\\d{2}$")     ~ ymd(x),
   str_detect(x, "^\\d{8}$")                   ~ ymd(x),
@@ -115,7 +128,7 @@ cli <- cli |>
          ingresos = a_numero(ingresos), edad = a_numero(edad), edad = if_else(edad == 999, NA_real_, edad),
          fecha_alta = a_fecha(fecha_alta),
          edad = if_else(edad < 18 | edad > 100, NA_real_, edad),
-         fecha_alta = if_else(fecha_alta > today(), NA_Date_, fecha_alta),
+         fecha_alta = if_else(fecha_alta > FECHA_CORTE, NA_Date_, fecha_alta),
          email = if_else(str_detect(email, "^[^@\\s]+@[^@\\s]+\\.[a-z]{2,}$"), email, NA_character_))
 
 cli |> count(provincia)
@@ -126,7 +139,7 @@ canon <- c("Aceite de oliva", "Arroz bomba", "Naranjas (caja)", "Vino tinto", "T
 ven <- ven_raw |>
   mutate(producto = canon[match(sin_ruido(producto), sin_ruido(canon))],
          id_cliente = norm_id(id_cliente), importe_eur = a_numero(importe_eur), fecha = a_fecha(fecha),
-         fecha = if_else(fecha < ymd("2020-01-01") | fecha > today(), NA_Date_, fecha),
+         fecha = if_else(fecha < ymd("2020-01-01") | fecha > FECHA_CORTE, NA_Date_, fecha),
          unidades = as.numeric(unidades), unidades = if_else(unidades <= 0 | unidades > 1000, NA_real_, unidades),
          descuento_pct = as.numeric(descuento_pct))
 glimpse(ven)

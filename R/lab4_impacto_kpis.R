@@ -5,45 +5,9 @@
 #' > **Objetivo.** Limpiar no es un fin: sirve para que **las cifras que das sean defendibles**. Calculamos los mismos KPIs con cuatro niveles de limpieza y comprobamos cuánto se mueve cada uno. Es el «tres personas, tres cifras» de la parte de gobierno, pero con datos de verdad.
 #'
 # ── Preparación (ejecutar una vez) ───────────────────────────────────────────
-# Funciona en cualquier máquina con R: instala lo que falte y descarga los datos si no están.
-if (getRversion() < "4.3.0")
-  stop("Estos laboratorios necesitan R 4.3 o superior (tienes ", getRversion(), "). Actualiza desde https://cran.r-project.org/")
-if (is.null(getOption("repos")) || isTRUE(unname(getOption("repos")["CRAN"]) == "@CRAN@"))
-  options(repos = c(CRAN = "https://cloud.r-project.org"))
-# En Linux (Colab, Codespaces) usamos binarios precompilados: se instalan en segundos.
-# Solo para las versiones de Ubuntu que los publican; en cualquier otra se instala desde CRAN.
-if (Sys.info()[["sysname"]] == "Linux") {
-  cod <- tryCatch(sub("^VERSION_CODENAME=", "", grep("^VERSION_CODENAME=", readLines("/etc/os-release"), value = TRUE)[1]),
-                  error = function(e) NA_character_)
-  if (cod %in% c("jammy", "noble"))
-    options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/", cod, "/latest")))
-}
-
-paquetes <- c("tidyverse")
-faltan <- paquetes[!vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)]
-if (length(faltan)) install.packages(faltan)
-suppressPackageStartupMessages({
-library(tidyverse)
-})
-
-# Los datos: si no están en la carpeta, se descargan
-BASE_URL <- "https://raw.githubusercontent.com/vicentcorrecher/lab-limpieza-datos/main/datos"
-obtener <- function(f) {
-  ruta <- file.path("datos", f)
-  if (!file.exists(ruta)) {
-    dir.create(dirname(ruta), recursive = TRUE, showWarnings = FALSE)
-    download.file(paste0(BASE_URL, "/", f), ruta, quiet = TRUE, mode = "wb")
-  }
-}
-for (f in c(
-  "funciones_labs.R",
-  "servicios/operaciones.csv",
-  "servicios/clientes.csv",
-  "servicios/productos_servicios.csv",
-  "servicios/sedes.csv",
-  "servicios/campanas.csv"
-)) obtener(f)
-source("datos/funciones_labs.R")
+# Instala lo que falte, carga los paquetes y descarga los datos si no están (la primera vez tarda unos minutos).
+source("datos/preparar_entorno.R")
+preparar(datos = "servicios", paquetes = "tidyverse")
 
 d <- cargar_servicios()
 

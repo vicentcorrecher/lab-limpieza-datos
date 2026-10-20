@@ -5,170 +5,123 @@
 #' > **Objetivo.** Antes de limpiar nada, **medir**. Pasamos los cinco ficheros por las dimensiones de calidad de la teoría (completitud, unicidad, validez, consistencia) y obtenemos un **cuadro de calidad** con semáforo. Tu trabajo: leerlo y decidir qué importa.
 #'
 # ── Preparación (ejecutar una vez) ───────────────────────────────────────────
-# Funciona en cualquier máquina con R: instala lo que falte y descarga los datos si no están.
-if (getRversion() < "4.3.0")
-  stop("Estos laboratorios necesitan R 4.3 o superior (tienes ", getRversion(), "). Actualiza desde https://cran.r-project.org/")
-if (is.null(getOption("repos")) || isTRUE(unname(getOption("repos")["CRAN"]) == "@CRAN@"))
-  options(repos = c(CRAN = "https://cloud.r-project.org"))
-# En Linux (Colab, Codespaces) usamos binarios precompilados: se instalan en segundos.
-# Solo para las versiones de Ubuntu que los publican; en cualquier otra se instala desde CRAN.
-if (Sys.info()[["sysname"]] == "Linux") {
-  cod <- tryCatch(sub("^VERSION_CODENAME=", "", grep("^VERSION_CODENAME=", readLines("/etc/os-release"), value = TRUE)[1]),
-                  error = function(e) NA_character_)
-  if (cod %in% c("jammy", "noble"))
-    options(repos = c(CRAN = paste0("https://packagemanager.posit.co/cran/__linux__/", cod, "/latest")))
-}
+# Instala lo que falte, carga los paquetes y descarga los datos si no están (la primera vez tarda unos minutos).
+source("datos/preparar_entorno.R")
+preparar(datos = "servicios", paquetes = "tidyverse")
 
-paquetes <- c("tidyverse")
-faltan <- paquetes[!vapply(paquetes, requireNamespace, logical(1), quietly = TRUE)]
-if (length(faltan)) install.packages(faltan)
-suppressPackageStartupMessages({
-library(tidyverse)
-})
+d <- cargar_servicios()   # una lista con las cinco tablas
+o <- d$operaciones        # la tabla central, para escribir menos
 
-# Los datos: si no están en la carpeta, se descargan
-BASE_URL <- "https://raw.githubusercontent.com/vicentcorrecher/lab-limpieza-datos/main/datos"
-obtener <- function(f) {
-  ruta <- file.path("datos", f)
-  if (!file.exists(ruta)) {
-    dir.create(dirname(ruta), recursive = TRUE, showWarnings = FALSE)
-    download.file(paste0(BASE_URL, "/", f), ruta, quiet = TRUE, mode = "wb")
-  }
-}
-for (f in c(
-  "funciones_labs.R",
-  "servicios/operaciones.csv",
-  "servicios/clientes.csv",
-  "servicios/productos_servicios.csv",
-  "servicios/sedes.csv",
-  "servicios/campanas.csv"
-)) obtener(f)
-source("datos/funciones_labs.R")
-
-d <- cargar_servicios()
-o <- d$operaciones
-n_tab <- map_int(d, nrow)
-
+#' Cada comprobación que hacemos es **una pregunta con respuesta en números**: cuántas filas incumplen una regla. Las iremos guardando en tablas con las mismas cuatro columnas (`dimension`, `comprobacion`, `incumplen`, `base`) para juntarlas al final.
+#'
 #' ## 1. Completitud: ¿falta algo?
 #'
-vacias <- function(x) sum(is.na(x) | (is.character(x) & str_squish(x) == ""), na.rm = TRUE)
+#' En R, un dato que falta se llama `NA`. Primero miramos **en qué columnas** de `operaciones` faltan datos:
+#'
+colSums(is.na(o))
 
-completitud <- imap_dfr(d, \(df, tabla) tibble(
-  tabla, filas = nrow(df), columnas = ncol(df),
-  celdas_vacias = sum(map_int(df, vacias)),
-  pct_vacias = round(100 * celdas_vacias / (filas * columnas), 3)))
+#' Ahora contamos, en cada tabla, **cuántas filas tienen algún dato vacío**:
+#'
+completitud <- tribble(
+  ~dimension,    ~comprobacion,                       ~incumplen,                        ~base,
+  "Completitud", "operaciones con algún dato vacío",  sum(!complete.cases(o)),           nrow(o),
+  "Completitud", "clientes con algún dato vacío",     sum(!complete.cases(d$clientes)),  nrow(d$clientes),
+  "Completitud", "productos con algún dato vacío",    sum(!complete.cases(d$productos)), nrow(d$productos),
+  "Completitud", "sedes con algún dato vacío",        sum(!complete.cases(d$sedes)),     nrow(d$sedes),
+  "Completitud", "campañas con algún dato vacío",     sum(!complete.cases(d$campanas)),  nrow(d$campanas))
 completitud
-
-# ¿En qué columnas están esas celdas vacías?
-imap_dfr(d, \(df, tabla) tibble(tabla, columna = names(df), vacias = map_int(df, vacias))) |>
-  filter(vacias > 0)
 
 #' ## 2. Unicidad: ¿cada cosa aparece una sola vez?
 #'
-claves <- c(operaciones = "operacion_id", clientes = "cliente_id", productos = "producto_id",
-            sedes = "sede_id", campanas = "campana_id")
-
-unicidad <- imap_dfr(d, \(df, tabla) tibble(
-  tabla, clave = claves[[tabla]], filas = nrow(df),
-  claves_distintas = n_distinct(df[[claves[[tabla]]]]),
-  filas_repetidas = filas - claves_distintas,
-  filas_identicas = sum(duplicated(df))))
+#' Cada fila debería tener un identificador propio. Si hay menos identificadores distintos que filas, hay repeticiones:
+#'
+unicidad <- tribble(
+  ~dimension, ~comprobacion,                            ~incumplen,                                               ~base,
+  "Unicidad", "operaciones con identificador repetido", nrow(o) - n_distinct(o$operacion_id),                     nrow(o),
+  "Unicidad", "clientes con identificador repetido",    nrow(d$clientes) - n_distinct(d$clientes$cliente_id),     nrow(d$clientes),
+  "Unicidad", "productos con identificador repetido",   nrow(d$productos) - n_distinct(d$productos$producto_id),  nrow(d$productos),
+  "Unicidad", "sedes con identificador repetido",       nrow(d$sedes) - n_distinct(d$sedes$sede_id),              nrow(d$sedes),
+  "Unicidad", "campañas con identificador repetido",    nrow(d$campanas) - n_distinct(d$campanas$campana_id),     nrow(d$campanas))
 unicidad
 
 #' ## 3. Validez: ¿cumple las reglas del negocio?
 #'
 #' Escribimos las reglas **por escrito** (no «de memoria») y contamos cuántas filas las incumplen.
 #'
-alta_ini <- as.Date("2022-01-01"); alta_fin <- as.Date("2025-12-31")
-c_ <- d$clientes; p_ <- d$productos; s_ <- d$sedes; k_ <- d$campanas
-
-regla <- function(tabla, texto, incumplen) tibble(tabla, comprobacion = texto, incumplen = as.integer(incumplen), base = n_tab[[tabla]])
-
-validez <- bind_rows(
-  regla("operaciones", "unidades >= 1",                           sum(o$unidades < 1)),
-  regla("operaciones", "precio_unitario > 0",                     sum(o$precio_unitario <= 0)),
-  regla("operaciones", "descuento entre 0 y 1",                   sum(o$descuento_pct < 0 | o$descuento_pct > 1)),
-  regla("operaciones", "satisfacción entre 1 y 10 (si existe)",   sum(o$satisfaccion < 1 | o$satisfaccion > 10, na.rm = TRUE)),
-  regla("operaciones", "fecha dentro del periodo 2022-2025",      sum(o$fecha < alta_ini | o$fecha > alta_fin)),
-  regla("operaciones", "margen = ingresos - coste",               sum(abs(o$margen - (o$ingresos - o$coste)) > 0.02)),
-  regla("operaciones", "ingresos = unidades x precio x (1-dto)",  sum(abs(o$ingresos - o$unidades * o$precio_unitario * (1 - o$descuento_pct)) > 0.05 * o$unidades)),
-  regla("operaciones", "duración > 0",                            sum(o$duracion_min <= 0)),
-  regla("clientes",    "fecha_alta no futura",                    sum(c_$fecha_alta > alta_fin)),
-  regla("productos",   "precio_lista > coste_unitario",           sum(p_$precio_lista <= p_$coste_unitario)),
-  regla("sedes",       "coordenadas dentro de España peninsular", sum(s_$latitud < 35 | s_$latitud > 44 | s_$longitud < -10 | s_$longitud > 5)),
-  regla("campanas",    "fecha_fin >= fecha_inicio",               sum(k_$fecha_fin < k_$fecha_inicio)),
-  regla("campanas",    "inversion > 0",                           sum(k_$inversion <= 0)))
+validez <- tribble(
+  ~dimension, ~comprobacion,                           ~incumplen,                                                              ~base,
+  "Validez",  "unidades >= 1",                         sum(o$unidades < 1),                                                     nrow(o),
+  "Validez",  "precio_unitario > 0",                   sum(o$precio_unitario <= 0),                                             nrow(o),
+  "Validez",  "descuento entre 0 y 1",                 sum(o$descuento_pct < 0 | o$descuento_pct > 1),                          nrow(o),
+  "Validez",  "satisfacción entre 1 y 10 (si existe)", sum(o$satisfaccion < 1 | o$satisfaccion > 10, na.rm = TRUE),             nrow(o),
+  "Validez",  "fecha dentro de 2022-2025",             sum(o$fecha < as.Date("2022-01-01") | o$fecha > as.Date("2025-12-31")),  nrow(o),
+  "Validez",  "margen = ingresos - coste",             sum(abs(o$margen - (o$ingresos - o$coste)) > 0.02),                      nrow(o),
+  "Validez",  "duración > 0",                          sum(o$duracion_min <= 0),                                                nrow(o),
+  "Validez",  "precio de lista > coste (productos)",   sum(d$productos$precio_lista <= d$productos$coste_unitario),             nrow(d$productos),
+  "Validez",  "fecha_fin >= fecha_inicio (campañas)",  sum(d$campanas$fecha_fin < d$campanas$fecha_inicio),                     nrow(d$campanas))
 validez
 
 #' ## 4. Consistencia: ¿cuadra entre tablas y dentro de cada columna?
 #'
-#' **4.1 Integridad referencial** (¿hay operaciones que apuntan a un cliente, producto o sede que no existe?)
+#' **4.1 Enlaces entre tablas.** `anti_join()` devuelve las filas que **no encuentran pareja**: operaciones que apuntan a un cliente, un servicio o una sede que no existe.
 #'
-huerfanas <- tribble(
-  ~relacion, ~operaciones_huerfanas,
-  "operaciones.cliente_id  -> clientes",  nrow(anti_join(o, d$clientes,  by = "cliente_id")),
-  "operaciones.producto_id -> productos", nrow(anti_join(o, d$productos, by = "producto_id")),
-  "operaciones.sede_id     -> sedes",     nrow(anti_join(o, d$sedes,     by = "sede_id")))
-huerfanas
+enlaces <- tribble(
+  ~dimension,     ~comprobacion,             ~incumplen,                                          ~base,
+  "Consistencia", "operación sin cliente",   nrow(anti_join(o, d$clientes,  by = "cliente_id")),  nrow(o),
+  "Consistencia", "operación sin servicio",  nrow(anti_join(o, d$productos, by = "producto_id")), nrow(o),
+  "Consistencia", "operación sin sede",      nrow(anti_join(o, d$sedes,     by = "sede_id")),     nrow(o))
+enlaces
 
-#' **4.2 Categorías escritas de forma distinta** (misma cosa, distinto texto: «web» y «Web »)
+#' **4.2 Lo mismo escrito de formas distintas.** Mira cómo se escribe el canal de alta de los clientes:
 #'
-# filas que usan una grafía minoritaria de un valor que, normalizado, es el mismo
-filas_en_variantes <- function(x) {
-  tibble(x = x[!is.na(x)]) |>
-    mutate(k = str_to_lower(str_squish(x))) |>
-    count(k, x) |> group_by(k) |> filter(n() > 1) |>
-    summarise(extra = sum(n) - max(n)) |> pull(extra) |> sum()
-}
+d$clientes |> count(canal_alta)
 
-texto <- imap_dfr(d, \(df, tabla) df |>
-  select(where(is.character), -ends_with("_id")) |>
-  summarise(across(everything(), filas_en_variantes)) |>
-  pivot_longer(everything(), names_to = "columna", values_to = "filas_afectadas") |>
-  mutate(tabla = tabla)) |>
-  filter(filas_afectadas > 0)
-texto
+#' ¿Ves «web» y «Web »? Es el mismo canal, pero R los cuenta por separado. Para detectarlo, comparamos el texto original con una versión en minúsculas y sin espacios sobrantes:
+#'
+canal_limpio <- str_to_lower(str_squish(d$clientes$canal_alta))
 
-d$clientes |> count(canal_alta, sort = TRUE)   # aquí se ve el culpable
+escritura <- tribble(
+  ~dimension,     ~comprobacion,                          ~incumplen,                                  ~base,
+  "Consistencia", "canal_alta escrito de forma distinta", sum(d$clientes$canal_alta != canal_limpio),  nrow(d$clientes))
+escritura
 
-#' **4.3 Coherencia en el tiempo** (una operación no debería ocurrir antes de que exista el cliente, el producto o la sede)
+#' **4.3 Coherencia en el tiempo.** Una operación no debería ocurrir antes de que exista el cliente, el servicio o la sede. Primero traemos esas tres fechas a cada operación:
 #'
 oj <- o |>
-  left_join(select(d$clientes,  cliente_id, fecha_alta),        by = "cliente_id") |>
+  left_join(select(d$clientes,  cliente_id, fecha_alta),         by = "cliente_id") |>
   left_join(select(d$productos, producto_id, fecha_lanzamiento), by = "producto_id") |>
   left_join(select(d$sedes,     sede_id, fecha_apertura),        by = "sede_id")
 
-temporal <- bind_rows(
-  regla("operaciones", "operación anterior al alta del cliente",        sum(oj$fecha < oj$fecha_alta)),
-  regla("operaciones", "operación anterior al lanzamiento del servicio", sum(oj$fecha < oj$fecha_lanzamiento)),
-  regla("operaciones", "operación anterior a la apertura de la sede",    sum(oj$fecha < oj$fecha_apertura)))
-temporal
+tiempo <- tribble(
+  ~dimension,     ~comprobacion,                                   ~incumplen,                             ~base,
+  "Consistencia", "operación anterior al alta del cliente",        sum(oj$fecha < oj$fecha_alta),          nrow(o),
+  "Consistencia", "operación anterior al lanzamiento del servicio", sum(oj$fecha < oj$fecha_lanzamiento), nrow(o),
+  "Consistencia", "operación anterior a la apertura de la sede",   sum(oj$fecha < oj$fecha_apertura),      nrow(o))
+tiempo
 
 #' ## 5. El cuadro de calidad
 #'
-#' Juntamos todo en una sola tabla. El **semáforo** lo decides tú con dos umbrales.
+#' Juntamos todas las tablas en una. El **semáforo** lo decides tú con un umbral.
 #'
-# >>> TOCA AQUÍ: cambia los umbrales y vuelve a ejecutar la celda <<<
+# >>> TOCA AQUÍ: cambia el umbral y vuelve a ejecutar la celda <<<
 UMBRAL_ROJO <- 1       # % de filas afectadas a partir del cual es rojo
-# (verde = 0 incumplimientos; ámbar = hay incumplimientos pero por debajo del umbral rojo)
+# verde = 0 incumplimientos · ámbar = hay, pero por debajo del umbral · rojo = igual o por encima
 
-cuadro <- bind_rows(
-  completitud |> transmute(dimension = "Completitud", tabla, comprobacion = "celdas vacías", incumplen = celdas_vacias, base = filas * columnas),
-  unicidad    |> transmute(dimension = "Unicidad", tabla, comprobacion = "claves repetidas", incumplen = filas_repetidas, base = filas),
-  validez     |> mutate(dimension = "Validez"),
-  huerfanas   |> transmute(dimension = "Consistencia", tabla = "operaciones", comprobacion = relacion, incumplen = operaciones_huerfanas, base = n_tab[["operaciones"]]),
-  texto       |> transmute(dimension = "Consistencia", tabla, comprobacion = paste("grafías distintas en", columna), incumplen = filas_afectadas, base = n_tab[tabla]),
-  temporal    |> mutate(dimension = "Consistencia")) |>
-  mutate(pct = round(100 * incumplen / base, 3),
-         semaforo = case_when(incumplen == 0 ~ "verde", pct < UMBRAL_ROJO ~ "ámbar", TRUE ~ "rojo"))
+cuadro <- bind_rows(completitud, unicidad, validez, enlaces, escritura, tiempo) |>
+  mutate(pct = round(100 * incumplen / base, 2),
+         semaforo = case_when(incumplen == 0    ~ "verde",
+                              pct < UMBRAL_ROJO ~ "ámbar",
+                              TRUE              ~ "rojo"))
 
-cuadro |> filter(semaforo != "verde") |> arrange(desc(pct)) |> select(dimension, tabla, comprobacion, incumplen, pct, semaforo)
+# Solo lo que no está en verde, de más a menos grave
+cuadro |> filter(semaforo != "verde") |> arrange(desc(pct))
 
-cuadro |> count(dimension, semaforo) |>
-  ggplot(aes(dimension, n, fill = semaforo)) +
+cuadro |>
+  filter(incumplen > 0) |>
+  ggplot(aes(x = pct, y = reorder(comprobacion, pct), fill = semaforo)) +
   geom_col() +
-  scale_fill_manual(values = c(verde = "#11D0CA", `ámbar` = "#F2B84B", rojo = "#F26B5B")) +
-  labs(title = "Comprobaciones por dimensión y resultado", x = NULL, y = "nº de comprobaciones", fill = NULL) +
+  scale_fill_manual(values = c(`ámbar` = "#F2B84B", rojo = "#F26B5B")) +
+  labs(title = "Qué falla y cuánto", x = "% de filas afectadas", y = NULL, fill = NULL) +
   theme_marca(base_size = 13)
 
 #' > ### Para pensar

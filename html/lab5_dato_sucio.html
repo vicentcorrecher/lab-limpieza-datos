@@ -1607,7 +1607,7 @@ plantados)</h3>
 
 
 <blockquote>
-<p><strong>Objetivo.</strong> Estudiante_18 viene casi limpio.
+<p><strong>Objetivo.</strong> El dataset de servicios viene casi limpio.
 <strong>Esto no es lo normal.</strong> Aquí tenéis un dataset construido
 con los errores típicos de los sistemas reales (formatos mezclados,
 centinelas, claves sucias, faltantes con motivo, joins que fallan en
@@ -1705,9 +1705,9 @@ ven_raw |&gt; mutate(patron = str_replace_all(fecha, &quot;[0-9]&quot;, &quot;9&
 <strong>«faltantes camuflados»</strong>? ¿Habríais visto el
 <code>999</code> si hubierais dejado que R convirtiera los textos a
 números?</li>
-<li>En Estudiante_18 todas las fechas eran <code>9999-99-99</code>.
-¿Cuántos formatos hay aquí? ¿Qué problema de <strong>ambigüedad</strong>
-crea <code>03-04-2021</code>?</li>
+<li>En el dataset de servicios todas las fechas eran
+<code>9999-99-99</code>. ¿Cuántos formatos hay aquí? ¿Qué problema de
+<strong>ambigüedad</strong> crea <code>03-04-2021</code>?</li>
 </ol>
 </blockquote>
 </div>
@@ -1934,14 +1934,14 @@ cat(&quot;Comprobaciones superadas\n&quot;)</code></pre>
 <h3 id="para-pensar-cierre-del-bloque">Para pensar (cierre del
 bloque)</h3>
 <ol style="list-style-type: decimal">
-<li>Haced una tabla con dos columnas: <strong>Estudiante_18</strong> y
+<li>Haced una tabla con dos columnas: <strong>Servicios</strong> y
 <strong>distribuidora</strong>. Para cada problema (fechas, números,
 claves, duplicados, faltantes, joins) anotad «no pasó» / «sí pasó» y
 cuánto costó arreglarlo.</li>
-<li>Estudiante_18 parecía fácil, pero tenía problemas <strong>que ningún
-formato ni regla de limpieza arregla</strong> (operaciones antes del
-alta). ¿Cuál es más difícil: el dato sucio <em>de formato</em> o el dato
-incoherente <em>de negocio</em>?</li>
+<li>El dataset de servicios parecía fácil, pero tenía problemas
+<strong>que ningún formato ni regla de limpieza arregla</strong>
+(operaciones antes del alta). ¿Cuál es más difícil: el dato sucio <em>de
+formato</em> o el dato incoherente <em>de negocio</em>?</li>
 <li>Si mañana el sistema de origen cambia el formato de las fechas, ¿qué
 parte de este script falla <strong>en voz alta</strong> y cuál
 <strong>en silencio</strong>?</li>

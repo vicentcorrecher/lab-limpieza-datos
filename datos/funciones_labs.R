@@ -1,10 +1,10 @@
-# Funciones compartidas por los laboratorios (Estudiante_18 · sector Servicios).
+# Funciones compartidas por los laboratorios (empresa de servicios multisede).
 # El alumnado NO tiene que escribir nada de esto: se carga con source() y se lee.
 
 suppressPackageStartupMessages({ library(dplyr); library(readr); library(stringr); library(tidyr) })
 
 # ---- 1. Carga: identificadores como texto (como pide la guía), fechas como fecha --------
-cargar_e18 <- function(dir = "datos/estudiante_18") {
+cargar_servicios <- function(dir = "datos/servicios") {
   # Los *_id llevan letras (O0000001, C00470...), así que readr los lee como texto.
   rd <- function(f) read_csv(file.path(dir, f), show_col_types = FALSE)
   list(operaciones = rd("operaciones.csv"), clientes = rd("clientes.csv"),
@@ -13,7 +13,7 @@ cargar_e18 <- function(dir = "datos/estudiante_18") {
 
 # ---- 2. Limpieza parametrizada: cada decisión es un argumento --------------------------
 # excluir: qué banderas se convierten en filas eliminadas. Por defecto NINGUNA (solo se marca).
-limpiar_e18 <- function(d, excluir = character(), k_iqr = 3, col_sector = "duracion_min") {
+limpiar_servicios <- function(d, excluir = character(), k_iqr = 3, col_sector = "duracion_min") {
   log <- tibble(regla = character(), filas_afectadas = integer(), decision = character())
   anota <- function(regla, n, decision) log <<- bind_rows(log, tibble(regla = regla, filas_afectadas = as.integer(n), decision = decision))
 

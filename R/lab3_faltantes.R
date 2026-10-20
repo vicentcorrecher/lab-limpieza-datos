@@ -37,16 +37,16 @@ obtener <- function(f) {
 }
 for (f in c(
   "funciones_labs.R",
-  "estudiante_18/operaciones.csv",
-  "estudiante_18/clientes.csv",
-  "estudiante_18/productos_servicios.csv",
-  "estudiante_18/sedes.csv",
-  "estudiante_18/campanas.csv"
+  "servicios/operaciones.csv",
+  "servicios/clientes.csv",
+  "servicios/productos_servicios.csv",
+  "servicios/sedes.csv",
+  "servicios/campanas.csv"
 )) obtener(f)
 source("datos/funciones_labs.R")
 
-d <- cargar_e18()
-l <- limpiar_e18(d)                     # limpieza del Lab 2 (solo duplicados + banderas)
+d <- cargar_servicios()
+l <- limpiar_servicios(d)                     # limpieza del Lab 2 (solo duplicados + banderas)
 ops <- l$operaciones |>
   left_join(select(l$clientes, cliente_id, segmento), by = "cliente_id") |>
   mutate(anyo = year(fecha))

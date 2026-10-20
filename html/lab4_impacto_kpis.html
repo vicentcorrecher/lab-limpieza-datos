@@ -1599,8 +1599,8 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">Lab 4 · Impacto: ¿cambian tus KPIs al
 limpiar?</h1>
-<h3 class="subtitle">Desaprendiendo sobre… Limpieza de datos ·
-Estudiante_18 (sector Servicios)</h3>
+<h3 class="subtitle">Desaprendiendo sobre… Limpieza de datos · Empresa
+de servicios multisede</h3>
 
 </div>
 
@@ -1645,14 +1645,14 @@ obtener &lt;- function(f) {
 }
 for (f in c(
   &quot;funciones_labs.R&quot;,
-  &quot;estudiante_18/operaciones.csv&quot;,
-  &quot;estudiante_18/clientes.csv&quot;,
-  &quot;estudiante_18/productos_servicios.csv&quot;,
-  &quot;estudiante_18/sedes.csv&quot;,
-  &quot;estudiante_18/campanas.csv&quot;
+  &quot;servicios/operaciones.csv&quot;,
+  &quot;servicios/clientes.csv&quot;,
+  &quot;servicios/productos_servicios.csv&quot;,
+  &quot;servicios/sedes.csv&quot;,
+  &quot;servicios/campanas.csv&quot;
 )) obtener(f)
 source(&quot;datos/funciones_labs.R&quot;)</code></pre>
-<pre class="r"><code>d &lt;- cargar_e18()</code></pre>
+<pre class="r"><code>d &lt;- cargar_servicios()</code></pre>
 <div id="cuatro-escenarios" class="section level2">
 <h2>1. Cuatro escenarios</h2>
 <table>
@@ -1688,9 +1688,9 @@ excluir nada</strong></td>
 </table>
 <pre class="r"><code>escenarios &lt;- list(
   &quot;A · Bruto&quot;       = d$operaciones,
-  &quot;B · Prudente&quot;    = limpiar_e18(d)$operaciones,
-  &quot;C · Sin pre-alta&quot; = limpiar_e18(d, excluir = &quot;antes_alta&quot;)$operaciones,
-  &quot;D · Estricto&quot;    = limpiar_e18(d, excluir = c(&quot;antes_alta&quot;, &quot;margen_negativo&quot;, &quot;sector&quot;))$operaciones)
+  &quot;B · Prudente&quot;    = limpiar_servicios(d)$operaciones,
+  &quot;C · Sin pre-alta&quot; = limpiar_servicios(d, excluir = &quot;antes_alta&quot;)$operaciones,
+  &quot;D · Estricto&quot;    = limpiar_servicios(d, excluir = c(&quot;antes_alta&quot;, &quot;margen_negativo&quot;, &quot;sector&quot;))$operaciones)
 
 tabla &lt;- imap_dfr(escenarios, \(ops, nombre) kpis(ops) |&gt; mutate(escenario = nombre, .before = 1))
 tabla |&gt; mutate(across(where(is.numeric), \(x) round(x, 2)))</code></pre>
@@ -1806,7 +1806,7 @@ MI_ESCENARIO &lt;- c(&quot;antes_lanzamiento&quot;)
 
 bind_rows(
   kpis(escenarios[[&quot;B · Prudente&quot;]]) |&gt; mutate(escenario = &quot;B · Prudente&quot;, .before = 1),
-  kpis(limpiar_e18(d, excluir = MI_ESCENARIO)$operaciones) |&gt; mutate(escenario = paste(&quot;Mi escenario:&quot;, paste(MI_ESCENARIO, collapse = &quot; + &quot;)), .before = 1)) |&gt;
+  kpis(limpiar_servicios(d, excluir = MI_ESCENARIO)$operaciones) |&gt; mutate(escenario = paste(&quot;Mi escenario:&quot;, paste(MI_ESCENARIO, collapse = &quot; + &quot;)), .before = 1)) |&gt;
   mutate(across(where(is.numeric), \(x) round(x, 2)))</code></pre>
 <pre><code>## # A tibble: 2 × 9
 ##   escenario                  operaciones ingresos margen margen_pct ticket_medio

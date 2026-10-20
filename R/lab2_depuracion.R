@@ -37,15 +37,15 @@ obtener <- function(f) {
 }
 for (f in c(
   "funciones_labs.R",
-  "estudiante_18/operaciones.csv",
-  "estudiante_18/clientes.csv",
-  "estudiante_18/productos_servicios.csv",
-  "estudiante_18/sedes.csv",
-  "estudiante_18/campanas.csv"
+  "servicios/operaciones.csv",
+  "servicios/clientes.csv",
+  "servicios/productos_servicios.csv",
+  "servicios/sedes.csv",
+  "servicios/campanas.csv"
 )) obtener(f)
 source("datos/funciones_labs.R")
 
-d <- cargar_e18()
+d <- cargar_servicios()
 o <- d$operaciones
 
 #' ## 1. Duplicados: lo evidente
@@ -128,14 +128,14 @@ o |> ggplot(aes(duracion_min)) +
 #'
 #' ## 6. Lo que has visto, en una sola función
 #'
-#' Toda la limpieza anterior vive en `limpiar_e18()` (puedes abrir `datos/funciones_labs.R` y leerla). Cada decisión es un **argumento**: por defecto **solo se marcan** los problemas y se eliminan los duplicados exactos.
+#' Toda la limpieza anterior vive en `limpiar_servicios()` (puedes abrir `datos/funciones_labs.R` y leerla). Cada decisión es un **argumento**: por defecto **solo se marcan** los problemas y se eliminan los duplicados exactos.
 #'
 # >>> TOCA AQUÍ: elige qué problemas se convierten en filas eliminadas <<<
 # opciones: "antes_alta", "antes_lanzamiento", "margen_negativo", "sector"
 EXCLUIR <- c()          # prueba, por ejemplo: c("antes_alta")   o   c("margen_negativo", "sector")
 K_IQR   <- 3            # prueba 1.5 o 5
 
-l <- limpiar_e18(d, excluir = EXCLUIR, k_iqr = K_IQR)
+l <- limpiar_servicios(d, excluir = EXCLUIR, k_iqr = K_IQR)
 l$log
 
 cat("Filas de operaciones: ", nrow(d$operaciones), "(originales) ->", nrow(l$operaciones), "(tras tus decisiones)\n")

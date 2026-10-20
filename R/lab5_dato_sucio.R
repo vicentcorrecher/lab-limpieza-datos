@@ -2,7 +2,7 @@
 # Guion para ir paso a paso: abre laboratorios.Rproj y ejecuta línea a línea con Ctrl+Enter (Cmd+Enter en Mac).
 # El texto del laboratorio está en los comentarios que empiezan por #'. Lo mismo, con salidas, en html/.
 
-#' > **Objetivo.** Estudiante_18 viene casi limpio. **Esto no es lo normal.** Aquí tenéis un dataset construido con los errores típicos de los sistemas reales (formatos mezclados, centinelas, claves sucias, faltantes con motivo, joins que fallan en silencio). Como **conocemos la verdad** (un *gold standard* que en la vida real no tendríais), podemos medir si cada decisión acierta. Todo está resuelto: leed la salida, y **contrastad con lo que visteis en los Labs 1-4**.
+#' > **Objetivo.** El dataset de servicios viene casi limpio. **Esto no es lo normal.** Aquí tenéis un dataset construido con los errores típicos de los sistemas reales (formatos mezclados, centinelas, claves sucias, faltantes con motivo, joins que fallan en silencio). Como **conocemos la verdad** (un *gold standard* que en la vida real no tendríais), podemos medir si cada decisión acierta. Todo está resuelto: leed la salida, y **contrastad con lo que visteis en los Labs 1-4**.
 #'
 # ── Preparación (ejecutar una vez) ───────────────────────────────────────────
 # Funciona en cualquier máquina con R: instala lo que falte y descarga los datos si no están.
@@ -61,7 +61,7 @@ ven_raw |> mutate(patron = str_replace_all(fecha, "[0-9]", "9")) |> count(patron
 
 #' > ### Para pensar
 #' > 1. ¿Qué valores de `Edad` o de ingresos son **«faltantes camuflados»**? ¿Habríais visto el `999` si hubierais dejado que R convirtiera los textos a números?
-#' > 2. En Estudiante_18 todas las fechas eran `9999-99-99`. ¿Cuántos formatos hay aquí? ¿Qué problema de **ambigüedad** crea `03-04-2021`?
+#' > 2. En el dataset de servicios todas las fechas eran `9999-99-99`. ¿Cuántos formatos hay aquí? ¿Qué problema de **ambigüedad** crea `03-04-2021`?
 #'
 #' ## 2. Depuración: texto, claves, números y fechas
 #'
@@ -205,6 +205,6 @@ stopifnot(nrow(ven) == 5000, n_distinct(maestro$id_cliente) == nrow(maestro), !a
 cat("Comprobaciones superadas\n")
 
 #' > ### Para pensar (cierre del bloque)
-#' > 1. Haced una tabla con dos columnas: **Estudiante_18** y **distribuidora**. Para cada problema (fechas, números, claves, duplicados, faltantes, joins) anotad «no pasó» / «sí pasó» y cuánto costó arreglarlo.
-#' > 2. Estudiante_18 parecía fácil, pero tenía problemas **que ningún formato ni regla de limpieza arregla** (operaciones antes del alta). ¿Cuál es más difícil: el dato sucio *de formato* o el dato incoherente *de negocio*?
+#' > 1. Haced una tabla con dos columnas: **Servicios** y **distribuidora**. Para cada problema (fechas, números, claves, duplicados, faltantes, joins) anotad «no pasó» / «sí pasó» y cuánto costó arreglarlo.
+#' > 2. El dataset de servicios parecía fácil, pero tenía problemas **que ningún formato ni regla de limpieza arregla** (operaciones antes del alta). ¿Cuál es más difícil: el dato sucio *de formato* o el dato incoherente *de negocio*?
 #' > 3. Si mañana el sistema de origen cambia el formato de las fechas, ¿qué parte de este script falla **en voz alta** y cuál **en silencio**?

@@ -1599,8 +1599,8 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">Lab 1 · Auditoría: ¿qué tan fiable es lo
 que tengo?</h1>
-<h3 class="subtitle">Desaprendiendo sobre… Limpieza de datos ·
-Estudiante_18 (sector Servicios)</h3>
+<h3 class="subtitle">Desaprendiendo sobre… Limpieza de datos · Empresa
+de servicios multisede</h3>
 
 </div>
 
@@ -1645,14 +1645,14 @@ obtener &lt;- function(f) {
 }
 for (f in c(
   &quot;funciones_labs.R&quot;,
-  &quot;estudiante_18/operaciones.csv&quot;,
-  &quot;estudiante_18/clientes.csv&quot;,
-  &quot;estudiante_18/productos_servicios.csv&quot;,
-  &quot;estudiante_18/sedes.csv&quot;,
-  &quot;estudiante_18/campanas.csv&quot;
+  &quot;servicios/operaciones.csv&quot;,
+  &quot;servicios/clientes.csv&quot;,
+  &quot;servicios/productos_servicios.csv&quot;,
+  &quot;servicios/sedes.csv&quot;,
+  &quot;servicios/campanas.csv&quot;
 )) obtener(f)
 source(&quot;datos/funciones_labs.R&quot;)</code></pre>
-<pre class="r"><code>d &lt;- cargar_e18()
+<pre class="r"><code>d &lt;- cargar_servicios()
 o &lt;- d$operaciones
 n_tab &lt;- map_int(d, nrow)</code></pre>
 <div id="completitud-falta-algo" class="section level2">

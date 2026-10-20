@@ -55,11 +55,11 @@ Es opcional: a veces tarda en conectar el entorno de R.
 
 | Lab | Qué se hace | Datos | Colab |
 |---|---|---|---|
-| 0 · Conexión | Qué es cada tabla, relaciones y una base DuckDB conectada | Estudiante_18 | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab0_conexion.ipynb) |
-| 1 · Auditoría | Cuadro de calidad con semáforo | Estudiante_18 | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab1_auditoria.ipynb) |
-| 2 · Depuración | Corregir, marcar o preguntar | Estudiante_18 | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab2_depuracion.ipynb) |
-| 3 · Faltantes | ¿Imputar o no imputar? Experimento MCAR frente a MNAR | Estudiante_18 | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab3_faltantes.ipynb) |
-| 4 · Impacto en KPIs | ¿Cambian los KPIs al limpiar? | Estudiante_18 | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab4_impacto_kpis.ipynb) |
+| 0 · Conexión | Qué es cada tabla, relaciones y una base DuckDB conectada | Servicios | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab0_conexion.ipynb) |
+| 1 · Auditoría | Cuadro de calidad con semáforo | Servicios | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab1_auditoria.ipynb) |
+| 2 · Depuración | Corregir, marcar o preguntar | Servicios | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab2_depuracion.ipynb) |
+| 3 · Faltantes | ¿Imputar o no imputar? Experimento MCAR frente a MNAR | Servicios | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab3_faltantes.ipynb) |
+| 4 · Impacto en KPIs | ¿Cambian los KPIs al limpiar? | Servicios | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab4_impacto_kpis.ipynb) |
 | 5 · Dato sucio | Cuando el dato viene mal de verdad | Distribuidora | [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/vicentcorrecher/lab-limpieza-datos/blob/main/google_colab/lab5_dato_sucio.ipynb) |
 
 En Colab: *Entorno de ejecución → Cambiar tipo de entorno de ejecución → R*, y después *Ejecutar todo*.
@@ -90,7 +90,7 @@ google_colab/    lab0..lab5 .ipynb: cuadernos para Colab (kernel R)
 generar_material.R  regenera html/ y R/ a partir de rmarkdown/
 assets/          marca.css, marca_pie.html y las fuentes Montserrat y DM Sans (licencia OFL) incrustadas en los .html
 datos/
-  estudiante_18/    5 CSV de una empresa de servicios (2022-2025)
+  servicios/    5 CSV de una empresa de servicios (2022-2025)
   distribuidora/    dataset sucio a propósito, con su «verdad» (gold standard)
   funciones_labs.R  funciones que usan los laboratorios 0-4
 ```

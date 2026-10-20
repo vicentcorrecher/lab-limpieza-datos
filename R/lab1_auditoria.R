@@ -37,15 +37,15 @@ obtener <- function(f) {
 }
 for (f in c(
   "funciones_labs.R",
-  "estudiante_18/operaciones.csv",
-  "estudiante_18/clientes.csv",
-  "estudiante_18/productos_servicios.csv",
-  "estudiante_18/sedes.csv",
-  "estudiante_18/campanas.csv"
+  "servicios/operaciones.csv",
+  "servicios/clientes.csv",
+  "servicios/productos_servicios.csv",
+  "servicios/sedes.csv",
+  "servicios/campanas.csv"
 )) obtener(f)
 source("datos/funciones_labs.R")
 
-d <- cargar_e18()
+d <- cargar_servicios()
 o <- d$operaciones
 n_tab <- map_int(d, nrow)
 

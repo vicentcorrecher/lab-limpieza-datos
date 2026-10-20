@@ -1599,8 +1599,8 @@ border-radius: 0px;
 
 <h1 class="title toc-ignore">Lab 2 · Depuración: cada decisión tiene un
 coste</h1>
-<h3 class="subtitle">Desaprendiendo sobre… Limpieza de datos ·
-Estudiante_18 (sector Servicios)</h3>
+<h3 class="subtitle">Desaprendiendo sobre… Limpieza de datos · Empresa
+de servicios multisede</h3>
 
 </div>
 
@@ -1644,14 +1644,14 @@ obtener &lt;- function(f) {
 }
 for (f in c(
   &quot;funciones_labs.R&quot;,
-  &quot;estudiante_18/operaciones.csv&quot;,
-  &quot;estudiante_18/clientes.csv&quot;,
-  &quot;estudiante_18/productos_servicios.csv&quot;,
-  &quot;estudiante_18/sedes.csv&quot;,
-  &quot;estudiante_18/campanas.csv&quot;
+  &quot;servicios/operaciones.csv&quot;,
+  &quot;servicios/clientes.csv&quot;,
+  &quot;servicios/productos_servicios.csv&quot;,
+  &quot;servicios/sedes.csv&quot;,
+  &quot;servicios/campanas.csv&quot;
 )) obtener(f)
 source(&quot;datos/funciones_labs.R&quot;)</code></pre>
-<pre class="r"><code>d &lt;- cargar_e18()
+<pre class="r"><code>d &lt;- cargar_servicios()
 o &lt;- d$operaciones</code></pre>
 <div id="duplicados-lo-evidente" class="section level2">
 <h2>1. Duplicados: lo evidente</h2>
@@ -1784,16 +1784,16 @@ un error o un proyecto grande.</p>
 </div>
 <div id="lo-que-has-visto-en-una-sola-función" class="section level2">
 <h2>6. Lo que has visto, en una sola función</h2>
-<p>Toda la limpieza anterior vive en <code>limpiar_e18()</code> (puedes
-abrir <code>datos/funciones_labs.R</code> y leerla). Cada decisión es un
-<strong>argumento</strong>: por defecto <strong>solo se marcan</strong>
-los problemas y se eliminan los duplicados exactos.</p>
+<p>Toda la limpieza anterior vive en <code>limpiar_servicios()</code>
+(puedes abrir <code>datos/funciones_labs.R</code> y leerla). Cada
+decisión es un <strong>argumento</strong>: por defecto <strong>solo se
+marcan</strong> los problemas y se eliminan los duplicados exactos.</p>
 <pre class="r"><code># &gt;&gt;&gt; TOCA AQUÍ: elige qué problemas se convierten en filas eliminadas &lt;&lt;&lt;
 # opciones: &quot;antes_alta&quot;, &quot;antes_lanzamiento&quot;, &quot;margen_negativo&quot;, &quot;sector&quot;
 EXCLUIR &lt;- c()          # prueba, por ejemplo: c(&quot;antes_alta&quot;)   o   c(&quot;margen_negativo&quot;, &quot;sector&quot;)
 K_IQR   &lt;- 3            # prueba 1.5 o 5
 
-l &lt;- limpiar_e18(d, excluir = EXCLUIR, k_iqr = K_IQR)
+l &lt;- limpiar_servicios(d, excluir = EXCLUIR, k_iqr = K_IQR)
 l$log</code></pre>
 <pre><code>## # A tibble: 7 × 3
 ##   regla                                           filas_afectadas decision      

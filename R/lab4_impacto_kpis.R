@@ -37,15 +37,15 @@ obtener <- function(f) {
 }
 for (f in c(
   "funciones_labs.R",
-  "estudiante_18/operaciones.csv",
-  "estudiante_18/clientes.csv",
-  "estudiante_18/productos_servicios.csv",
-  "estudiante_18/sedes.csv",
-  "estudiante_18/campanas.csv"
+  "servicios/operaciones.csv",
+  "servicios/clientes.csv",
+  "servicios/productos_servicios.csv",
+  "servicios/sedes.csv",
+  "servicios/campanas.csv"
 )) obtener(f)
 source("datos/funciones_labs.R")
 
-d <- cargar_e18()
+d <- cargar_servicios()
 
 #' ## 1. Cuatro escenarios
 #'
@@ -58,9 +58,9 @@ d <- cargar_e18()
 #'
 escenarios <- list(
   "A · Bruto"       = d$operaciones,
-  "B · Prudente"    = limpiar_e18(d)$operaciones,
-  "C · Sin pre-alta" = limpiar_e18(d, excluir = "antes_alta")$operaciones,
-  "D · Estricto"    = limpiar_e18(d, excluir = c("antes_alta", "margen_negativo", "sector"))$operaciones)
+  "B · Prudente"    = limpiar_servicios(d)$operaciones,
+  "C · Sin pre-alta" = limpiar_servicios(d, excluir = "antes_alta")$operaciones,
+  "D · Estricto"    = limpiar_servicios(d, excluir = c("antes_alta", "margen_negativo", "sector"))$operaciones)
 
 tabla <- imap_dfr(escenarios, \(ops, nombre) kpis(ops) |> mutate(escenario = nombre, .before = 1))
 tabla |> mutate(across(where(is.numeric), \(x) round(x, 2)))
@@ -124,7 +124,7 @@ MI_ESCENARIO <- c("antes_lanzamiento")
 
 bind_rows(
   kpis(escenarios[["B · Prudente"]]) |> mutate(escenario = "B · Prudente", .before = 1),
-  kpis(limpiar_e18(d, excluir = MI_ESCENARIO)$operaciones) |> mutate(escenario = paste("Mi escenario:", paste(MI_ESCENARIO, collapse = " + ")), .before = 1)) |>
+  kpis(limpiar_servicios(d, excluir = MI_ESCENARIO)$operaciones) |> mutate(escenario = paste("Mi escenario:", paste(MI_ESCENARIO, collapse = " + ")), .before = 1)) |>
   mutate(across(where(is.numeric), \(x) round(x, 2)))
 
 #' > ### Para pensar (cierre)

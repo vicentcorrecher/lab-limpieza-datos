@@ -148,7 +148,7 @@ cat("Filas de operaciones: ", nrow(d$operaciones), "(originales) ->", nrow(l$ope
 ```
 
 > ### Para pensar
-> 1. De los cinco problemas, ¿cuáles **corriges**, cuáles **marcas** y cuáles **preguntas**? ¿Qué criterio has usado?
+> 1. De los seis problemas, ¿cuáles **corriges**, cuáles **marcas** y cuáles **preguntas**? ¿Qué criterio has usado?
 > 2. Excluye `"antes_alta"` y mira cuántas filas desaparecen. ¿Te parece razonable descartar tanto dato por una fecha de alta?
 > 3. Hay 1.346 operaciones anteriores al **lanzamiento del servicio** (`"antes_lanzamiento"`). ¿Qué dato está mal, la operación o la fecha de lanzamiento?
 > 4. El «diario» (`l$log`) lista las decisiones. ¿Por qué es importante que **quede escrito** y no solo hecho?

@@ -86,8 +86,8 @@ laboratorios.Rproj · instalar_paquetes.R
 rmarkdown/       lab0..lab5 .Rmd: los laboratorios para RStudio (fuente de todo lo demás)
 R/               lab0..lab5 .R: guiones paso a paso, con el texto en comentarios
 html/            lab0..lab5 .html: informes con la marca y todas las salidas
-google_colab/    lab0..lab5 .ipynb: cuadernos para Colab (kernel R)
-generar_material.R  regenera html/ y R/ a partir de rmarkdown/
+google_colab/    lab0..lab5 .ipynb: cuadernos para Colab (kernel R), generados desde los .Rmd
+generar_material.R  regenera html/, R/ y google_colab/ a partir de rmarkdown/
 assets/          marca.css, marca_pie.html y las fuentes Montserrat y DM Sans (licencia OFL) incrustadas en los .html
 datos/
   servicios/    5 CSV de una empresa de servicios (2022-2025)
@@ -95,6 +95,6 @@ datos/
   funciones_labs.R  funciones que usan los laboratorios 0-4
 ```
 
-Si modificas un `.Rmd`, ejecuta `generar_material.R` para actualizar `html/` y `R/`.
+Si modificas un `.Rmd`, ejecuta `generar_material.R` para actualizar `html/`, `R/` y `google_colab/`: así los cuatro formatos dicen siempre lo mismo.
 
 Los datos están generados de forma sintética: no representan a ninguna empresa ni persona real.
